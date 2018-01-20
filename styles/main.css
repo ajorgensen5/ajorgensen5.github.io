@@ -12,8 +12,9 @@ body {
 }
 
 h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: /* #xxxxxx */;
+    font-size: 1.2rem;
+    font-family: tangerine, serif;
+    color: #3D4080;
 }
 
 h2 {
