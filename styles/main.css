@@ -14,8 +14,8 @@ body {
 }
 
 h1 {
-    font-size: 8rem;
-    font-family: 'Tangerine', cursive;
+    font-size: 7rem;
+    font-family: Tangerine, cursive;
     color: #fff;
     line-height: 80px;
     
@@ -33,7 +33,7 @@ h2 {
 }
 
 header, main, footer {
-    margin: 5rem auto;
+    margin: 8rem auto;
     padding: 2rem;
     max-width: 1200px;
 }
