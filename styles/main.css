@@ -1,29 +1,29 @@
 
-* { margin: 0; box-sizing: border-box; } 
+* { margin: 0; box-sizing: border-box; 
+    } 
 
 body { 
-    font-size: 22px; 
+    font-size: 20px; 
     line-height: 50px;
     font-family: Ubuntu, sans-serif;
     color: black;
-    max-width: 1200px;
+    max-width: 900px;
+    margin: auto;
     background-color: floralwhite;
-    
-    
-    
+
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 5rem;
     font-family: Tangerine, cursive;
     color: #fff;
-    line-height: 80px;
+    line-height: 5rem;
     
     
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 4rem;
     text-align: left;
     border-bottom: 1px solid #bbb;
@@ -45,16 +45,19 @@ header, footer, footer a {
 }
 
 header img {
-    width: 250px;
+    width: 300px;
     height: auto;
     float: right;
     padding: 1em;
+    max-width: 900px;
+    overflow: auto;
+    
     
 }
 
 footer {
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
-    max-width: 1200px;
+    max-width: 900px;
     
 }

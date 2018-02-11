@@ -1,0 +1,130 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 900px;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+    padding 10px;
+    text-align: left;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+   
+    font-family: 'Rogue Serif Light', sans-serif;
+
+}
+
+header {
+    
+   
+    
+}
+
+header h1 {
+    font-size: 1.2em;
+    text-shadow: 4px 4px 4px #aaa;
+    position: absolute;
+}
+
+header img {
+    
+    width: 25%;
+}
+
+header .subheading {
+  
+    font-family:  cursive;
+    
+}
+
+nav {
+
+}
+
+nav button {}
+
+nav ul {
+    display: list-style-type: none;
+    float: left;
+    
+    
+}
+
+nav ul li {
+    
+}
+
+nav ul li a {
+   
+    
+}
+
+nav ul li.active a {}
+
+nav ul li a:hover {}
+
+main {}
+
+main h2 {
+    font-size: 2em;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+
+section {
+    display: none;
+}
+
+section img {
+    width: 30%;
+}
+
+article p.town-article img {
+    
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 66%;
+    /* fill the page in the small/phone view */
+    margin: 10px;
+}
+
+footer {
+    font-size: 12px;
+    max-width: 900px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer aside {}
+
+footer > p {
+    display: flex;
+    float: right;
+    
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
