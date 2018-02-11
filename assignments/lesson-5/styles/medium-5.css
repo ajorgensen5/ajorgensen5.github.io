@@ -29,9 +29,20 @@
     header img {
         width: 250px;
     }
+
     main figure {
         margin: 0 0 .2rem 2%;
         width: 96%;
     }
 
+    section img {
+        width: ?;
+    }
+
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        width: ???;
+        /* fill the page in the small/phone view */
+        margin: ???;
+    }
 }
