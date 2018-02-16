@@ -3,9 +3,21 @@
     nav button {
         display: none;
     }
+
+    nav ul {
+        margin-left: 2%;
+
+
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem;
+        1rem;
+    }
     /* hamburger button does not need to be shown */
     section.forecast {
-        display: ???;
+        display: block;
     }
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
@@ -13,21 +25,34 @@
         float: right;
     }
 
-    /* navigation bar*/
-    nav ul {
-        display: flex;
-        list-style-type: none;
-        flex-direction: row;
-        justify-content: space-around;
+    nav {
+        background-color: #003FC6;
     }
 
-    section {
-        display: block;
+    nav ul li {
+        float: left;
     }
+
+    ul li ul .active {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #33FD57;
+    }
+    a:visited {
+        color: #4881FC;
+    }
+    a:active {
+        color: #FF9234;
+    }
+
+    section {}
 
     /* responsive images */
     header img {
-        width: 250px;
+        width: 14%;
     }
 
     main figure {
@@ -36,13 +61,18 @@
     }
 
     section img {
-        width: ?;
+        width: 30%;
+
     }
 
     article p.town-article img {
         /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-        width: ???;
+        width: 100%;
+        height: auto;
+        float: left;
+
+
         /* fill the page in the small/phone view */
-        margin: ???;
+        margin: auto;
     }
 }

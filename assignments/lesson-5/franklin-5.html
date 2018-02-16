@@ -29,8 +29,10 @@
     </header>
 
     <!-- site navigation use placeholder references -->
-    <nav>
-        <button onclick="toggleNavMenu()">&#9776;</button>
+    <nav class="clearfix">
+        <button onclick="toggleNavMenu()">&#9776;
+        </button>
+        <ul id="sally"></ul>
         <ul>
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Franklin</a></li>
@@ -42,24 +44,24 @@
     </nav>
 
     <main>
-        <h2>Franklin Township</h2>
+        <h2>Franklin, IL</h2>
         <figure>
-            <img src="images/franklin%20bridge.jpeg" alt="franklin bridge">
+            <img src="images/policestation2.jpg" alt="franklin bridge">
         </figure>
         <section>
             <h3>Weather Summary</h3>
             <div class="highlow">
-                <p>High: 88 &#8457;</p>
-                <p>Low:68 &#8457;</p>
+                <p>High: 24 &#8457;</p>
+                <p>Low: 15 &#8457;</p>
             </div>
             <div class="current">
                 Sunny
                 <picture>
-                    <img src="images/sunny.ico" alt="" width="" height="">
+                    <img src="images/sparkly-snowflake-clipart-1.jpg" alt="" width="" height="">
                 </picture>
             </div>
             <div class="conditions">
-                <p>Precipitation: 0%</p>
+                <p>Precipitation: 15%</p>
                 <p>Wind Speed: 5 mpg SW</p>
             </div>
         </section>
@@ -83,25 +85,25 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
+                        <td>20&deg;F</td>
+                        <td>24&deg;F</td>
+                        <td>19&deg;F</td>
+                        <td>21&deg;F</td>
+                        <td>32&deg;F</td>
+                        <td>35&deg;F</td>
+                        <td>40&deg;F</td>
+                        <td>37&deg;F</td>
+                        <td>23&deg;F</td>
+                        <td>20&deg;F</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <article>
-            <h3>Franklin Breaks Clear Sky Record</h3>
+            <h3>Franklin Prepares for More Snow</h3>
             <p class="town-article">
-                <img src="images/farming.jpeg" alt="farming in Franklin" width="" height=""> The second greatest record for clear sky's occur for Franklin, MU. Farmers are lucky to be able to finish harvest in record time. More Details
+                <img src="images/snowstorm.image2.jpg" alt="farming in Franklin" width="" height=""> Some areas of Franklin had a further 2 feet of snow overnight on top of accumulations as deep as 5 feet from earlier in the week.
             </p>
         </article>
 
@@ -109,11 +111,9 @@
 
     <footer>
         <aside>
-            Franklin, MU
-            <br> 125 Main St. Franklin, MU 83454 809-876-7676
-
+            <p>Franklin, IL 25 Main St. Franklin, IL 83454 809-876-7676</p>
         </aside>
-        <p class="footer-bar">&copy;2017 All Rights Reserved | SmartCast Weather | <span id="currentdate">Current Date Placeholder</span></p>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | SmartCast Weather | <span id="currentdate">Feb 6, 2018 </span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>

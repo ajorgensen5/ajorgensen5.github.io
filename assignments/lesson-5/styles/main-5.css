@@ -2,8 +2,8 @@
 
 * {
     box-sizing: border-box;
-    margin: auto;
     max-width: 900px;
+
 }
 
 /* This wildcard applies to all elements ensuring a box layout model */
@@ -13,73 +13,110 @@ body {
     font-family: 'Verdana', sans-serif;
     padding 10px;
     text-align: left;
-    /* Declare the base font-family - from google font api or other */
+    max-width: /* Declare the base font-family - from google font api or other */
+}
+
+button {
+    float: right;
+
 }
 
 header,
 nav,
 main,
 footer {
-    /* the comma means apply the following CSS declarations to all of the listed elements */
+
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-   
     font-family: 'Rogue Serif Light', sans-serif;
+    max-width: 900px;
+
 
 }
 
-header {
-    
-   
-    
-}
+header {}
 
 header h1 {
     font-size: 1.2em;
     text-shadow: 4px 4px 4px #aaa;
-    position: absolute;
+    margin: 10px;
+
 }
 
 header img {
-    
-    width: 25%;
+
+    width: 15%;
 }
 
 header .subheading {
-  
-    font-family:  cursive;
-    
+
+    font-family: cursive;
+    margin: 10px;
+
 }
+
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: cornflowerblue;
+}
+
 
 nav {
-
+    background-color: #003FC6;
+    font-family: Verdana, sans-serif;
 }
-
-nav button {}
 
 nav ul {
-    display: list-style-type: none;
-    float: left;
-    
-    
-}
-
-nav ul li {
-    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
-   
-    
+    display: block;
+    padding: .8rem;
+    2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-nav ul li.active a {}
+ul li ul .active {
+    text-decoration: none;
+    color: white;
+}
 
-nav ul li a:hover {}
+nav ul li .hover a {
+    color: #33FD57;
+}
+
+
+nav ul li {}
+
+nav ul li .visited a {
+    color: #4881FC
+}
+
+nav ul li.active a {
+    background-color: rgba(0.0.0.2);
+    color: #FF9234;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #33FD57;
+}
 
 main {}
 
 main h2 {
-    font-size: 2em;
+    font-size: 1.5em;
+    float: left;
+    clear: both;
+    margin: 10px;
 }
 
 main figure {
@@ -92,20 +129,36 @@ main figure img {
 }
 
 
-section {
+.forecast {
     display: none;
+}
+
+section {
+    margin: 10px;
 }
 
 section img {
     width: 30%;
 }
 
-article p.town-article img {
-    
-    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 66%;
-    /* fill the page in the small/phone view */
+article {
     margin: 10px;
+}
+
+article p.town-article img {
+
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    height: auto;
+    /* fill the page in the small/phone view */
+    margin-bottom: 10px;
+
+    display: flex;
+
+}
+
+town-article {
+    clear: both;
 }
 
 footer {
@@ -114,17 +167,24 @@ footer {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
-footer aside {}
 
 footer > p {
     display: flex;
     float: right;
-    
+
 }
 
 /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
