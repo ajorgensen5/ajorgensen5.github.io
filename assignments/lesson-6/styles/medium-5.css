@@ -2,22 +2,32 @@
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     nav button {
         display: none;
+         
     }
 
     nav ul {
-        margin-left: 2%;
-
+        max-width: 900px;
+        
+       
 
     }
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .8rem;
+        padding: .6rem 2.1rem;
         1rem;
+        
+        
+        
     }
     /* hamburger button does not need to be shown */
     section.forecast {
-        display: block;
+        display:inline;
+        float: left;
+        margin-bottom: 10px;
+        
+        
+        
     }
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
@@ -27,10 +37,13 @@
 
     nav {
         background-color: #003FC6;
+        margin-left: 10px
+        
     }
 
     nav ul li {
         float: left;
+        
     }
 
     ul li ul .active {
@@ -56,10 +69,19 @@
     }
 
     main figure {
-        margin: 0 0 .2rem 2%;
+        margin: 0 ;
         width: 96%;
     }
+    
+    .prepare {
+        color: darkorange;
+    }
 
+    section {
+        float: left;
+        margin-bottom: 10px;
+    }
+    
     section img {
         width: 30%;
 
@@ -75,4 +97,12 @@
         /* fill the page in the small/phone view */
         margin: auto;
     }
+}
+#town-article {
+    float: right;
+    margin-bottom: 10px;
+}
+footer{
+    clear: both;
+    
 }

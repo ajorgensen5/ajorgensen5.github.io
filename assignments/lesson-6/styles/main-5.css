@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0 auto;
-
+    max-width: 900px;
 }
 
 /* This wildcard applies to all elements ensuring a box layout model */
@@ -159,9 +159,8 @@ article {
     max-width:  50%;
     height: auto;
     /* fill the page in the small/phone view */
-    margin-right: 5px;
-    margin-top: 5px;
-    border: dashed red;
+    margin-right: 10px;
+    margin-top: 10px;
     display: flex;
     float: left;
 
@@ -172,12 +171,16 @@ h3 {
     
 }
 
-.prepare {
-    
+.prepare {   
+}
+
+.snow {
+    font-size: .8rem;
+    padding: 10px;
 }
 
 footer {
-    font-size: .8rem;
+    font-size: .7rem;
     background-color: black;
     color: white;
     display: flex;

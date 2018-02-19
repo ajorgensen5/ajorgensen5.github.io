@@ -10,11 +10,18 @@
         display: flex;
         list-style-type: none;
         flex-direction: row;
-        justify-content: space-around;
+        align-items: center;
+       
     }
-
+    
+    .myphoto {
+        max-width: 900px;
+        margin: 0;
+    }
+    
+    
     nav ul li a {
-        padding: .6rem 1rem;
+        padding: .6rem 2.1rem;
     }
 
     section {
@@ -22,7 +29,7 @@
     }
 
     main figure {
-        margin: 0 0 .2rem 2%;
+        margin: 0;
         width: 100%;
     }
 
@@ -35,7 +42,7 @@
         width: 100%;
         height: auto;
         /* fill the page in the small/phone view */
-        margin: auto;
+        margin: 0;
     }
 
 }
