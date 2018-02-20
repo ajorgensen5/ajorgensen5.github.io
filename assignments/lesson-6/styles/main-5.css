@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 900px;
+    
 }
 
 /* This wildcard applies to all elements ensuring a box layout model */
@@ -14,8 +15,9 @@ body {
     padding 10px;
     text-align: left;
     justify-content: center;
-    
+       
 }
+
 
 button {
     
@@ -147,7 +149,7 @@ section img {
 
 section {
     clear: left;
-    float: right;
+    float: left;
     margin: 0;
 }
 
@@ -191,11 +193,12 @@ footer {
     align-items: center;
 }
 
-footer > p {
-    display: flex;
-    float: right;
+footer p {
+  
 
 }
+
+
 
 /* This structure refers to p elements that are direct children of the footer element */
 
