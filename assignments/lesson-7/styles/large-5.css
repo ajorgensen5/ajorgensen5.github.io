@@ -1,0 +1,48 @@
+@media only screen and (min-width: 64em) {
+
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 29.333%;
+    }
+
+    /* navigation bar*/
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        align-items: center;
+       
+    }
+    
+    .myphoto {
+        max-width: 900px;
+        margin: 0;
+    }
+    
+    
+    nav ul li a {
+        padding: .6rem 2rem;
+    }
+
+    section {
+        display: block;
+    }
+
+    main figure {
+        margin: 0;
+        width: 100%;
+    }
+
+    section img {
+        width: 30%;
+    }
+
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        width: 100%;
+        height: auto;
+        /* fill the page in the small/phone view */
+        margin: 0;
+    }
+
+}
