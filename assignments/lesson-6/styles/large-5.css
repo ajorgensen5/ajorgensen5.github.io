@@ -18,6 +18,10 @@
 
 
     }
+    
+    .hide-nav {
+        display: block;
+    }
 
     .myphoto {
         max-width: 900px;

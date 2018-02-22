@@ -49,6 +49,10 @@
         float: left;
         
     }
+    
+    .hide-nav {
+        display: block;
+    }
 
     ul li ul .active {
         text-decoration: none;
