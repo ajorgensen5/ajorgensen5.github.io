@@ -45,6 +45,7 @@
 
     nav ul li {
         float: left;
+        font-size: .8em;
         
     }
 
@@ -54,7 +55,9 @@
     }
 
     .hide-nav {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     
     a:hover {

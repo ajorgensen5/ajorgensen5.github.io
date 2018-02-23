@@ -65,10 +65,16 @@ nav button {
     color: cornflowerblue;
 }
 
+.show-nav {
+    display: block;
+}
+
+.hide-nav {
+    display: none;
+}
 
 nav {
-    background-color: #003FC6;
-    font-family: Verdana, sans-serif;
+   
 }
 
 nav ul {
@@ -76,6 +82,7 @@ nav ul {
     list-style-type: none;
     padding:0;
     margin: 0;
+    
 }
 
 nav ul li a {
@@ -85,6 +92,8 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #003FC6;
+     font-family: Verdana, sans-serif;
     
 }
 
@@ -198,13 +207,7 @@ footer p {
 
 }
 
-.show-nav {
-    display: block;
-}
 
-.hide-nav {
-    display: none;
-}
 
 /* This structure refers to p elements that are direct children of the footer element */
 
