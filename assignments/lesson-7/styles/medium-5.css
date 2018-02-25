@@ -1,52 +1,52 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 32em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     nav button {
         display: none;
-         
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+        width: 96%;
+        font-size: .7em;
     }
 
     nav ul {
-        max-width: 900px;
-        
-       
+        width: 100%;
 
     }
     nav ul li a {
-        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .6rem 1rem;
-        1rem;
-             
-        
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem;
     }
     /* hamburger button does not need to be shown */
     section.forecast {
-        display:inline;
-        float: left;
         margin-bottom: 10px;
         padding
-        
-        
-        
-        
     }
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
         width: 62.666%;
-        float: right;
     }
 
     nav {
         background-color: #003FC6;
-        margin-left: 2%;
-        
     }
 
-    nav ul li {
-        float: left;
-        font-size: .8em;
-        
+    nav ul li {}
+
+    .hide-nav {
+        display: flex;
     }
 
     ul li ul .active {
@@ -54,12 +54,6 @@
         color: white;
     }
 
-    .hide-nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
     a:hover {
         color: #33FD57;
     }
@@ -70,7 +64,12 @@
         color: #FF9234;
     }
 
-    section {}
+
+
+
+    article p.town-article img {
+        width: 62.666%;
+    }
 
     /* responsive images */
     header img {
@@ -78,19 +77,18 @@
     }
 
     main figure {
-        margin: 0 ;
+        margin: 0;
         width: 96%;
     }
-    
+
     .prepare {
         color: darkorange;
     }
 
     section {
-        float: left;
         margin-bottom: 10px;
     }
-    
+
     section img {
         width: 30%;
 
@@ -100,22 +98,36 @@
         /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
         width: 100%;
         height: auto;
-        float: left;
 
 
         /* fill the page in the small/phone view */
         margin: auto;
     }
-}
-#town-article {
-    float: right;
-    margin-bottom: 10px;
-}
-footer{
-    clear: both;
-}
-footer-bar {
-    max-width: 900px;
-}
-    
+
+    #town-article {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        clear: both;
+    }
+
+    footer-bar {
+        max-width: 900px;
+    }
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 2px;
+        background-color: black;
+        max-width: 100%;
+    }
+
+    .griditem {
+        background-color: azure;
+        border: 1px solid red;
+        text-align: center;
+    }
+
 }

@@ -20,7 +20,7 @@
     }
     
     .hide-nav {
-        display: block;
+        display: flex;
     }
 
     .myphoto {

@@ -6,26 +6,31 @@
     }
 
     /* navigation bar*/
+    nav {
+        width: 100%;
+    }
+
     nav ul {
-        display: block;
+        display: flex;
         list-style-type: none;
         flex-direction: row;
         align-items: center;
-       
+
+
     }
     
     .hide-nav {
-        display: block;
+        display: flex;
     }
-    
+
     .myphoto {
         max-width: 900px;
         margin: 0;
     }
-    
-    
+
+
     nav ul li a {
-        padding: .6rem 2rem;
+        padding: .6rem
     }
 
     section {
@@ -47,6 +52,18 @@
         height: auto;
         /* fill the page in the small/phone view */
         margin: 0;
+    }    
+ .gridcontainer {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 2px;
+        background-color: black;
+        max-width: 100%;
     }
 
+    .griditem {
+        background-color: azure;
+        border: 1px solid red;
+        text-align: center;
+    }
 }

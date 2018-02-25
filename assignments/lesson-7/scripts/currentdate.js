@@ -13,3 +13,4 @@ var dd = d.getDate();
 var dateoutput = days[d.getDay()] + ", " + dd + " " + months[month] + " " + year;
 
 document.getElementById("currentdate").innerHTML = dateoutput;
+

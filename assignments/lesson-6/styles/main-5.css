@@ -78,6 +78,10 @@ nav ul {
     margin: 0;
 }
 
+nav ul li {
+    width: 16.67%;
+}
+
 nav ul li a {
     display: block;
     padding: .8rem 
@@ -85,6 +89,7 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
+    
     
 }
 

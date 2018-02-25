@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 900px;
-    
+
 }
 
 /* This wildcard applies to all elements ensuring a box layout model */
@@ -15,12 +15,15 @@ body {
     padding: 10px;
     text-align: left;
     justify-content: center;
-       
+
 }
 
 
-button { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
-
+button {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 3rem;
 }
 
 header,
@@ -35,27 +38,28 @@ footer {
 
 }
 
-header {}
+.title {
+    display: flex;
+    flex-direction: row;
+}
 
 header h1 {
-    
     font-size: 1.2em;
     text-shadow: 4px 4px 4px #aaa;
     max-width: 62rem;
-    
+    margin-top: 40px;
 }
 
 header img {
-
-    width: 15%;
+    width: 100px;
+    height: 100px;
+    margin: 0;
 }
 
 header .subheading {
-
     font-family: 'Bad Script', cursive;
     margin-bottom: 5px;
 }
-
 
 nav button {
     margin: .2rem 2%;
@@ -65,34 +69,28 @@ nav button {
     color: cornflowerblue;
 }
 
-.show-nav {
-    display: block;
+
+nav {
+    background-color: #003FC6;
+    font-family: Verdana, sans-serif;
 }
-
-.hide-nav {
-    display: none;
-}
-
-
 
 nav ul {
-    
     list-style-type: none;
-    padding:0;
+    padding: 0;
     margin: 0;
-    
+}
+
+nav ul li {
+    width: 8rem;
 }
 
 nav ul li a {
     display: block;
-    padding: .8rem 
-    2%;
+    padding: .8rem 2%;
     text-decoration: none;
     color: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: #003FC6;
-     font-family: Verdana, sans-serif;
-    
 }
 
 nav ul li .hover a {
@@ -108,10 +106,15 @@ nav ul li.active a {
     color: #FF9234;
 }
 
-
-main {
-
+.show-nav {
+    display: block;
 }
+
+.hide-nav {
+    display: none;
+}
+
+main {}
 
 main h2 {
     font-size: 1.5em;
@@ -129,59 +132,94 @@ main figure.myphoto img {
     margin: 0 auto;
 }
 
-.weathersummary{
+.weathersummary {
     color: blue;
-        margin: 0px;
-           
+    margin: 0px;
+
 }
 
-.highlow{
+.windchill {
+    display: inline;
+
+}
+
+.highlow {
     margin-top: 10px;
 }
 
 .forecast {
     display: none;
-    float: right;
+}
+
+.highTemp {
+    display: flex;
+    list-style-type: none;
+}
+
+.lowTemp {
+    display: flex;
+    list-style-type: none;
 }
 
 .conditions {
-    margin-top:  10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
+#output {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section,
+div {
+    margin: 1rem;
+}
+
+.form {
+    background-color: #bbb;
+    padding: 1rem;
+    border: 1px solid #444;
+}
+
+div {
+    background-color: #eee;
+    padding: 1rem;
+    border: 1px solid #444;
+}
+
+#aNum {
+    border: 1px solid #bbeedd;
+    background-color: #aaffcc;
+    text-align: center;
+}
+
+
 section img {
     width: 30%;
-    
+
 }
 
 section {
-    clear: left;
-    float: left;
     margin: 0;
 }
 
-article {
-}
+article {}
 
 .moresnow img {
-
-
-    max-width:  50%;
+    max-width: 50%;
     height: auto;
     /* fill the page in the small/phone view */
     margin-right: 10px;
     margin-top: 10px;
-    display: flex;
-    float: left;
-
 }
 
 h3 {
-  display: block;
-    
+    display: block;
+
 }
 
-.prepare {  
+.prepare {
     text-align: left;
     margin: 0 0 5 6;
 }
@@ -201,16 +239,22 @@ footer {
 }
 
 footer p {
-  color: white;
+    color: white;
 
 }
-
-
-
-/* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-
+.gridcontainer{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+    padding: 20px;
+    max-width: 100%;
 }
+
+.griditem {
+    background-color: azure;
+    border: 1px solid red;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+}
+

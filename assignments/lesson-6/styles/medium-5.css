@@ -10,15 +10,17 @@
         float: left;
         justify-content: center;
         width: 96%;
+        font-size: .7em;
     }
 
     nav ul {
+       width: 100%;
        
     }
     nav ul li a {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         border: none;
         border-left: 1px solid rgba(0, 0, 0, 0.3);
         padding: .6rem;
@@ -46,12 +48,12 @@
     }
 
     nav ul li {
-        float: left;
+        
         
     }
     
     .hide-nav {
-        display: block;
+        display: flex;
     }
 
     ul li ul .active {
@@ -90,6 +92,12 @@
         margin-bottom: 10px;
     }
 
+    .forecast {
+    display: flex;
+    float: right;
+    justify-content: center;
+    
+}
     section img {
         width: 30%;
 
