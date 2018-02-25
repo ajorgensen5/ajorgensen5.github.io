@@ -46,6 +46,10 @@
         width: 30%;
     }
 
+       
+    .gridcontainer {
+         box-shadow: 5px 10px #888888;
+    }
     article p.town-article img {
         /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
         width: 100%;
