@@ -12,12 +12,12 @@ html {
 
 body {
     box-shadow: 10px 10px 10px #628ca6;
-    max-width: 265px;
+    max-width: 258px;
+     border-collapse: collapse;
     
 }
 
-main {
-    
+main { border-collapse: collapse;
 }
 
 table {
@@ -78,11 +78,13 @@ h2 {
     background-color: #e7f0ed;
 }
 
-.bf {
-    padding 5px;
+.
+bf {
+    padding: 10px ;
 }
   .ngoal {
       background-color: #628ca6;
+      
   }
 
 
