@@ -14,7 +14,7 @@ html {
 
 body {
     box-shadow: 10px 10px 10px #628ca6;
-    max-width: 258px;
+    max-width: 266px;
      border-collapse: collapse;
     
 }
@@ -92,7 +92,6 @@ bf {
 
 tfoot {
     background-color: #6EABB5;
-    font-size: 12px;
 }
 
 
@@ -101,15 +100,7 @@ tfoot {
 
 
 
-
-th {
-  background-color: rgb(235,235,235);
-}
-
-td {
-  text-align: center;
-    column-span: 2;
-}
+not sure how to use this?
 
 tr:nth-child(even) td {
   background-color: rgb(250,250,250);
@@ -119,10 +110,6 @@ tr:nth-child(even) td {
 tr:nth-child(odd) td {
   background-color: rgb(245,245,245);
 }
+*/
 
-caption {
-  padding: 10px;
-}
-*/
-*/
-*/
+
