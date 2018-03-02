@@ -12,7 +12,8 @@ html {
 
 body {
     box-shadow: 10px 10px 10px #628ca6;
-    max-width: 250px;
+    max-width: 265px;
+    
 }
 
 main {
@@ -21,7 +22,7 @@ main {
 
 table {
     border-collapse: collapse;
-    max-width: 300px;
+    
 
 }
 
@@ -46,7 +47,7 @@ th,
 td {
 
     margin: 0;
-    padding: 8px;
+    padding: 10px;
     font-size: 0.8rem;
     letter-spacing: 1px;
     text-align: center;
@@ -77,38 +78,25 @@ h2 {
     background-color: #e7f0ed;
 }
 
-/*
+.bf {
+    padding 5px;
+}
   .ngoal {
       background-color: #628ca6;
   }
-*/
+
 
 tfoot {
     background-color: #6EABB5;
     font-size: 12px;
 }
 
-/*html 
-  font-family: sans-serif;
-    
-}
 
-table {
-  
-  border: 2px solid rgb(200,200,200);
-  letter-spacing: 1px;
-  font-size: 0.8rem;
-box-shadow: 1px 1px 1px #999;
-    background-color: darkturquoise;
-   
-}
 
-td, th {
-    column-span: 2;
-  border: 1px solid rgb(190,190,190);
-  padding: 10px 20px;
-     
-}
+/*
+
+
+
 
 th {
   background-color: rgb(235,235,235);
@@ -131,4 +119,6 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
+*/
+*/
 */
