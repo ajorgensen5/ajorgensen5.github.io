@@ -1,0 +1,133 @@
+@media only screen and (min-width: 32em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    nav button {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+        width: 96%;
+        font-size: .7em;
+    }
+
+    nav ul {
+        width: 100%;
+
+    }
+    nav ul li a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem;
+    }
+    /* hamburger button does not need to be shown */
+    section.forecast {
+        margin-bottom: 10px;
+        padding
+    }
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article img {
+        width: 62.666%;
+    }
+
+    nav {
+        background-color: #003FC6;
+    }
+
+    nav ul li {}
+
+    .hide-nav {
+        display: flex;
+    }
+
+    ul li ul .active {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #33FD57;
+    }
+    a:visited {
+        color: #4881FC;
+    }
+    a:active {
+        color: #FF9234;
+    }
+
+
+
+
+    article p.town-article img {
+        width: 62.666%;
+    }
+
+    /* responsive images */
+    header img {
+        width: 14%;
+    }
+
+    main figure {
+        margin: 0;
+        width: 96%;
+    }
+
+    .prepare {
+        color: darkorange;
+    }
+
+    section {
+        margin-bottom: 10px;
+    }
+
+    section img {
+        width: 30%;
+
+    }
+
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        width: 100%;
+        height: auto;
+
+
+        /* fill the page in the small/phone view */
+        margin: auto;
+    }
+
+    #town-article {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        clear: both;
+    }
+
+    footer-bar {
+        max-width: 900px;
+    }
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 2px;
+        background-color: black;
+        max-width: 100%;
+    }
+
+    .griditem {
+        background-color: azure;
+        border: 1px solid red;
+        text-align: center;
+    }
+
+}

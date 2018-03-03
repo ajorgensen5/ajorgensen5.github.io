@@ -2,7 +2,12 @@
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 900px;
+    
 
+}
+
+fieldset {
+    border:0;
 }
 
 html {

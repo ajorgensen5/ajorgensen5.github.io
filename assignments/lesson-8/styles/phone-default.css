@@ -1,0 +1,38 @@
+/*--------FORM STUFF---------------*/
+
+/*---------FOOTER----------------*/
+
+
+
+
+
+
+form#conference{
+    margin: 1em 3%;
+}
+
+fieldset {
+    background-color: #4881FC;
+    color: white;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: red solid 1px;
+}
+
+legend {
+    color: black;
+    margin-left: 06%
+        padding: 2em;
+    border: green solid 2px;
+    background-color: beige;
+    border-radius: 1em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+}
+footer {
+background-color: #b4ba6c;
+}
