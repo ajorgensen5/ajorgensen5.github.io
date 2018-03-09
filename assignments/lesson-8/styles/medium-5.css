@@ -12,7 +12,7 @@
     nav {
         display: flex;
         justify-content: center;
-        width: 96%;
+        width: 100%;
         font-size: .7em;
     }
 
@@ -72,14 +72,46 @@
     }
 
     /* responsive images */
+    
+    header h1 {
+    font-size: 2em;
+    
+    max-width: 62rem;
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-bottom: 0;
+    color: white;
+}
+
+
+
+header .subheading {
+    font-family: 'Bad Script', cursive;
+    margin-left: 14%;
+    margin-top: 0;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: blue;
+    color: aqua;
+    border: none;
+    font-size: 1.4rem;
+    }
+    
+    
+    
     header img {
-        width: 14%;
+        width: 15%;
     }
 
     main figure {
         margin: 0;
         width: 96%;
     }
+
+    .forecast {
+    display: flex;
+        color: aqua;
+}
 
     .prepare {
         color: darkorange;
@@ -94,10 +126,13 @@
 
     }
 
-    article p.town-article img {
-        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-        width: 100%;
-        height: auto;
+   .moresnow img {
+    max-width: 50%;
+    height: auto;
+    /* fill the page in the small/phone view */
+    margin-right: 10px;
+    margin-top: 10px;
+}
 
 
         /* fill the page in the small/phone view */

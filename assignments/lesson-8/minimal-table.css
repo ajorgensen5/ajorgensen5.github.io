@@ -2,12 +2,12 @@
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 900px;
-    
+
 
 }
 
 fieldset {
-    border:0;
+    border: 0;
 }
 
 html {
@@ -20,16 +20,17 @@ html {
 body {
     box-shadow: 7px 7px 7px #628ca6;
     max-width: 266px;
-     border-collapse: collapse;
-    
+    border-collapse: collapse;
+
 }
 
-main { border-collapse: collapse;
+main {
+    border-collapse: collapse;
 }
 
 table {
     border-collapse: collapse;
-    
+
 
 }
 
@@ -77,23 +78,25 @@ h2 {
 
 }
 
-.odd {
-    background-color: #E1FFE7;
-}
 
-.even {
+tr:nth-child(odd) td {
     background-color: #e7f0ed;
 }
 
-.
-bf {
-    padding: 10px ;
+tr:nth-child(even) td {
+    background-color: #E1FFE7;
 }
-  .ngoal {
-      background-color: #628ca6;
-      color: white;
-      
-  }
+
+
+. bf {
+    padding: 10px;
+}
+
+#ngoal {
+    background-color: #628ca6;
+    color: white;
+
+}
 
 
 tfoot {
@@ -117,5 +120,3 @@ tr:nth-child(odd) td {
   background-color: rgb(245,245,245);
 }
 */
-
-

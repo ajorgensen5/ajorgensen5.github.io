@@ -5,6 +5,34 @@
         width: 29.333%;
     }
 
+    
+        header h1 {
+    font-size: 3em;
+    
+    max-width: 62rem;
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-bottom: 0;
+    color: white;
+}
+
+
+
+header .subheading {
+    font-family: 'Bad Script', cursive;
+    margin-left: 14%;
+    margin-top: 0;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: blue;
+    color: aqua;
+    border: none;
+    font-size: 2.2rem;
+    }
+    
+    
+    
+    
     /* navigation bar*/
     nav {
         width: 100%;

@@ -1,0 +1,308 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 900px;
+
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 2%;
+    text-align: left;
+    justify-content: center;
+}
+
+button {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    margin: 2%;
+    background: none;
+    color: aqua
+}
+
+header,
+nav,
+main,
+footer {
+
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    font-family: 'Roboto', sans-serif;
+    margin: .02%;
+    background-color: blue;
+    border: none;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    border: none;
+    margin: 0;
+    padding: 1%;
+}
+
+header h1 {
+    font-size: 1.6em;
+
+    max-width: 62rem;
+    margin-top: 4%;
+    margin-left: 1%;
+    margin-bottom: 0;
+    color: white;
+}
+
+header img {
+    width: 10%;
+    height: 15%;
+    margin: 0;
+}
+
+header .subheading {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Bad Script', cursive;
+    margin-bottom: 0;
+    margin-left: 13%;
+    margin-top: 0;
+    padding-top: 1%;
+    padding-bottom: 0;
+    background-color: blue;
+    color: aqua;
+    border: none;
+    font-size: 1rem;
+
+
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: cornflowerblue;
+}
+
+
+
+nav {
+    background-color: #003FC6;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    width: 8rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li .hover a {
+    color: #33FD57;
+}
+
+nav ul li .visited a {
+    color: #4881FC
+}
+
+nav ul li.active a {
+    background-color: rgba(0.0.0.2);
+    color: #FF9234;
+}
+
+.show-nav {
+    display: block;
+}
+
+.hide-nav {
+    display: none;
+}
+main {
+    padding: 2%;
+    margin: 0px;
+
+}
+
+main h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: orange;
+    margin-left: 2%
+}
+
+main figure {
+    margin: 0px;
+    width: 100%;
+    align-content: center;
+}
+
+main figure.myphoto img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.weathersummary {
+    color: aqua;
+    font-size: 1.2em;
+    margin-left: 2%;
+    margin-bottom: 0;
+}
+
+.windchill {
+    display: inline;
+
+
+}
+
+.highlow {
+    margin-left: 0;
+    background-color: blue;
+    border: none;
+    color: greenyellow;
+}
+
+.forecast {
+    display: none;
+}
+
+.highTemp {
+    display: flex;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.lowTemp {
+    display: flex;
+    list-style-type: none;
+}
+
+.conditions {
+    color: greenyellow;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-bottom: 0;
+    background-color: blue;
+    border: none;
+}
+
+.current {
+    color: greenyellow;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-bottom: 0;
+    background-color: blue;
+    border: none;
+}
+
+#output {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section,
+div {
+    margin: 1rem;
+}
+
+.form {
+    background-color: #bbb;
+    padding: 1rem;
+    border: 1px solid #444;
+}
+
+div {
+    background-color: #eee;
+    padding: 1rem;
+    border: 1px solid #444;
+}
+
+#aNum {
+    border: 1px solid #bbeedd;
+    background-color: #aaffcc;
+    text-align: center;
+}
+
+
+section img {
+    width: 30%;
+
+}
+
+section {
+    margin: 0;
+}
+
+article {}
+
+.moresnow img {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    /* fill the page in the small/phone view */
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prepare {
+    text-align: left;
+    margin: 0 0 5 6;
+    color: orange;
+    padding: 2%;
+}
+
+.snow {
+    display: flex;
+    font-size: .8rem;
+    color:white
+}
+
+footer {
+    font-size: .7rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+footer p {
+    color: white;
+
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.griditem {
+    background-color: azure;
+    border: 1px solid red;
+    text-align: center;
+    padding: 10px;
+    max-width: 90%;
+}

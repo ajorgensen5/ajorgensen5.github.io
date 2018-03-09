@@ -47,12 +47,12 @@ footer {
     background-color: blue;
     border: none;
     margin: 0;
-    padding: 1%;    
+    padding: 1%;
 }
 
 header h1 {
     font-size: 1.6em;
-    text-shadow: 4px 4px 4px #aaa;
+
     max-width: 62rem;
     margin-top: 4%;
     margin-left: 1%;
@@ -61,23 +61,36 @@ header h1 {
 }
 
 header img {
-    width: 15%;
+    width: 10%;
     height: 15%;
     margin: 0;
 }
 
-header .subheading {
-    font-family: 'Bad Script', cursive;
-    margin-left: .1%;
+header {
+    justify-content: flex-start;
+    margin-bottom: 0;
     margin-top: 0;
     padding-top: 1%;
-    padding-bottom: 2%;
+    padding-bottom: 0;
     background-color: blue;
     color: aqua;
     border: none;
-    font-size: 1.4em;
-    
-  
+    font-size: 1rem;}
+
+github.co.subheading {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Bad Script', cursive;
+    margin-bottom: 0;
+    margin-left: 13%;
+    margin-top: 0;
+    padding-top: 1%;
+    padding-bottom: 0;
+    background-color: blue;
+    color: aqua;
+    border: none;
+    font-size: 1rem;
+
 }
 
 nav button {
@@ -89,10 +102,10 @@ nav button {
 }
 
 
+
 nav {
     background-color: #003FC6;
     font-family: Verdana, sans-serif;
-    margin: 0;
 }
 
 nav ul {
@@ -133,17 +146,17 @@ nav ul li.active a {
 .hide-nav {
     display: none;
 }
-
 main {
     padding: 2%;
+    margin: 0px;
 
 }
 
 main h2 {
-    font-size: 2em;
     margin-top: 10px;
     margin-bottom: 10px;
     color: orange;
+    margin-left: 2%
 }
 
 main figure {
@@ -159,15 +172,22 @@ main figure.myphoto img {
 
 .weathersummary {
     color: aqua;
+    font-size: 1.2em;
+    margin-left: 2%;
+    margin-bottom: 0;
 }
 
 .windchill {
     display: inline;
 
+
 }
 
 .highlow {
-    margin: 0;
+    margin-left: 0;
+    background-color: blue;
+    border: none;
+    color: greenyellow;
 }
 
 .forecast {
@@ -177,6 +197,7 @@ main figure.myphoto img {
 .highTemp {
     display: flex;
     list-style-type: none;
+    margin-left: 10px;
 }
 
 .lowTemp {
@@ -185,8 +206,21 @@ main figure.myphoto img {
 }
 
 .conditions {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    color: greenyellow;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-bottom: 0;
+    background-color: blue;
+    border: none;
+}
+
+.current {
+    color: greenyellow;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-bottom: 0;
+    background-color: blue;
+    border: none;
 }
 
 #output {
@@ -230,25 +264,26 @@ section {
 article {}
 
 .moresnow img {
+    display: flex;
     max-width: 50%;
     height: auto;
     /* fill the page in the small/phone view */
     margin-right: 10px;
     margin-top: 10px;
-}
-
-h3 {
-    display: block;
-
+    margin-bottom: 10px;
 }
 
 .prepare {
     text-align: left;
     margin: 0 0 5 6;
+    color: orange;
+    padding: 2%;
 }
 
 .snow {
+    display: flex;
     font-size: .8rem;
+    color:white
 }
 
 footer {
@@ -265,7 +300,8 @@ footer p {
     color: white;
 
 }
-.gridcontainer{
+
+.gridcontainer {
     display: grid;
     grid-template-columns: auto;
     background-color: black;
@@ -280,4 +316,3 @@ footer p {
     padding: 10px;
     max-width: 90%;
 }
-
