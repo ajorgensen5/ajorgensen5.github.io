@@ -224,6 +224,8 @@ main figure.myphoto img {
 }
 
 .frankcontainer {
+    margin: auto;
+    background-color: lawngreen;
     align-content: center;
     max-width: 80%;
      clear: both;
@@ -234,6 +236,8 @@ main figure.myphoto img {
 
 
 .greencontainer {
+     margin: auto;
+    background-color: lawngreen;
     max-width: 80%;
      clear: both;
     padding: 2%;
@@ -242,6 +246,8 @@ main figure.myphoto img {
 }
 
 .springcontainer {
+     margin: auto;
+    background-color: lawngreen;
     max-width: 80%;
      clear: both;
     padding: 2%;

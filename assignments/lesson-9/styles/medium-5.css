@@ -112,7 +112,7 @@ header .subheading {
     }
 
     .forecast {
-    justify-content: center;
+   padding: 2%;
 }
 
     .prepare {
