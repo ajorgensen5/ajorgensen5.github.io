@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>CIT Assignment 9 - Consuming Data from JSON Sources - Aimee Jorgensen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Aimee Jorgensen">
+
+    <meta name="description" content="CIT 230 Assignment 9 - Aimee Jorgensen - Web Frontend Development at Brigham Young University - Idaho.">
+    <!-- external style references in the proper cascading order -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <div class="title">
+            <img src="images/Weather_SunAbstract.png" alt="The site logo" width="" height="">
+            <h1>SmartCast Weather</h1>
+        </div>
+        <div class="subheading">Smart Forecasts for a Smart Life</div>
+
+    </header>
+
+    <!-- site navigation use placeholder references -->
+
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+    <nav>
+
+        <ul id="nav" class="hide-nav">
+
+            <li><a href="home.html">Home</a></li>
+            <li class="active">
+                <a href="franklin-8.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springville.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <section class="forecast">
+        <h3>10 Day Forecast</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day 1</th>
+                    <th>Day 2</th>
+                    <th>Day 3</th>
+                    <th>Day 4</th>
+                    <th>Day 5</th>
+                    <th>Day 6</th>
+                    <th>Day 7</th>
+                    <th>Day 8</th>
+                    <th>Day 9</th>
+                    <th>Day 10</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20&deg;F</td>
+                    <td>24&deg;F</td>
+                    <td>19&deg;F</td>
+                    <td>21&deg;F</td>
+                    <td>32&deg;F</td>
+                    <td>35&deg;F</td>
+                    <td>40&deg;F</td>
+                    <td>37&deg;F</td>
+                    <td>23&deg;F</td>
+                    <td>20&deg;F</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div class="frankcontainer">
+        <h3>Weather Conditions for <span id="place"> Franklin, MN </span></h3> <br>
+
+        <p> The Weather Today is <span id="weather">Cloudy</span></p>
+        <img id="w_url" src="" alt="current_weather">
+        <p> Current Temperature is <span id="currentTemp">90</span> &deg;</p><br>
+        <p>Current Wind Speed <span id="windspeed">10 </span> mph</p>
+        <br>
+        <p>Description Forecast is </p> <span id="w_description"></span>
+        <br>
+    </div>
+
+    <div class="greencontainer">
+        <h3>Weather Conditions for <span id="place"> Greenville, MN </span></h3> <br>
+
+        <p> The Weather Today is <span id="weather">Cloudy</span></p>
+        <img id="w_url" src="" alt="current_weather">
+        <p> Current Temperature is <span id="currentTemp">90</span> &deg;</p><br>
+        <p>Current Wind Speed <span id="windspeed">10 </span> mph</p>
+        <br>
+        <p>Description Forecast is </p> <span id="w_description"></span>
+        <br>
+    </div>
+
+    <div class="springcontainer">
+        <h3>Weather Conditions for <span id="place"> Springfield, MN </span></h3> <br>
+
+        <p> The Weather Today is <span id="weather">Cloudy</span></p>
+        <img id="w_url" src="" alt="current_weather">
+        <p> Current Temperature is <span id="currentTemp">90</span> &deg;</p><br>
+        <p>Current Wind Speed <span id="windspeed">10 </span> mph</p>
+        <br>
+        <p>Description Forecast is </p> <span id="w_description"></span>
+        <br>
+    </div>
+
+
+
+</body>
+<footer>
+    <aside>
+        <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
+        <span id="currentdate"></span>
+    </p>
+
+</footer>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/wu_weather.js"></script>
+
+</html>

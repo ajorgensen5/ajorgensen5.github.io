@@ -66,7 +66,18 @@ header img {
     margin: 0;
 }
 
-header .subheading {
+header {
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 1%;
+    padding-bottom: 0;
+    background-color: blue;
+    color: aqua;
+    border: none;
+    font-size: 1rem;}
+
+.subheading {
     display: flex;
     justify-content: flex-start;
     font-family: 'Bad Script', cursive;
@@ -79,7 +90,6 @@ header .subheading {
     color: aqua;
     border: none;
     font-size: 1rem;
-
 
 }
 
@@ -212,6 +222,33 @@ main figure.myphoto img {
     background-color: blue;
     border: none;
 }
+
+.frankcontainer {
+    align-content: center;
+    max-width: 80%;
+     clear: both;
+    padding: 2%;
+    overflow: auto;
+    font-size: .8em;
+}
+
+
+.greencontainer {
+    max-width: 80%;
+     clear: both;
+    padding: 2%;
+    overflow: auto;
+    font-size: .8em;
+}
+
+.springcontainer {
+    max-width: 80%;
+     clear: both;
+    padding: 2%;
+    overflow: auto;
+    font-size: .8em;
+}
+
 
 #output {
     display: flex;
