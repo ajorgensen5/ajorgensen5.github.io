@@ -18,29 +18,5 @@ franklinObject.onload = function () {
         document.getElementById('w_url').src = fweatherInfo.current_observation.icon_url;
 
         document.getElementById('txtforecast').innerHTML = fweatherInfo.forecast.txt_forecast.forecastday[0].fcttext;
-
-}
-
-var greenvilleObject = new XMLHttpRequest();
-
-greenvilleObject.open('GET','http://api.wunderground.com/api/b427f9b05290ebaf/forecast/conditions/q/MN/Greenville.json', true);
-
-greenvilleObject.send();
-
-greenvilleObject.onload = function () {
-
-        var gweatherInfo = JSON.parse(greenvilleObject.responseText);
-        console.log(gweatherInfo);
-
-        document.getElementById('gweather').innerHTML = gweatherInfo.current_observation.weather;
-
-        document.getElementById('gcurrentTemp').innerHTML = gweatherInfo.current_observation.temp_f;
-
-        document.getElementById('gwindspeed').innerHTML = gweatherInfo.current_observation.wind_mph;
-
-        document.getElementById('gw_url').src = gweatherInfo.current_observation.icon_url;
-
-        document.getElementById('gtxtforecast').innerHTML = gweatherInfo.forecast.txt_forecast.forecastday[0].fcttext;
-
 }
        
