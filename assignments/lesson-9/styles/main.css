@@ -21,8 +21,8 @@ body {
 button {
     display: block;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 2%;
+    right: 2%;
     margin: 2%;
     background: none;
     color: aqua
@@ -39,6 +39,7 @@ footer {
     background-color: blue;
     border: none;
     padding: 0;
+    max-width: 
 }
 
 .title {
@@ -48,20 +49,22 @@ footer {
     border: none;
     margin: 0;
     padding: 1%;
+    max-height: 4.6em;
 }
 
 header h1 {
+    display: flex;
     font-size: 1.6em;
-
     max-width: 62rem;
-    margin-top: 4%;
+    margin-top: 1%;
     margin-left: 1%;
     margin-bottom: 0;
     color: white;
 }
 
 header img {
-    width: 10%;
+    display: flex;
+    width: 15%;
     height: 15%;
     margin: 0;
 }
@@ -75,7 +78,8 @@ header {
     background-color: blue;
     color: aqua;
     border: none;
-    font-size: 1rem;}
+    font-size: 1rem;
+}
 
 .subheading {
     display: flex;
@@ -83,13 +87,13 @@ header {
     font-family: 'Bad Script', cursive;
     margin-bottom: 0;
     margin-left: 13%;
-    margin-top: 0;
+    margin-top: -6%;
     padding-top: 1%;
-    padding-bottom: 0;
+    padding-bottom: 1%;
     background-color: blue;
     color: aqua;
     border: none;
-    font-size: 1rem;
+    font-size: .8rem;
 
 }
 
@@ -146,6 +150,7 @@ nav ul li.active a {
 .hide-nav {
     display: none;
 }
+
 main {
     padding: 2%;
     margin: 0px;
@@ -228,7 +233,7 @@ main figure.myphoto img {
     background-color: lawngreen;
     align-content: center;
     max-width: 80%;
-     clear: both;
+    clear: both;
     padding: 2%;
     overflow: auto;
     font-size: .8em;
@@ -236,20 +241,20 @@ main figure.myphoto img {
 
 
 .greencontainer {
-     margin: auto;
+    margin: auto;
     background-color: lawngreen;
     max-width: 80%;
-     clear: both;
+    clear: both;
     padding: 2%;
     overflow: auto;
     font-size: .8em;
 }
 
 .springcontainer {
-     margin: auto;
+    margin: auto;
     background-color: lawngreen;
     max-width: 80%;
-     clear: both;
+    clear: both;
     padding: 2%;
     overflow: auto;
     font-size: .8em;
@@ -316,7 +321,7 @@ article {}
 .snow {
     display: flex;
     font-size: .8rem;
-    color:white
+    color: white
 }
 
 footer {

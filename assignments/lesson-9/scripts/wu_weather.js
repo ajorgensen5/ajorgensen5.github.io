@@ -17,8 +17,8 @@ weatherObject.onload = function () {
     document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
 
     document.getElementById('w_url').src = weatherInfo.current_observation.icon_url;
-    
-    document.getElementById('w_description').innerHTML=weatherInfo.current_weather;  
+
+    document.getElementById('w_description').innerHTML = weatherInfo.current_weather;
 
 }
 
@@ -31,38 +31,39 @@ weatherObject.send();
 
 weatherObject.onload = function () {
 
-    var weatherInfo = JSON.parse(weatherObject.responseText);
-    console.log(weatherInfo);
+        var weatherInfo = JSON.parse(weatherObject.responseText);
+        console.log(weatherInfo);
 
-    document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
+        document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
 
-    document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
+        document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
 
-    document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
+        document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
 
-    document.getElementById('w_url').src = weatherInfo.current_observation.icon_url;
-    
-    document.getElementById('w_description').innerHTML=weatherInfo.current_weather;  
+        document.getElementById('w_url').src = weatherInfo.current_observation.icon_url;
 
-    var weatherObject = new XMLHttpRequest();
+        document.getElementById('w_description').innerHTML = weatherInfo.current_weather;
+}
 
-weatherObject.open('GET',
-    'http://api.wunderground.com/api/b427f9b05290ebaf/conditions/q/MN/Springfield.json', true);
+        var weatherObject = new XMLHttpRequest();
 
-weatherObject.send();
+        weatherObject.open('GET',
+            'http://api.wunderground.com/api/b427f9b05290ebaf/conditions/q/MN/Springfield.json', true);
 
-weatherObject.onload = function () {
+        weatherObject.send();
 
-    var weatherInfo = JSON.parse(weatherObject.responseText);
-    console.log(weatherInfo);
+        weatherObject.onload = function () {
 
-    document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
+                var weatherInfo = JSON.parse(weatherObject.responseText);
+                console.log(weatherInfo);
 
-    document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
+                document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
 
-    document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
+                document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
 
-    document.getElementById('w_url').src = weatherInfo.current_observation.icon_url;
-    
-    document.getElementById('w_description').innerHTML=weatherInfo.current_weather;  
+                document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
 
+                document.getElementById('w_url').src = weatherInfo.current_observation.icon_url;
+
+                document.getElementById('w_description').innerHTML = weatherInfo.current_weather;
+        }
