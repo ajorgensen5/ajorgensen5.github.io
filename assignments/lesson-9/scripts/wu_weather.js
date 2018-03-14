@@ -1,69 +1,23 @@
-var weatherObject = new XMLHttpRequest();
+var franklinObject = new XMLHttpRequest();
 
-weatherObject.open('GET',
-    'http://api.wunderground.com/api/b427f9b05290ebaf/conditions/q/MN/Franklin.json', true);
+franklinObject.open('GET','http://api.wunderground.com/api/b427f9b05290ebaf/forecast/conditions/q/MN/Franklin.json', true);
 
-weatherObject.send();
+franklinObject.send();
 
-weatherObject.onload = function () {
+franklinObject.onload = function () {
 
-    var weatherInfo = JSON.parse(weatherObject.responseText);
-    console.log(weatherInfo);
+        var fweatherInfo = JSON.parse(franklinObject.responseText);
+        console.log(fweatherInfo);
 
-    document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
+        document.getElementById('weather').innerHTML = fweatherInfo.current_observation.weather;
 
-    document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
+        document.getElementById('currentTemp').innerHTML = fweatherInfo.current_observation.temp_f;
 
-    document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
+        document.getElementById('windspeed').innerHTML = fweatherInfo.current_observation.wind_mph;
 
-    document.getElementById('w_url').src = weatherInfo.current_observation.icon_url;
+        document.getElementById('w_url').src = fweatherInfo.current_observation.icon_url;
 
-    document.getElementById('w_description').innerHTML = weatherInfo.current_weather;
+        document.getElementById('txtForecast').innerHTML = fWeatherInfo.current_observation.forecast.txt_forecast.forecastday["0"].fcttext;
 
 }
-
-var weatherObject = new XMLHttpRequest();
-
-weatherObject.open('GET',
-    'http://api.wunderground.com/api/b427f9b05290ebaf/conditions/q/MN/Greenville.json', true);
-
-weatherObject.send();
-
-weatherObject.onload = function () {
-
-        var weatherInfo = JSON.parse(weatherObject.responseText);
-        console.log(weatherInfo);
-
-        document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
-
-        document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
-
-        document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
-
-        document.getElementById('w_url').src = weatherInfo.current_observation.icon_url;
-
-        document.getElementById('w_description').innerHTML = weatherInfo.current_weather;
-}
-
-        var weatherObject = new XMLHttpRequest();
-
-        weatherObject.open('GET',
-            'http://api.wunderground.com/api/b427f9b05290ebaf/conditions/q/MN/Springfield.json', true);
-
-        weatherObject.send();
-
-        weatherObject.onload = function () {
-
-                var weatherInfo = JSON.parse(weatherObject.responseText);
-                console.log(weatherInfo);
-
-                document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
-
-                document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
-
-                document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
-
-                document.getElementById('w_url').src = weatherInfo.current_observation.icon_url;
-
-                document.getElementById('w_description').innerHTML = weatherInfo.current_weather;
-        }
+       

@@ -8,9 +8,7 @@
         display: none;
     }
 
-    title{
-        max-height: 2rem;
-    }
+    
     nav {
         display: flex;
         justify-content: center;
