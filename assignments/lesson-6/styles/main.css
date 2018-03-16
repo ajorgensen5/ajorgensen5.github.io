@@ -185,16 +185,15 @@ h3 {
 .snow {
     font-size: .8rem;
 }
-.clearfix::after {
-    
- 
-   
+.clearfix: {
+
 }
 
 .responsive {
     width: 50%;
     height: auto;
-    margin: 2%
+    margin: 2%;
+    
 }
 
 footer {
