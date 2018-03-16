@@ -1,0 +1,6 @@
+/*  example to use for this weeks css*/
+
+section, div {margin: 1rem;}
+.form {background-color:#bbb; padding: 1rem; border:1px solid #444;}
+div {background-color:#eee; padding: 1rem; border:1px solid #444;}
+#aNum {border:1px solid #bbeedd; background-color:#aaffcc; text-align:center;}

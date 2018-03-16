@@ -11,13 +11,13 @@
 
     <!-- Google API font reference -->
     <link href="styles/normalize.css" rel="stylesheet">
-    
+
     <link href="styles/phone-default.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> (Their HTML coding)
 
-<link rel="stylesheet" href="styles/styles.css"> (my coding in HTML);
+    <link rel="stylesheet" href="styles/styles.css"> (my coding in HTML);
     <!-- normalize useragent/browser defaults -->
-    
+
     <!-- default styles - small/phone views -->
 
     <!-- large/wide/desktop views -->
@@ -40,51 +40,17 @@
                         <label><span>Your Name:</span><input name = "fullname" type="text" value="" placeholder="John Doe" pattern="[a-zA-Z -._]{3,99}" required></label>
 
                         <label><span>Your Phone Number (optional):</span><input name = "phone" type="tel" value="" placeholder="1233215322" pattern="[0-9] {10,20}"></label>
-                        
+
                         <label><span>Email:</span><input name = "email" type="email" value="" placeholder="stormyw@gmail.com" required></label>
-                        
-                        <label><span>SmartWeather Spotter/id:</span><input name = "spotter id" type="tel" value="" placeholder="AD-##" required></label>
-                        
-                        Become a SmartWeather Spotter
+
+                        <label><span>SmartWeather Spotter/id:</span><input name = "spotter id" type="tel" value="" placeholder="AD-##" required></label> Become a SmartWeather Spotter
                     </fieldset>
 
-                    
-                    Header with Franklin
-EVENT INFORMATION
-Snowfall:  Total amount for this storm
-Snowfall rate:  in the past hours, minutes
-Snow Depth:  Total amount on the ground (inches)
-Current Temperature
-                    
-Precipitation/Flooding
-Preciptitation rate, in the past, hours min
-                    Name of river, stream or creek in flood
-                    
-            
-Severe Weather/Wind:
-Sustained Wind Speed:  mph
-Wind was measured or estimated
-                    
-Hail/Tornado
-Hail Size: drop down list
-Tornado: drop down list
-                    
-Thunderstorm:
-Check boxes:
-        Downed trees, tree limbs, utility poles, power lines, wind damage
-What got damaged/hit: drop down options
-                    Diameter of tree:  inches or foot/feet
-                    
-Upload images of the storm
-                    
-Comments and Other information
 
-Submit report    reset form
-                    
-        footer
-                    
+                    Header with Franklin EVENT INFORMATION Snowfall: Total amount for this storm Snowfall rate: in the past hours, minutes Snow Depth: Total amount on the ground (inches) Current Temperature Precipitation/Flooding Preciptitation rate, in the past, hours min Name of river, stream or creek in flood Severe Weather/Wind: Sustained Wind Speed: mph Wind was measured or estimated Hail/Tornado Hail Size: drop down list Tornado: drop down list Thunderstorm: Check boxes: Downed trees, tree limbs, utility poles, power lines, wind damage What got damaged/hit: drop down options Diameter of tree: inches or foot/feet Upload images of the storm Comments and Other information Submit report reset form footer
 
-                    
+
+
                     <fieldset>
                         <legend><span>Weather Conditions</span></legend>
                         <label><span>company:</span><input name="company" type="text"></label>
@@ -132,6 +98,18 @@ Submit report    reset form
             </aside>
         </div>
     </div>
-    </body>
-     
-                </html>
+</body>
+<footer>
+    <aside>
+        <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
+        <span id="currentdate"></span>
+    </p>
+</footer>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/windchill.js"></script>
+
+
+</html>

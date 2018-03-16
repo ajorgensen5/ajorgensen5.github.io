@@ -1,0 +1,227 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 900px;
+    
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    text-align: left;
+    justify-content: center;
+       
+}
+
+
+button { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+
+}
+
+header,
+nav,
+main,
+footer {
+
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+
+
+}
+
+header {}
+
+header h1 {
+    
+    font-size: 1.2em;
+    text-shadow: 4px 4px 4px #aaa;
+    max-width: 62rem;
+    
+}
+
+header img {
+
+    width: 15%;
+}
+
+header .subheading {
+
+    font-family: 'Bad Script', cursive;
+    margin-bottom: 5px;
+}
+
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: cornflowerblue;
+}
+
+
+nav {
+    background-color: #003FC6;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+}
+
+nav ul li {
+    width: 16.67%;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 
+    2%;
+    text-decoration: none;
+    color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+nav ul li .hover a {
+    color: #33FD57;
+}
+
+nav ul li .visited a {
+    color: #4881FC
+}
+
+nav ul li.active a {
+    background-color: rgba(0.0.0.2);
+    color: #FF9234;
+}
+
+.show-nav {
+    display: block;
+}
+
+.hide-nav {
+    display: none;
+}
+
+main {
+
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main figure {
+    margin: 0px;
+    width: 100%;
+}
+
+main figure.myphoto img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.weathersummary{
+    color: blue;
+        margin: 0px;
+           
+}
+
+.highlow{
+    margin-top: 10px;
+}
+
+.forecast {
+    display: none;
+    float: right;
+}
+
+.conditions {
+    margin-top:  10px;
+    margin-bottom: 10px;
+}
+
+section img {
+    width: 30%;
+    
+}
+
+section {
+    clear: left;
+    float: left;
+    margin: 0;
+}
+
+article {
+    border:  solid red 2px;
+}
+
+
+h3 {
+  display: block;
+    
+}
+
+.prepare {  
+    text-align: left;
+    margin: 0 0 5 6;
+    color: blue;
+   
+}
+
+.snow {
+    font-size: .8rem;
+}
+.clearfix::after {
+    
+ 
+   
+}
+
+.responsive {
+    width: 50%;
+    height: auto;
+    margin: 2%
+}
+
+footer {
+    font-size: .7rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+footer p {
+  color: white;
+
+}
+
+
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix: left {
+    content: "";
+    display: table;
+    clear: both;
+}
