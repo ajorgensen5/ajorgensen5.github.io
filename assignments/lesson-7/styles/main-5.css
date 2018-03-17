@@ -21,8 +21,8 @@ body {
 button {
     display: block;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 2%;
+    right: 10%;
     margin: 2%;
     background: none;
     color: aqua

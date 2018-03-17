@@ -22,8 +22,8 @@ body {
 button.hamburger {
     display: block;
     position: absolute;
-    top: 6%;
-    left: 98%;
+    top: 4%;
+    left: 80%;
     margin: 2%;
     background: none;
     color: aqua;
@@ -180,8 +180,8 @@ main figure.myphoto img {
     justify-content: flex-start;
 }
 
-section {
-    margin: 2%;
+section.forecast {
+   display: flex;
 }
 
 table.weathersummary {
