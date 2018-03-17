@@ -18,7 +18,19 @@
 
 
 
-header .subheading {
+header  {
+   
+    margin-left: 14%;
+    margin-top: 0;
+    padding-top: %;
+    padding-bottom: 2%;
+    background-color: blue;
+    color: aqua;
+    border: none;
+    font-size: .8rem;
+    }
+    
+     .subheading {
     font-family: 'Bad Script', cursive;
     margin-left: 14%;
     margin-top: 0;
@@ -27,10 +39,8 @@ header .subheading {
     background-color: blue;
     color: aqua;
     border: none;
-    font-size: 2.2rem;
+    font-size: .6rem;
     }
-    
-    
     
     
     /* navigation bar*/

@@ -263,10 +263,6 @@ img#w_url{
     font-size: .8em;  
 }
 
-#content {
-    
-}
-
 
 #output {
     display: flex;
@@ -276,12 +272,11 @@ img#w_url{
 section,
 div {
     margin: 1rem;
-   
 }
 
 .form {
     background-color: #bbb;
-    padding: 2%;
+    padding: 1rem;
     border: 1px solid #444;
 }
 
@@ -289,11 +284,6 @@ div {
     background-color: #eee;
     padding: 1rem;
     border: 1px solid #444;
-}
-
-div.left {
-    background-color: red;
-    
 }
 
 #aNum {
@@ -336,6 +326,7 @@ article {}
     font-size: .8rem;
     color: white
 }
+
 
 footer {
     font-size: .7rem;

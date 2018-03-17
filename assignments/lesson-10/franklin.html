@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CIT Assignment 7 - Responsive Design - Aimee Jorgensen</title>
+    <title>CIT Assignment 8 - Build a Form - Aimee Jorgensen</title>
     <meta name="author" content="Aimee Jorgensen">
-    <meta name="description" content="CIT 230 Assignment 7 - Aimee Jorgensen - Web Frontend Development at Brigham Young University - Idaho.">
+    <meta name="description" content="CIT 230 Assignment 8 - Aimee Jorgensen - Web Frontend Development at Brigham Young University - Idaho.">
     <!-- external style references in the proper cascading order -->
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
@@ -18,11 +18,11 @@
     <!-- Google API font reference -->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-5.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="styles/medium-5.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="styles/large-5.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
 </head>
 
@@ -30,7 +30,7 @@
 
     <header>
         <div class="title">
-            <img src="images/sun.png" alt="The site logo" width="" height="">
+            <img src="images/Weather_SunAbstract.png" alt="The site logo" width="" height="">
             <h1>SmartCast Weather</h1>
         </div>
         <div class="subheading">Smart Forecasts for a Smart Life</div>
@@ -41,17 +41,18 @@
     <button class="hamburger" onclick="toggleHam()">&#9776;</button>
 
     <nav>
-
+<ul id="mainmenu">
         <ul id="nav" class="hide-nav">
 
             <li><a href="home.html">Home</a></li>
             <li class="active">
-                <a href="franklin-7.html">Franklin</a></li>
+                <a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
             <li><a href="springville.html">Springfield</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
+    </ul>
     </nav>
 
     <main>
@@ -66,7 +67,7 @@
         </figure>
         <h2>Franklin, IL</h2>
         <section>
-            <h3 class=weathersummary>Weather Summary</h3>
+            <h3 class=weathersummary><strong>Weather Summary</strong></h3>
             <div class="highlow">
                 <p>High: <span id="high">24</span> &#8457;</p>
                 <span id="currenthigh"></span>
@@ -119,6 +120,7 @@
                     </tr>
                 </tbody>
             </table>
+            
         </section>
 
 
@@ -148,11 +150,31 @@
         <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
             <span id="currentdate"></span>
         </p>
+        <script>
+    //remember to add an ID of ?mainmenu" to the nav ul"
+    var urlString = document.location.href;
+    varurlArray = urlString.split('/');
+    var pageHREF=urlArray[urlArray.length-1];
+    
+    if (pageHREF !=="") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        //loop through all the menu items in the navigation
+        for(i=0; i<menu.length; i++) {
+            var currentURL=(menu[i].getAttribute("href"));
+            menu[i].parentNode.className=""; //turn off highlighting by default
+            if (currentURL===pageHREF) {
+                menu[i]parentNode.className="active";
+            }//end if
+        }//end of the search for a match
+            }//end of if !==
+
+    </script>
+
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
-
 
 
 </body>
