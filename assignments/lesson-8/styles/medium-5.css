@@ -140,6 +140,8 @@ header  {
     }
 
    .moresnow img {
+       display: flex;
+       align-content: flex-start;
     max-width: 50%;
     height: auto;
     /* fill the page in the small/phone view */
@@ -166,17 +168,17 @@ header  {
 
     .gridcontainer {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 20%
-        padding: 2px;
+        grid-template-columns: 50%;
+        grid-template-rows: 200px 200px 200px 200px;
+        padding: 5px;
         background-color: black;
         max-width: 100%;
     }
 
     .griditem {
-        background-color: azure;
-        border: 1px solid red;
+        background-color: white;
+        border: 3px solid aqua;
         text-align: center;
     }
-
+    
 }
