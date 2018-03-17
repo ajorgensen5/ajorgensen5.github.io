@@ -84,11 +84,21 @@
 }
 
 
-
-header .subheading {
-    font-family: 'Bad Script', cursive;
-    margin-left: 14%;
+header  {
+    
     margin-top: 0;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: blue;
+    color: aqua;
+    border: none;
+    font-size: 1.4rem;
+    }
+    
+.subheading {
+    font-family: 'Bad Script', cursive;
+    margin-left: 15%;
+    margin-top: -4%;
     padding-top: 1%;
     padding-bottom: 2%;
     background-color: blue;
@@ -118,11 +128,14 @@ header .subheading {
     }
 
     section {
+        display: flex;
+        
+        grid-template-rows: 40em;
         margin-bottom: 10px;
     }
 
     section img {
-        width: 30%;
+        width: 100%;
 
     }
 
@@ -154,6 +167,7 @@ header .subheading {
     .gridcontainer {
         display: grid;
         grid-template-columns: 50% 50%;
+        grid-template-rows: 20%
         padding: 2px;
         background-color: black;
         max-width: 100%;
