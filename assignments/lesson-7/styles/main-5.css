@@ -77,7 +77,7 @@ header {
     border: none;
     font-size: 1rem;}
 
-github.co.subheading {
+div.subheading {
     display: flex;
     justify-content: flex-start;
     font-family: 'Bad Script', cursive;
@@ -262,7 +262,7 @@ section {
 }
 
 article {}
-
+clearfix{}
 .moresnow img {
     display: flex;
     max-width: 50%;
