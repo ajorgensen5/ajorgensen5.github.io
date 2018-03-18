@@ -41,18 +41,16 @@
     <button class="hamburger" onclick="toggleHam()">&#9776;</button>
 
     <nav>
-<ul id="mainmenu">
-        <ul id="nav" class="hide-nav">
-
-            <li><a href="home.html">Home</a></li>
-            <li class="active">
-                <a href="franklin.html">Franklin</a></li>
-            <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springville.html">Springfield</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+        <ul id="mainmenu">
+            <ul id="nav" class="hide-nav">
+                <li> <a href="home.html">Home</a></li>
+                <li class="active"><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
         </ul>
-    </ul>
     </nav>
 
     <main>
@@ -120,7 +118,7 @@
                     </tr>
                 </tbody>
             </table>
-            
+
         </section>
 
 
@@ -151,33 +149,32 @@
             <span id="currentdate"></span>
         </p>
         <script>
-    //remember to add an ID of ?mainmenu" to the nav ul"
-    var urlString = document.location.href;
-    varurlArray = urlString.split('/');
-    var pageHREF=urlArray[urlArray.length-1];
-    
-    if (pageHREF !=="") {
-        var menu = document.querySelectorAll('ul#mainmenu li a');
-        var i;
-        //loop through all the menu items in the navigation
-        for(i=0; i<menu.length; i++) {
-            var currentURL=(menu[i].getAttribute("href"));
-            menu[i].parentNode.className=""; //turn off highlighting by default
-            if (currentURL===pageHREF) {
-                menu[i]parentNode.className="active";
-            }//end if
-        }//end of the search for a match
-            }//end of if !==
+            //remember to add an ID of ?mainmenu" to the nav ul"
+            var urlString = document.location.href;
+            varurlArray = urlString.split('/');
+            var pageHREF = urlArray[urlArray.length - 1];
 
-    </script>
+            if (pageHREF !== "") {
+                var menu = document.querySelectorAll('ul#mainmenu li a');
+                var i;
+                //loop through all the menu items in the navigation
+                for (i = 0; i < menu.length; i++) {
+                    var currentURL = (menu[i].getAttribute("href"));
+                    menu[i].parentNode.className = ""; //turn off highlighting by default
+                    if (currentURL === pageHREF) {
+                        menu[i] parentNode.className = "active";
+                    } //end if
+                } //end of the search for a match
+            } //end of if !==
+        </script>
 
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/wu_weather.js"></script>
-    
-    
+
+
 
 
 </body>

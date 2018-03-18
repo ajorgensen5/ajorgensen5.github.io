@@ -43,24 +43,23 @@
     <nav>
 
         <ul id="nav" class="hide-nav">
-
             <li><a href="home.html">Home</a></li>
-            <li class="active">
+            <li>
                 <a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springville.html">Springfield</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    
+
     <header>
         <h1>Gallery</h1>
     </header>
     <main>
         <div class="gridcontainer">
             <div class="griditem">
-           
+
                 <img src="images/lightning-storm-weather-sky-53459---200.jpg" alt="lightening storm image">
                 <h2>Lightening Storm Ablaze</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -92,7 +91,7 @@
                 <img src="images/fall-photo-349447-200.jpg">
                 <h2>Fall Paradise</h2>
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                
+
             </div>
         </div>
     </main>
@@ -104,32 +103,31 @@
             <span id="currentdate"></span>
         </p>
         <script>
-    //remember to add an ID of ?mainmenu" to the nav ul"
-    var urlString = document.location.href;
-    varurlArray = urlString.split('/');
-    var pageHREF=urlArray[urlArray.length-1];
-    
-    if (pageHREF !=="") {
-        var menu = document.querySelectorAll('ul#mainmenu li a');
-        var i;
-        //loop through all the menu items in the navigation
-        for(i=0; i<menu.length; i++) {
-            var currentURL=(menu[i].getAttribute("href"));
-            menu[i].parentNode.className=""; //turn off highlighting by default
-            if (currentURL===pageHREF) {
-                menu[i]parentNode.className="active";
-            }//end if
-        }//end of the search for a match
-            }//end of if !==
+            //remember to add an ID of ?mainmenu" to the nav ul"
+            var urlString = document.location.href;
+            varurlArray = urlString.split('/');
+            var pageHREF = urlArray[urlArray.length - 1];
 
-    </script>
+            if (pageHREF !== "") {
+                var menu = document.querySelectorAll('ul#mainmenu li a');
+                var i;
+                //loop through all the menu items in the navigation
+                for (i = 0; i < menu.length; i++) {
+                    var currentURL = (menu[i].getAttribute("href"));
+                    menu[i].parentNode.className = ""; //turn off highlighting by default
+                    if (currentURL === pageHREF) {
+                        menu[i] parentNode.className = "active";
+                    } //end if
+                } //end of the search for a match
+            } //end of if !==
+        </script>
 
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/wu_weather.js"></script>
-    
+
 </body>
 
 </html>
