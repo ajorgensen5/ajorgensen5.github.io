@@ -143,13 +143,7 @@
 
     </main>
 
-    <footer>
-        <aside>
-            <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
-        </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
-            <span id="currentdate"></span>
-        </p>
+  
         <script>
     //remember to add an ID of ?mainmenu" to the nav ul"
     var urlString = document.location.href;
@@ -170,11 +164,19 @@
             }//end of if !==
 
     </script>
-
+  <footer>
+        <aside>
+            <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
+            <span id="currentdate"></span>
+        </p>
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/computenumber.js"></script>
+    <script src="scripts/wu_weather.js"></script>
 
 
 </body>
