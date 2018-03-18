@@ -54,9 +54,9 @@
         color: white;
     }
 
-    a:hover {
-        color: #33FD57;
-    }
+    nav ul li .hover a {
+    color: #33FD57;
+}
     a:visited {
         color: #4881FC;
     }

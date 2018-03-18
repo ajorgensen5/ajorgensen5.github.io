@@ -134,6 +134,7 @@ nav ul li .hover a {
     color: #33FD57;
 }
 
+
 nav ul li .visited a {
     color: #4881FC
 }
@@ -141,6 +142,11 @@ nav ul li .visited a {
 nav ul li.active a {
     background-color: rgba(0.0.0.2);
     color: #FF9234;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #33FD57;
 }
 
 .show-nav {
