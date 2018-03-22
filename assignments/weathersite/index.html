@@ -101,17 +101,26 @@
                         if (cities[i].name != "Placerton") {
                             var myDiv = document.createElement('div');
                             var myH2 = document.createElement('h2');
+                            var myImg = document.createElement('img');
                             var myPara1 = document.createElement('p');
                             var myPara2 = document.createElement('p');
                             var myPara3 = document.createElement('p');
                             var myPara4 = document.createElement('p');
 
+                            if(cities[i].name == "Franklin")
+                                myImg.setAttribute('src','images/franklin bridge.jpeg');
+                            if(cities[i].name == "Greenville")
+                                myImg.setAttribute('src','images/farming.jpeg');
+                            if(cities[i].name == "Springfield")
+                                myImg.setAttribute('src','images/forest-fog-sunny-nature-615348 copy.jpg');
+                            
                             myH2.textContent = cities[i].name;
                             myPara1.textContent = 'Motto: ' + cities[i].motto;
                             myPara2.textContent = 'Year Founded: ' + cities[i].yearFounded;
                             myPara3.textContent = 'Current Population:' + cities[i].currentPopulation;
                             myPara4.textContent = 'Average Rain Fall:' + cities[i].averageRainFall;
 
+                            myDiv.appendChild(myImg);
                             myDiv.appendChild(myH2);
                             myDiv.appendChild(myPara1);
                             myDiv.appendChild(myPara2);
