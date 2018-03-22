@@ -8,7 +8,7 @@
         display: none;
     }
 
-    
+
     nav {
         display: flex;
         justify-content: center;
@@ -55,8 +55,8 @@
     }
 
     nav ul li .hover a {
-    color: #33FD57;
-}
+        color: #33FD57;
+    }
     a:visited {
         color: #4881FC;
     }
@@ -86,7 +86,7 @@
         color: white;
         justify-content: center;
         align-content: center;
-        
+
     }
 
 
@@ -154,32 +154,61 @@
 
     /* fill the page in the small/phone view */
     margin: auto;
-}
 
-#town-article {
-    margin-bottom: 10px;
-}
 
-footer {
-    clear: both;
-}
+    #town-article {
+        margin-bottom: 10px;
+    }
 
-footer-bar {
-    max-width: 900px;
-}
+    footer {
+        clear: both;
+    }
 
-.gridcontainer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 2px;
-    background-color: black;
-    max-width: 100%;
-}
+    footer-bar {
+        max-width: 900px;
+    }
 
-.griditem {
-    background-color: azure;
-    border: 1px solid red;
-    text-align: center;
-}
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 2px;
+        background-color: black;
+        max-width: 100%;
+    }
 
+    .griditem {
+        background-color: azure;
+        border: 1px solid red;
+        text-align: center;
+    }
+
+    .weatherStory {
+        text-align: center;
+        padding: 10px;
+        margin: 3px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .weatherCities{
+        display: block;
+    }
+
+    .citiesDiv{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    .citiesDiv2{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    
+    .weatherCities img{
+        width: 100%;
+    }
 }

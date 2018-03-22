@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CIT Assignment 9 - Weather Site Home Page - Aimee Jorgensen</title>
+    <title>CIT Assignment 10 - Weather Site Home Page - Aimee Jorgensen</title>
     <meta name="author" content="Aimee Jorgensen">
     <meta name="description" content="">
     <!-- external style references in the proper cascading order -->
@@ -51,10 +51,14 @@
         </ul>
     </nav>
     <main>
-        <section>
+        <h2>Weather Story</h2>
+        <div class="weatherStory">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+            <img src="images/pine-tree-with-snow-200.jpg" alt="snow on pine tree">
+        </div>
+
+        <section class="weatherCities">
             <!-- JSON -->
-
-
             <script>
                 var section = document.querySelector('section');
 
@@ -100,6 +104,17 @@
                     for (var i = 0; i < cities.length; i++) {
                         if (cities[i].name != "Placerton") {
                             var myDiv = document.createElement('div');
+
+                            if (cities[i].name == "Franklin")
+                                myDiv.className ="citiesDiv";  
+                            else if (cities[i].name == "Greenville")
+                                myDiv.className ="citiesDiv2"; 
+                            else if (cities[i].name == "Springfield")
+                                myDiv.className ="citiesDiv";
+                            
+                            var myDiv1 = document.createElement('div');
+                            var myDiv2 = document.createElement('div');
+
                             var myH2 = document.createElement('h2');
                             var myImg = document.createElement('img');
                             var myPara1 = document.createElement('p');
@@ -107,33 +122,35 @@
                             var myPara3 = document.createElement('p');
                             var myPara4 = document.createElement('p');
 
-                            if(cities[i].name == "Franklin")
-                                myImg.setAttribute('src','images/franklin bridge.jpeg');
-                            if(cities[i].name == "Greenville")
-                                myImg.setAttribute('src','images/farming.jpeg');
-                            if(cities[i].name == "Springfield")
-                                myImg.setAttribute('src','images/forest-fog-sunny-nature-615348 copy.jpg');
-                            
+                            if (cities[i].name == "Franklin")
+                                myImg.setAttribute('src', 'images/franklin bridge.jpeg');
+                            if (cities[i].name == "Greenville")
+                                myImg.setAttribute('src', 'images/farming.jpeg');
+                            if (cities[i].name == "Springfield")
+                                myImg.setAttribute('src', 'images/forest-fog-sunny-nature-615348 copy.jpg');
+
                             myH2.textContent = cities[i].name;
                             myPara1.textContent = 'Motto: ' + cities[i].motto;
                             myPara2.textContent = 'Year Founded: ' + cities[i].yearFounded;
                             myPara3.textContent = 'Current Population:' + cities[i].currentPopulation;
                             myPara4.textContent = 'Average Rain Fall:' + cities[i].averageRainFall;
 
-                            myDiv.appendChild(myImg);
-                            myDiv.appendChild(myH2);
-                            myDiv.appendChild(myPara1);
-                            myDiv.appendChild(myPara2);
-                            myDiv.appendChild(myPara3);
-                            myDiv.appendChild(myPara4);
+                            myDiv1.appendChild(myImg);
+                            myDiv2.appendChild(myH2);
+                            myDiv2.appendChild(myPara1);
+                            myDiv2.appendChild(myPara2);
+                            myDiv2.appendChild(myPara3);
+                            myDiv2.appendChild(myPara4);
+                            myDiv.appendChild(myDiv1);
+                            myDiv.appendChild(myDiv2);
                             section.appendChild(myDiv);
                         }
                     }
                 }
-
             </script>
         </section>
-    </main><footer>
+    </main>
+    <footer>
         <aside>
             <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
         </aside>
@@ -141,25 +158,24 @@
             <span id="currentdate"></span>
         </p>
         <script>
-    //remember to add an ID of ?mainmenu" to the nav ul"
-    var urlString = document.location.href;
-    varurlArray = urlString.split('/');
-    var pageHREF=urlArray[urlArray.length-1];
-    
-    if (pageHREF !=="") {
-        var menu = document.querySelectorAll('ul#mainmenu li a');
-        var i;
-        //loop through all the menu items in the navigation
-        for(i=0; i<menu.length; i++) {
-            var currentURL=(menu[i].getAttribute("href"));
-            menu[i].parentNode.className=""; //turn off highlighting by default
-            if (currentURL===pageHREF) {
-                menu[i]parentNode.className="active";
-            }//end if
-        }//end of the search for a match
-            }//end of if !==
+            //remember to add an ID of ?mainmenu" to the nav ul"
+            var urlString = document.location.href;
+            varurlArray = urlString.split('/');
+            var pageHREF = urlArray[urlArray.length - 1];
 
-    </script>
+            if (pageHREF !== "") {
+                var menu = document.querySelectorAll('ul#mainmenu li a');
+                var i;
+                //loop through all the menu items in the navigation
+                for (i = 0; i < menu.length; i++) {
+                    var currentURL = (menu[i].getAttribute("href"));
+                    menu[i].parentNode.className = ""; //turn off highlighting by default
+                    if (currentURL === pageHREF) {
+                        menu[i] parentNode.className = "active";
+                    } //end if
+                } //end of the search for a match
+            } //end of if !==
+        </script>
 
     </footer>
     <script src="scripts/hamburger.js"></script>

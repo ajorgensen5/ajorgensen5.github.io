@@ -363,3 +363,17 @@ footer p {
     padding: 10px;
     max-width: 90%;
 }
+
+.weatherStory{
+    text-align: center;
+    padding: 10px;
+    margin: 3px;
+}
+
+.weatherCities{
+    display: none;
+}
+
+footer{
+    text-align: center;
+}
