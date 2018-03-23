@@ -67,8 +67,6 @@
     }
 
 
-    .gridcontainer {
-        box-shadow: 5px 10px #888888;
     }
     article p.town-article img {
         /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
@@ -80,7 +78,7 @@
     .gridcontainer {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        max-width: 100%;
+        max-width: 100%;  
     }
 
     .griditem {
