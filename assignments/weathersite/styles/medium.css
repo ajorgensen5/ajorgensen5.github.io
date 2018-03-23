@@ -8,12 +8,42 @@
         display: none;
     }
 
-    header img {
-        display: flex;
-        width: 12%;
-        height: 12%;
-        margin: 0;
+
+
+    header {
+        background-color: blue;
+        color: aqua;
+        border: none;
     }
+
+
+
+    header figure {
+        width: 16%;
+        padding: 4px
+    }
+
+    header img {
+        width: 100%;
+        padding: 8px 0 0 0;
+
+    }
+
+
+    header div h1 {
+        color: white;
+        font-size: 200%;
+        margin: 16px 0 2px 0;
+    }
+
+    header div h3 {
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Bad Script', cursive;
+        font-size: 140%;
+        margin: 2px 0 0 0;
+    }
+
     nav {
         display: flex;
         justify-content: center;
@@ -80,52 +110,6 @@
     }
 
     /* responsive images */
-    header h1 {
-        display: flex;
-        font-size: 2em;
-        max-width: 62rem;
-        max-height: 2rem;
-        margin-top: 2%;
-        margin-left: 1%;
-        margin-bottom: 1%;
-        color: white;
-        justify-content: center;
-        align-content: center;
-
-    }
-
-
-
-    header {
-
-        margin-left: 0;
-        margin-top: 0;
-        padding-top: 1%;
-        padding-bottom: 2%;
-        background-color: blue;
-        color: aqua;
-        border: none;
-        font-size: 1rem;
-    }
-
-    .subheading {
-        font-family: 'Bad Script', cursive;
-        margin-left: 14%;
-        margin-top: -6%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        background-color: blue;
-        color: aqua;
-        border: none;
-        font-size: 1rem;
-    }
-
-
-
-    header img {
-        width: 15%;
-    }
-
     main figure {
         margin: 0;
         width: 96%;
@@ -206,7 +190,7 @@
         justify-content: center;
         justify-content: space-around;
         flex-direction: row;
-       
+
     }
 
     .citiesDiv2 {

@@ -35,66 +35,52 @@ footer {
 
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     font-family: 'Roboto', sans-serif;
-    margin: .02%;
     background-color: blue;
-    border: none;
-    padding: 0;
-    max-width: 
 }
 
-.title {
+
+
+header div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: blue;
+    color: aqua;
+    width: 86%;
+    margin: 0;
+    padding: 16px 0 0 8px;
     border: none;
-    margin: 0;
-    padding: 1%;
-    max-height: 4.6em;
+
 }
 
-header h1 {
-    display: flex;
-    font-size: 1.6em;
-    max-width: 62rem;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-bottom: 0;
-    color: white;
+header figure img {
+    width: 100%;
 }
 
-header img {
-    display: flex;
-    width: 12%;
-    height: 12%;
+header figure {
+    width: 14%;
     margin: 0;
+    padding: 6px 0 0 0;
+
 }
 
 header {
-    justify-content: flex-start;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 1%;
-    padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
     background-color: blue;
-    color: aqua;
-    border: none;
-    font-size: 1rem;
 }
 
-.subheading {
+header div h1{
+    color: white;
+    font-size:5vw;
+    margin:0 0 2px 0;
+}
+
+header div h3 {
     display: flex;
     justify-content: flex-start;
     font-family: 'Bad Script', cursive;
-    margin-bottom: 0;
-    margin-left: 13%;
-    margin-top: -6%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: blue;
-    color: aqua;
-    border: none;
-    font-size: .8rem;
-
+    font-size:3vw;
+    margin:2px 0 0 0;
 }
 
 nav button {
@@ -119,19 +105,15 @@ nav ul {
 }
 
 nav ul li {
-    width: 8rem;
+    width:8rem;
 }
 
 nav ul li a {
     display: block;
-    padding: .8rem 2%;
+    padding: .8rem;
     text-decoration: none;
     color: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-nav ul li .hover a {
-    color: #33FD57;
 }
 
 
@@ -237,7 +219,8 @@ main figure.myphoto img {
 .townweather {
     background-color: gray;
 }
-.frankcontainer { 
+
+.frankcontainer {
     margin: auto;
     background-color: lawngreen;
     padding: 2%;
@@ -245,7 +228,7 @@ main figure.myphoto img {
     font-size: .8em;
 }
 
-img#w_url{
+img#w_url {
     display: flex;
     max-width: 10%;
     margin: 2%;
@@ -257,7 +240,7 @@ img#w_url{
     clear: both;
     padding: 2%;
     overflow: auto;
-    font-size: .8em;   
+    font-size: .8em;
 }
 
 .springcontainer {
@@ -266,7 +249,7 @@ img#w_url{
     clear: both;
     padding: 2%;
     overflow: auto;
-    font-size: .8em;  
+    font-size: .8em;
 }
 
 
@@ -278,7 +261,6 @@ img#w_url{
 section,
 div {
     margin: 1rem;
-
 }
 
 .form {
@@ -290,7 +272,7 @@ div {
 div {
     background-color: #eee;
     padding: 1rem;
-    border: 1px solid #444;
+    border: 1px solid aqua;
 }
 
 #aNum {
@@ -365,24 +347,25 @@ footer p {
     max-width: 90%;
 }
 
-.weatherStory{
+.weatherStory {
     text-align: center;
     padding: 10px;
     margin: 3px;
     background: none;
     color: white;
     border: none;
-   
+
 }
 
-.weatherCities{
+.weatherCities {
     display: none;
     border: none;
 }
 
-.footer-bar1{
+.footer-bar1 {
     font-size: 1.2em;
 }
-footer{
+
+footer {
     text-align: center;
 }
