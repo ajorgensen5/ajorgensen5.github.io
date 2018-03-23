@@ -140,7 +140,7 @@ nav ul li .visited a {
 }
 
 nav ul li.active a {
-    background-color: rgba(0.0.0.2);
+    background-color: rgba(0,0,0,0);
     color: #FF9234;
 }
 

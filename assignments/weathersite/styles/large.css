@@ -4,7 +4,7 @@
     article p.town-article img {
         width: 29.333%;
     }
-  
+
     header figure img {
         width: 80%;
         margin: 0 10%;
@@ -80,14 +80,10 @@
     .gridcontainer {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        padding: 2px;
-        background-color: black;
         max-width: 100%;
     }
 
     .griditem {
-        background-color: azure;
-        border: 1px solid red;
         text-align: center;
     }
 }
