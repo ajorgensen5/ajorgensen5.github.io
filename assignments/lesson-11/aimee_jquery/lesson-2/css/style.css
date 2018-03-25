@@ -258,12 +258,14 @@ body {
 }
 
 .footer {
-    height: 30px;
-    background: rgba(0, 167, 255, 0.86);
+    position: relative;
+    height: 90px;
+    background-color: deepskyblue;
+    text-align: center;
 }
 
 .footer h5 {
-    top: 8px;
+    margin-top: 16px;
     left: 7px;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
@@ -274,10 +276,32 @@ body {
     text-decoration: none;
     font-weight: normal;
     color: inherit;
+    color: white;
+    font-size: 16px;
+}
+
+footer ul li{
+    display: inline;
+    padding: 4px;
+    margin-left: 12px;
+    background: green;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px gray;
 }
 
 .assignments {
     display: flex;
   justify-content: space-around;
+    font-size: 16px;
+    margin-bottom: -12px;
+    border: 2px solid purple;
+
+        
+    
+}
+
+footer h3 {
+    color: black;
+    padding: 10px;
     
 }
