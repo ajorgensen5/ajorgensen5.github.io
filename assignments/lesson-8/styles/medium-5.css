@@ -1,17 +1,42 @@
 @media only screen and (min-width: 32em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-    
-    h1 {
-        font-size: 2em;
-    }
     nav button {
         display: none;
     }
 
-    button.hamburger {
+    .hamburger {
         display: none;
     }
 
+
+
+
+
+    header figure {
+        width: 16%;
+        padding: 4px;
+    }
+
+    header img {
+        width: 100%;
+        padding: 8px 0 0 0;
+
+    }
+
+
+    header div h1 {
+        color: white;
+        font-size: 200%;
+        margin: 16px 0 2px 0;
+    }
+
+    header div h3 {
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Bad Script', cursive;
+        font-size: 140%;
+        margin: 2px 0 0 0;
+    }
 
     nav {
         display: flex;
@@ -25,18 +50,12 @@
 
     }
     nav ul li a {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        border-left: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .6rem;
+       
     }
     /* hamburger button does not need to be shown */
-    section.forecast {
+    .forecast {
         margin-bottom: 10px;
-        padding
+        color: green;
     }
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
@@ -47,7 +66,10 @@
         background-color: #003FC6;
     }
 
-    nav ul li {}
+    nav ul li {
+    width: 16.67%;
+        text-align:center;
+    }
 
     .hide-nav {
         display: flex;
@@ -58,7 +80,7 @@
         color: white;
     }
 
-    a:hover {
+    nav ul li .hover a {
         color: #33FD57;
     }
     a:visited {
@@ -68,7 +90,10 @@
         color: #FF9234;
     }
 
+    .ten {
 
+        max-width: 100%;
+    }
 
 
     article p.town-article img {
@@ -76,87 +101,40 @@
     }
 
     /* responsive images */
-    
-    header h1 {
-    font-size: 2em;
-    
-    max-width: 62rem;
-    margin-top: 4%;
-    margin-left: 1%;
-    margin-bottom: 0;
-    color: white;
-}
-
-
-header  {
-    
-    margin-top: 0;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    background-color: blue;
-    color: aqua;
-    border: none;
-    font-size: 1.4rem;
-    }
-    
-.subheading {
-    font-family: 'Bad Script', cursive;
-    margin-left: 15%;
-    margin-top: -4%;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    background-color: blue;
-    color: aqua;
-    border: none;
-    font-size: 1.4rem;
-    }
-    
-    
-    
-    header img {
-        width: 15%;
-    }
-
     main figure {
         margin: 0;
         width: 96%;
     }
 
     .forecast {
-    display: flex;
-        color: aqua;
-}
+       display: inherit;
+    }
 
     .prepare {
         color: darkorange;
     }
 
     section {
-        display: flex;
-        
-        grid-template-rows: 40em;
         margin-bottom: 10px;
     }
 
     section img {
-        width: 100%;
+        width: 30%;
 
     }
 
-   .moresnow img {
-       display: flex;
-       align-content: flex-start;
-    max-width: 50%;
-    height: auto;
-    /* fill the page in the small/phone view */
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
-
+    .moresnow img {
+        max-width: 50%;
+        height: auto;
         /* fill the page in the small/phone view */
-        margin: auto;
+        margin-right: 10px;
+        margin-top: 10px;
     }
+
+
+    /* fill the page in the small/phone view */
+    margin: auto;
+
 
     #town-article {
         margin-bottom: 10px;
@@ -172,17 +150,163 @@ header  {
 
     .gridcontainer {
         display: grid;
-        grid-template-columns: 50%;
-        grid-template-rows: 200px 200px 200px 200px;
-        padding: 5px;
-        background-color: black;
+        grid-template-columns: 50% 50%;
+        padding: 2px;
+        background-color: #003FC6;
         max-width: 100%;
     }
 
-    .griditem {
-        background-color: white;
-        border: 3px solid aqua;
+    .weatherStory {
         text-align: center;
+        padding: 10px;
+        margin: 3px;
+        display: flex;
+        justify-content: space-around;
     }
+    div {
+        background: none;
+    }
+    .weatherCities {
+        display: block;
+    }
+
+    .citiesDiv {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        flex-direction: row;
+
+    }
+
+    .citiesDiv2 {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+
+    .weatherCities img {
+        width: 100%;
+    }
+#content {
+    background-color: #4881FC;
     
+}
+input {
+    border-radius: 8px;
+    margin: 8px;
+    padding-left: 10px;
+    background-color: azure;
+}
+
+.left {
+
+    background-color: white;
+    margin: auto;
+}
+.row {
+    
+    background-color: greenyellow;
+    margin: auto;
+    max-width: 90%;
+}
+.report{
+    color: white;
+    background-color: #4881FC;
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin: auto;
+    
+}
+progress {
+    width: 96%;
+    background-color: azure;
+    padding: 5%;
+    
+}
+
+#ratingvalue {
+    
+    
+}
+/*--------FORM STUFF---------------*/
+
+/*---------FOOTER----------------*/
+
+
+form#stormReport{
+    margin: 1em 3%;
+    
+}
+
+
+fieldset {
+    max-width: 90%;
+    background-color: #4881FC;
+    color: white;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: lightgreen solid 2px;
+}
+
+legend {
+    
+    color: black;
+    padding: 8px;
+    font-style: oblique;
+    font-size: 12px;
+    background-color: greenyellow;
+    border-radius: .5em;
+    margin: 5%;
+    
+}
+
+label {
+    display: block;
+    margin: .3em;
+}
+}
+footer {
+background-color: black;
+}
+
+#myBar {
+    width: 1%;
+    height: 15px;
+    background-color: none;
+    
+}
+#output {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.addComments{
+    max-width: 100%;
+    padding: 2%;
+    margin: 0;
+    border-radius: 8px;
+    display: flex;
+    align-content: flex-start;
+    font-size: 12px;
+    border: 1px solid green;
+}
+textarea#comments{
+    border-radius: 8px;
+    background-color: azure;
+    font-size: 12px;
+    border: none;
+    
+}
+
+
+fieldset.pi{
+    max-width: 100%;
+    font-size: 16px;
+    padding: 5%;
+   
+    
+
+   
 }

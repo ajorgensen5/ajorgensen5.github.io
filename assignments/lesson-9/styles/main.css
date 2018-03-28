@@ -280,6 +280,11 @@ div {
     margin: 1rem;
 }
 
+.report {
+    color: greenyellow;
+    background-color: blue;
+}
+
 .form {
     background-color: #bbb;
     padding: 1rem;
@@ -366,7 +371,8 @@ footer p {
 }
 
 div#content {
-    background-color: black;
+    background-color: blue;
+    border: none;
     padding: 2%;
     margin: 4%
 }

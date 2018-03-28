@@ -5,44 +5,25 @@
         width: 29.333%;
     }
 
-    
-        header h1 {
-    font-size: 3em;
-    
-    max-width: 62rem;
-    margin-top: 4%;
-    margin-left: 1%;
-    margin-bottom: 0;
-    color: white;
-}
-
-
-
-header  {
-   
-    
-    margin-top: 0;
-    padding-top: %;
-    padding-bottom: 2%;
-    background-color: blue;
-    color: aqua;
-    border: none;
-    font-size: .8rem;
+    header figure img {
+        width: 80%;
+        margin: 0 10%;
     }
-    
-     .subheading {
-    font-family: 'Bad Script', cursive;
-    margin-left: 14%;
-    margin-top: 0;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    background-color: blue;
-    color: aqua;
-    border: none;
-    font-size: .6rem;
+
+    header div h1 {
+        color: white;
+        font-size: 200%;
+        margin: 16px 0 2px 0;
     }
-    
-    
+
+    header div h3 {
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Bad Script', cursive;
+        font-size: 140%;
+        margin: 2px 0 0 0;
+    }
+
     /* navigation bar*/
     nav {
         width: 100%;
@@ -56,7 +37,7 @@ header  {
 
 
     }
-    
+
     .hide-nav {
         display: flex;
     }
@@ -73,7 +54,7 @@ header  {
 
     section {
         display: block;
-        
+
     }
 
     main figure {
@@ -85,9 +66,7 @@ header  {
         width: 30%;
     }
 
-       
-    .gridcontainer {
-         box-shadow: 5px 10px #888888;
+
     }
     article p.town-article img {
         /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
@@ -95,18 +74,14 @@ header  {
         height: auto;
         /* fill the page in the small/phone view */
         margin: 0;
-    }    
- .gridcontainer {
+    }
+    .gridcontainer {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        padding: 2px;
-        background-color: black;
-        max-width: 100%;
+        max-width: 100%;  
     }
 
     .griditem {
-        background-color: azure;
-        border: 1px solid red;
         text-align: center;
     }
 }

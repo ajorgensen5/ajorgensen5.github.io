@@ -365,3 +365,119 @@ footer p {
     padding: 10px;
    
 }
+
+}
+input {
+    border-radius: 8px;
+    margin: 8px;
+    padding-left: 10px;
+    background-color: azure;
+    width: 40%;
+}
+
+.left {
+
+    background-color: white;
+    margin: auto;
+}
+.row {
+    
+    background-color: greenyellow;
+    margin: auto;
+    max-width: 90%;
+}
+.report{
+    color: white;
+    background-color: #4881FC;
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin: auto;
+    
+}
+progress {
+    width: 96%;
+    background-color: azure;
+    padding: 5%;
+    
+}
+
+#ratingvalue {
+    
+    
+}
+
+
+form#stormReport{
+    margin: 1em 3%;
+    
+}
+
+
+fieldset {
+    max-width: 90%;
+    background-color: #4881FC;
+    color: white;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: lightgreen solid 2px;
+}
+
+legend {
+    
+    color: black;
+    padding: 8px;
+    font-style: oblique;
+    font-size: 12px;
+    background-color: greenyellow;
+    border-radius: .5em;
+    
+}
+
+label {
+    display: block;
+    margin: .3em;
+}
+}
+footer {
+background-color: black;
+}
+
+#myBar {
+    width: 1%;
+    height: 15px;
+    background-color: none;
+    
+}
+#output {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.addComments{
+    max-width: 100%;
+    padding: 2%;
+    margin: 0;
+    border-radius: 8px;
+    display: flex;
+    align-content: flex-start;
+    font-size: 12px;
+    border: 1px solid green;
+}
+textarea#comments{
+    border-radius: 8px;
+    background-color: azure;
+    font-size: 8px;
+    border: none;
+    margin: 5px;
+    width: 500px;
+}
+
+
+fieldset.pi{
+    max-width: 100%;
+    font-size: 8px;
+    padding: 5%;
+    background-color: #ff7600;
+   
+}

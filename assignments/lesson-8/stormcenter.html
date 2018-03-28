@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CIT Assignment 8 - Storm Center - Aimee Jorgensen</title>
+    <title>CIT Assignment 8 - Storm Center Page - Aimee Jorgensen</title>
     <meta name="author" content="Aimee Jorgensen">
-    <meta name="description" content="CIT 230 Assignment 8 - Aimee Jorgensen - Web Frontend Development at Brigham Young University - Idaho.">
+    <meta name="description" content="This Page is for Users to Report Storms in Their Area">
     <!-- external style references in the proper cascading order -->
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
@@ -16,24 +16,28 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 
     <!-- Google API font reference -->
-    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="/ajorgensen5.github.io/assignments/lesson-8/styles/main-5.css" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-5.css" rel="stylesheet">
+    <link href="/ajorgensen5.github.io/assignments/lesson-8/styles/medium-5.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="styles/medium-5.css" rel="stylesheet">
+    <link href="/ajorgensen5.github.io/assignments/lesson-8/styles/large.css" rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="styles/large-5.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="/ajorgensen5.github.io/assignments/lesson-8/styles/phone-default.css" rel="stylesheet">
+    
     <!-- large/wide/desktop views -->
 </head>
 
 <body>
 
     <header>
-        <div class="title">
-            <img src="images/Weather_SunAbstract.png" alt="The site logo" width="" height="">
+        <figure>
+            <img src="/ajorgensen5.github.io/assignments/lesson-8/images/Sun_orange_icon.svg.png" alt="The site logo">
+        </figure>
+        <div>
             <h1>SmartCast Weather</h1>
+            <h3>Smart Forecasts for a Smart Life </h3>
         </div>
-        <div class="subheading">Smart Forecasts for a Smart Life</div>
     </header>
 
     <!-- site navigation use placeholder references -->
@@ -41,63 +45,29 @@
     <button class="hamburger" onclick="toggleHam()">&#9776;</button>
 
     <nav>
-
         <ul id="nav" class="hide-nav">
-
-            <li><a href="home.html">Home</a></li>
-            <li class="active">
-                <a href="franklin-8.html">Franklin</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springville.html">Springfield</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-8.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
-        
-        <section class="forecast">
-            <h3>10 Day Forecast</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day 1</th>
-                        <th>Day 2</th>
-                        <th>Day 3</th>
-                        <th>Day 4</th>
-                        <th>Day 5</th>
-                        <th>Day 6</th>
-                        <th>Day 7</th>
-                        <th>Day 8</th>
-                        <th>Day 9</th>
-                        <th>Day 10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>20&deg;F</td>
-                        <td>24&deg;F</td>
-                        <td>19&deg;F</td>
-                        <td>21&deg;F</td>
-                        <td>32&deg;F</td>
-                        <td>35&deg;F</td>
-                        <td>40&deg;F</td>
-                        <td>37&deg;F</td>
-                        <td>23&deg;F</td>
-                        <td>20&deg;F</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
 
-        <div id="content" class="clearfix">
-            <h1>Storm Center Page</h1>
-            <div report> Report a Storm in Your Area</div>
+        <div id="content">
+
+            <h2>Storm Center</h2>
+            <div class="report"> Report a Storm in Your Area</div>
 
             <div class="row">
                 <div class="left">
-                    <p>Progress:<progress value="3" max="5"></progress></p>
-                    <form action="" method="post" enctype="multipart/form-data" name="attend" id="conference">
+                    <p>Progress: <progress value="3" max="8"></progress></p>
+                    
+                    <form action="" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport">
+                      
 
 
                         <fieldset class="pi">
@@ -113,8 +83,8 @@
 
                             <label><span>Date:</span><input date = "date" type="date" value="" placeholder="xx/xx/xxxx" required></label><br>
 
-                            <label><span>Storm Severity (1 to 10)</span></label>
-                            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <label><span>Storm Severity (10 being worst) <br>1</span></label>
+                            <input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">10</span><br>
 
 
@@ -140,18 +110,21 @@
                         <br>
 
                         <form action="/html/tags/html_form_tag_action.cfm" method="post">
-                            <div>
-                                <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">Additional Information or Comments</textarea>
+                            <div class=addComments>Add Comments and Additional Information
+                                
+                                <textarea name="comments" id="comments" ></textarea>
+                                
+                                
                             </div>
                             <input type="submit" value="Submit">
                         </form>
-                        
+
 
                         <fieldset>
 
 
 
-                            
+
                         </fieldset>
 
                     </form>
@@ -159,29 +132,31 @@
                 <!-- end of column -->
                 <aside class="right">
                     <div class="ad"><a href="#"><img src ="">
+                      
                     </a>
                     </div>
                 </aside>
 
-
-    <footer>
-        <aside>
-            <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
-        </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
-            <span id="currentdate"></span>
-        </p>
-    </footer>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
-
-
-        </div>
+            </div>
         </div>
     </main>
-    
+
 </body>
+<footer>
+    <aside>
+        <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
+        <span id="currentdate"></span>
+    </p>
+</footer>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/hideMenu.js"></script>
+<script src="scripts/jquery.min.js"></script>
+
 
 
 </html>
