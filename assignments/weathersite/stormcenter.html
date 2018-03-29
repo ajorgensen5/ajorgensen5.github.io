@@ -7,7 +7,22 @@
     <title>CIT Assignment 10 - Weather Site Home Page - Aimee Jorgensen</title>
     <meta name="author" content="Aimee Jorgensen">
     <meta name="description" content="">
+    
+    
     <!-- external style references in the proper cascading order -->
+    
+    <!-- default styles - small/phone views -->
+    <link href="/ajorgensen5.github.io/assignments/weathersite/styles/main.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="/ajorgensen5.github.io/assignments/weathersite/medium.css" rel="stylesheet">
+     <!-- large/wide/desktop views -->
+    <link href="/ajorgensen5.github.io/assignments/weathersite/large.css" rel="stylesheet">
+
+    <link href="/ajorgensen5.github.io/assignments/weathersite/phone-default.css" rel="stylesheet">
+
+
+
+    <!-- Google API font reference -->
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
 
@@ -15,25 +30,21 @@
 
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 
-    <!-- Google API font reference -->
-    <link href="/ajorgensen5.github.io/styles/normalize.css">
+
+
     <!-- normalize useragent/browser defaults -->
-    <link href="/ajorgensen5.github.io/assignments/weathersite/styles/main.css" rel="stylesheet">
-    <!-- default styles - small/phone views -->
-    <link href="/ajorgensen5.github.io/assignments/weathersite/medium.css" rel="stylesheet">
-    <!-- medium/tablet views -->
-    <link href="/ajorgensen5.github.io/assignments/weathersite/large.css" rel="stylesheet">
-    
-    <link href="/ajorgensen5.github.io/assignments/weathersite/phone-default.css" rel="stylesheet">
-    
-    <!-- large/wide/desktop views -->
+
+    <link href="/ajorgensen5.github.io/assignments/weathersite/normalize.css">
+
+
+   
 </head>
 
 <body>
 
     <header>
         <figure>
-            <img src="images/Sun_orange_icon.svg.png" alt="The site logo">
+            <img src="/ajorgensen5.github.io/assignments/weathersite/images/Sun_orange_icon.svg.png" alt="The site logo">
         </figure>
         <div>
             <h1>SmartCast Weather</h1>
@@ -48,11 +59,11 @@
     <nav>
         <ul id="nav" class="hide-nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="franklin.html">Franklin</a></li>
-            <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springfield.html">Springfield</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="/ajorgensen5.github.io/assignments/weathersite/franklin.html">Franklin</a></li>
+            <li><a href="/ajorgensen5.github.io/assignments/weathersite/greenville.html">Greenville</a></li>
+            <li><a href="/ajorgensen5.github.io/assignments/weathersite/springfield.html">Springfield</a></li>
+            <li><a href="/ajorgensen5.github.io/assignments/weathersite/stormcenter.html">Storm Center</a></li>
+            <li><a href="/ajorgensen5.github.io/assignments/weathersite/gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
@@ -65,10 +76,10 @@
 
             <div class="row">
                 <div class="left">
-                    <p>Progress: <progress value="3" max="8"></progress></p>
                     
-                    <form action="" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport">
-                      
+
+                    <form action="/ajorgensen5.github.io/assignments/weathersite/thanks.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport">
+
 
 
                         <fieldset class="pi">
@@ -76,21 +87,20 @@
 
                             <label><span>Your Full Name:</span><input name = "fullname" type="text" value="" placeholder="John Doe" pattern="(?=.*[a-z])(?=.*[A-Z]).{5-10,}" required></label><br>
 
-                            <label><span>Your Phone Number (optional):</span><input name = "phone" type="tel" value="" placeholder="1233215322" pattern="[0-9] {10,20}" required></label><br>
+                            <label><span>Your Phone Number (optional):</span><input name = "phone" type="" value="" placeholder="1233215322"></label><br>
 
                             <label><span>Email:</span><input name = "email" type="email" value="" placeholder="stormyw@gmail.com" required></label><br>
 
-                            <label><span>Zip Code:</span><input number = "zip" type="email" value="" placeholder="84041" required></label><br>
+                            <label><span>Zip Code:</span><input number = "zip" type="" value="" placeholder="84041" required></label><br>
 
                             <label><span>Date:</span><input date = "date" type="date" value="" placeholder="xx/xx/xxxx" required></label><br>
 
-                            <label><span>Storm Severity (10 being worst) <br>1</span></label>
+                            <label><span>Storm Severity (10 being worst)</span></label><span id="ratingvalue">1</span>
                             <input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">10</span><br>
 
 
                             <label><span>Storm Region:</span> </label>
-                            <form action="/action_page.php">
                                 <input list="browsers" name="browser">
                                 <datalist id="browsers">
                                 <option selected="selected" disabled="disabled">Select a Region</option>
@@ -98,39 +108,32 @@
                                 <option value="Greenville">
                                 <option value="Springfield">
                                  <br>  
-                                    </option></datalist></form>
+                                    </option></datalist>
                         </fieldset><br>
 
-
+                              <fieldset>
                         <label><span>User Currently in Danger?</span></label><br>
-                        <form action="/action_page.php">
+                        
                             <input type="radio" name="yes" value="Yes"> Yes<br>
                             <input type="radio" name="maybe" value="Maybe" checked> Maybe <br>
                             <input type="radio" name="no" value="No"> No <br>
-                        </form>
+                        
                         <br>
 
-                        <form action="/html/tags/html_form_tag_action.cfm" method="post">
-                            <div class=addComments>Add Comments and Additional Information
-                                
-                                <textarea name="comments" id="comments" ></textarea>
-                                
-                                
+                       
+                            <div class=addComments><p>Add Comments and Additional Information</p><br>
+
+                                <textarea name="comments" id="comments"></textarea>
+
+
                             </div>
                             <input type="submit" value="Submit">
-                        </form>
-
-
-                        <fieldset>
-
-
-
-
+                        
                         </fieldset>
 
                     </form>
                 </div>
-                <!-- end of column -->
+                
                 <aside class="right">
                     <div class="ad"><a href="#"><img src ="">
                       
