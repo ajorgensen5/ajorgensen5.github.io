@@ -2,7 +2,7 @@
 
 
 
-//function calcWc {
+function calcWc {
 var h= document.getElementById("high").innerHTML;
 var l= document.getElementById("low").innerHTML;
 var w= document.getElementById("wind").innerHTML;
@@ -17,6 +17,6 @@ var wc = f.toFixed(2);
 
 
 document.getElementById("outputWindchill").innerHTML = wc;
-//    }
-//window.alert(wc);
+   }
+
 
