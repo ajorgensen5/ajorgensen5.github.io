@@ -186,16 +186,17 @@ main figure.myphoto img {
 
 .weatherSum  {
     padding-top: 4px;
-    color:  red;
+    color: black;
     font-size: 1em;
 }
 
 .franklinCurrent {
-    background: green;
+    background: white;
 }
 
 #nameCity{
-    background-color: pink;
+    color: black;
+    
 }
 .windchill {
     display: inline;

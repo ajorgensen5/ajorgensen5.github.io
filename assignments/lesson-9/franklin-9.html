@@ -71,7 +71,7 @@
         <h2>Franklin, IL</h2>
     
         <section id="weatherSummary">
-            <h2 class="weatherSum">This is the Weather Summary class<span id="nameCity"></span></h2>
+            <h2 class="weatherSum">Current Conditions for <span id="nameCity"></span></h2>
             <div class="franklinCurrent">franklinCurrent
                  <img id='wUrl' src="" alt="current weather icon">
                 <p id='weatherString'>weatherString</p>
@@ -97,9 +97,11 @@
                 <p>Wind Speed<span id="windSpeed">5</span> mph SW</p>
             </div>
                 </div>
-                </h2>
+       
+                
         </section>
 
+        
         <section class="forecast">
             <h3>10 Day Forecast</h3>
             <table>
@@ -119,8 +121,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>20&deg;F</td>
-                        <td>24&deg;F</td>
+                        <td><span id="dayone"></span>&deg;F</td>
+                        <td>&deg;F</td>
                         <td>19&deg;F</td>
                         <td>21&deg;F</td>
                         <td>32&deg;F</td>
@@ -154,9 +156,9 @@
             </figure>
 
         </article>
+</main>
+    
 
-    </main>
-</body>
     <footer>
         <aside>
             <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
@@ -170,6 +172,6 @@
 <!--    <script src="scripts/windchill.js"></script>-->
     <script src="scripts/wu_weather_franklin.js"></script>
     
-
+</body>
 </html>
    
