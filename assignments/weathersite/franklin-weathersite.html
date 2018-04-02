@@ -4,26 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Franklin-8 Springfield</title>
+    <title>CIT Assignment 10 - Franklin Page - Aimee Jorgensen</title>
     <meta name="author" content="Aimee Jorgensen">
-    <meta name="description" content="">
-    <!-- external style references in the proper cascading order -->
+    <meta name="description" content="Weathersite-Aimee Jorgensen-BYUI">
+
+    <!-- Google API font reference -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-
-
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 
-    <!-- Google API font reference -->
-    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- external style references in the proper cascading order -->
+
     <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-8.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="styles/medium-8.css" rel="stylesheet">
+    <link href="styles/main-weathersite.css" rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="styles/large-8.css" rel="stylesheet">
+    <link href="styles/medium-weathersite.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
+    <link href="styles/large-weathersite.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -42,17 +44,20 @@
 
     <button class="hamburger" onclick="toggleHam()">&#9776;</button>
 
+
     <nav>
         <ul id="nav" class="hide-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="franklin-8.html">Franklin</a></li>
-            <li><a href="greenville-8.html">Greenville</a></li>
-            <li><a href="springfield-8.html">Springfield</a></li>
-            <li><a href="stormcenter-8.html">Storm Center</a></li>
-            <li><a href="gallery-8.html">Gallery</a></li>
+            <li><a href="index-weathersite.html">Home</a></li>
+                <li class="active">
+            <li><a href="gallery-weathersite.html">Franklin</a></li>
+            <li><a href="greenville-weathersite.html">Greenville</a></li>
+            <li><a href="springfield-weathersite.html">Springfield</a></li>
+            <li><a href="stormcenter-weathersite.html">Storm Center</a></li>
+            <li><a href="gallery-weathersite.html">Gallery</a></li>
         </ul>
+    
     </nav>
-
+-->
 
     <main>
 
@@ -64,7 +69,7 @@
 
 
         </figure>
-        <h2>Springfield, MN</h2>
+        <h2>Franklin, IL</h2>
         <section>
             <h3 class=weathersummary><strong>Weather Summary</strong></h3>
             <div class="highlow">
@@ -88,38 +93,62 @@
         </section>
 
         <section class="forecast">
-            <h3>10 Day Forecast</h3>
-            <table>
+            <table id="10day">
+                <caption><strong>10-Day Forecast</strong></caption>
+
+
                 <thead>
-                    <tr>
-                        <th>Day 1</th>
-                        <th>Day 2</th>
-                        <th>Day 3</th>
-                        <th>Day 4</th>
-                        <th>Day 5</th>
-                        <th>Day 6</th>
-                        <th>Day 7</th>
-                        <th>Day 8</th>
-                        <th>Day 9</th>
-                        <th>Day 10</th>
+                    <tr class="sunday">
+                        <th><strong>Sun</strong></th>
+                        <th><strong>Mon</strong></th>
+                        <th><strong>Tue</strong></th>
+                        <th><strong>Wed</strong></th>
+                        <th><strong>Thu</strong></th>
+                        <th><strong>Fri</strong></th>
+                        <th><strong>Sat</strong></th>
+
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr>
-                        <td>20&deg;F</td>
-                        <td>24&deg;F</td>
-                        <td>19&deg;F</td>
-                        <td>21&deg;F</td>
-                        <td>32&deg;F</td>
-                        <td>35&deg;F</td>
-                        <td>40&deg;F</td>
-                        <td>37&deg;F</td>
-                        <td>23&deg;F</td>
-                        <td>20&deg;F</td>
+                        <td>High</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
                     </tr>
+                    <tr>
+                        <td>Low</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Windchill</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+
+
                 </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="7">SmartCast Weather 3.1.2018 by aJorgensen</th>
+                    </tr>
+                </tfoot>
+
             </table>
-            
+
         </section>
 
 
@@ -150,33 +179,31 @@
             <span id="currentdate"></span>
         </p>
         <script>
-    //remember to add an ID of ?mainmenu" to the nav ul"
-    var urlString = document.location.href;
-    varurlArray = urlString.split('/');
-    var pageHREF=urlArray[urlArray.length-1];
-    
-    if (pageHREF !=="") {
-        var menu = document.querySelectorAll('ul#mainmenu li a');
-        var i;
-        //loop through all the menu items in the navigation
-        for(i=0; i<menu.length; i++) {
-            var currentURL=(menu[i].getAttribute("href"));
-            menu[i].parentNode.className=""; //turn off highlighting by default
-            if (currentURL===pageHREF) {
-                menu[i]parentNode.className="active";
-            }//end if
-        }//end of the search for a match
-            }//end of if !==
+            //remember to add an ID of ?mainmenu" to the nav ul"
+            var urlString = document.location.href;
+            varurlArray = urlString.split('/');
+            var pageHREF = urlArray[urlArray.length - 1];
 
-    </script>
+            if (pageHREF !== "") {
+                var menu = document.querySelectorAll('ul#mainmenu li a');
+                var i;
+                //loop through all the menu items in the navigation
+                for (i = 0; i < menu.length; i++) {
+                    var currentURL = (menu[i].getAttribute("href"));
+                    menu[i].parentNode.className = ""; //turn off highlighting by default
+                    if (currentURL === pageHREF) {
+                        menu[i] parentNode.className = "active";
+                    } //end if
+                } //end of the search for a match
+            } //end of if !==
+        </script>
 
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/wu_weather.js"></script>
-
-
+    <script src="scripts/franklin.js">
+    </script>
 </body>
-
 </html>

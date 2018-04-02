@@ -6,25 +6,25 @@
 
 }
 
-fieldset {
+table fieldset {
     border: 0;
 }
 
-html {
+table html {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     position: relative;
     top: 150px;
 }
 
-body {
+table body {
     box-shadow: 7px 7px 7px #628ca6;
-    max-width: 370px;
+    max-width: 266px;
     border-collapse: collapse;
 
 }
 
-main {
+table main {
     border-collapse: collapse;
 }
 
@@ -34,19 +34,18 @@ table {
 
 }
 
-caption {
-    background-color: blue;
+table caption {
+    background-color: #6EABB5;
     font-size: 1.6em;
     max-height: 25%;
     padding: 5px 5px 7px 7px;
     border: 2px solid rgb(200, 200, 200);
     border-bottom: none;
-    color: white
 
 
 }
 
-thead {
+table thead {
     text-align: center;
     justify-content: center;
 
@@ -65,7 +64,7 @@ td {
 
 }
 
-h2 {
+table h2 {
     text-align: center;
     max-height: 5px;
     align-content: center;
@@ -73,7 +72,7 @@ h2 {
 }
 
 .period {
-    color: black;
+    color: white;
     background-color: #628ca6;
 
 
@@ -81,11 +80,11 @@ h2 {
 
 
 tr:nth-child(odd) td {
-    background-color: azure;
+    background-color: #e7f0ed;
 }
 
 tr:nth-child(even) td {
-    background-color: lightgray;;
+    background-color: #E1FFE7;
 }
 
 
@@ -101,7 +100,7 @@ tr:nth-child(even) td {
 
 
 tfoot {
-    background-color: gray;
+    background-color: #6EABB5;
 }
 
 

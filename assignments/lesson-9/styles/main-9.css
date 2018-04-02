@@ -2,12 +2,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 900px;
-
 }
 
-/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     margin: 0;
@@ -100,17 +96,25 @@ nav button {
 
 
 nav {
-    font-family: Verdana, sans-serif;
+    
 }
 
 nav ul {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #0026BA;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    
 }
 
 nav ul li {
     width: 8rem;
+}
+
+a {
+    color: white;
+    font-size: 16px;
 }
 
 nav ul li a {
@@ -121,7 +125,7 @@ nav ul li a {
 }
 
 
-nav ul li .visited a {
+nav ul li a .visited {
     color: black;
 }
 
@@ -155,6 +159,11 @@ main h2 {
     color: yellow;
     margin-left: 2%
 }
+      
+#weatherSummary
+{
+    background-color: #00F4FF;
+}
 
 main figure {
     margin: 0px;
@@ -175,13 +184,25 @@ main figure.myphoto img {
     margin-bottom: 0;
 }
 
+.weatherSum  {
+    padding-top: 4px;
+    color:  red;
+    font-size: 1em;
+}
+
+.franklinCurrent {
+    background: green;
+}
+
+#nameCity{
+    background-color: pink;
+}
 .windchill {
     display: inline;
 
-
 }
 
-.highlow {
+.highLow {
     margin-left: 0;
     background-color: blue;
     border: none;

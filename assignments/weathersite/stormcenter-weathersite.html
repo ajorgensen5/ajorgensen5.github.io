@@ -4,33 +4,47 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Franklin-8 - Stormcenter</title>
+    <title>CIT Assignment 10 - Weather Site Home Page - Aimee Jorgensen</title>
     <meta name="author" content="Aimee Jorgensen">
     <meta name="description" content="">
+    
+    
     <!-- external style references in the proper cascading order -->
+    
+    <!-- default styles - small/phone views -->
+    <link href="/ajorgensen5.github.io/assignments/weathersite/styles/main.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="/ajorgensen5.github.io/assignments/weathersite/medium.css" rel="stylesheet">
+     <!-- large/wide/desktop views -->
+    <link href="/ajorgensen5.github.io/assignments/weathersite/large.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="/ajorgensen5.github.io/assignments/weathersite/phone-default.css" rel="stylesheet">
 
 
+
+    <!-- Google API font reference -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 
-    <!-- Google API font reference -->
-    <link href="styles/normalize.css" rel="stylesheet">
+
+
     <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-8.css" rel="stylesheet">
-    <!-- default styles - small/phone views -->
-    <link href="styles/medium-8.css" rel="stylesheet">
-    <!-- medium/tablet views -->
-    <link href="styles/large-8.css" rel="stylesheet">
-    <!-- large/wide/desktop views -->
+
+    <link href="/ajorgensen5.github.io/assignments/weathersite/normalize.css">
+
+
+   
 </head>
 
 <body>
 
     <header>
         <figure>
-            <img src="images/Sun_orange_icon.svg.png" alt="The site logo">
+            <img src="/ajorgensen5.github.io/assignments/weathersite/images/Sun_orange_icon.svg.png" alt="The site logo">
         </figure>
         <div>
             <h1>SmartCast Weather</h1>
@@ -43,17 +57,21 @@
     <button class="hamburger" onclick="toggleHam()">&#9776;</button>
 
     <nav>
+
         <ul id="nav" class="hide-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="franklin-8.html">Franklin</a></li>
-            <li><a href="greenville-8.html">Greenville</a></li>
-            <li><a href="springfield-8.html">Springfield</a></li>
-            <li><a href="stormcenter-8.html">Storm Center</a></li>
-            <li><a href="gallery-8.html">Gallery</a></li>
+
+            <li><a href="home.html">Home</a></li>
+            <li class="active">
+                <a href="gallery.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springville.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
+    
     </nav>
 
-        <main>
+    <main>
 
         <div id="content">
 
@@ -64,7 +82,7 @@
                 <div class="left">
                     
 
-                    <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport">
+                    <form action="/ajorgensen5.github.io/assignments/weathersite/thanks.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport">
 
 
 
@@ -143,6 +161,7 @@
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/main.js"></script>
 <script src="scripts/hideMenu.js"></script>
 <script src="scripts/jquery.min.js"></script>
 

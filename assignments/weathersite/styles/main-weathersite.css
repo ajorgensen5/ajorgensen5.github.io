@@ -2,12 +2,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 900px;
-
 }
 
-/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     margin: 0;
@@ -100,17 +96,25 @@ nav button {
 
 
 nav {
-    font-family: Verdana, sans-serif;
+    
 }
 
 nav ul {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #0026BA;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    
 }
 
 nav ul li {
     width: 8rem;
+}
+
+a {
+    color: white;
+    font-size: 16px;
 }
 
 nav ul li a {
@@ -121,7 +125,7 @@ nav ul li a {
 }
 
 
-nav ul li .visited a {
+nav ul li a .visited {
     color: black;
 }
 
@@ -146,7 +150,6 @@ nav ul li a:hover {
 main {
     padding: 2%;
     margin: 0px;
-
 }
 
 main h2 {
@@ -602,6 +605,18 @@ footer p {
     color: white;
     border: none;
 
+}
+
+.citiesDiv1 {
+    background-color: white;
+}
+
+.citiesDiv2 {
+    background-color: white;
+}
+
+.citiesDiv3 {
+    background-color: white;
 }
 
 .weatherCities {

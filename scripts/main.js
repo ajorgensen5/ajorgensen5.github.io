@@ -18,5 +18,18 @@ weatherObject.onload = function () {
 
     document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
 
-} // end of onload
+} 
 
+function move() {
+    var elem = document.getElementById("myBar"); 
+    var width = 5;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}
