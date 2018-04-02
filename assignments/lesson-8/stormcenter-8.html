@@ -53,7 +53,7 @@
         </ul>
     </nav>
 
-        <main>
+    <main>
 
         <div id="content">
 
@@ -62,64 +62,68 @@
 
             <div class="row">
                 <div class="left">
-                    
 
-                    <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport">
+
+                    <form action="thanks.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport" target="_blank">
 
 
 
                         <fieldset class="pi">
-                            <legend>Location of Storm</legend>
+                            <legend>Personal Information</legend>
 
-                            <label><span>Your Full Name:</span><input name = "fullname" type="text" value="" placeholder="John Doe" pattern="(?=.*[a-z])(?=.*[A-Z]).{5-10,}" required></label><br>
+                            <label><span>Your Full Name:</span><input name = "fullname" type="text" value="" placeholder="Full Name" pattern="([a-zA-Z -.]).{5,30,}" required></label>
 
-                            <label><span>Your Phone Number (optional):</span><input name = "phone" type="" value="" placeholder="1233215322"></label><br>
+                            <label><span>Your Phone Number (optional):</span><input name = "phone" type="tel" value="" placeholder="1233215322" pattern="[0-9]{10,20}" required></label><br>
 
                             <label><span>Email:</span><input name = "email" type="email" value="" placeholder="stormyw@gmail.com" required></label><br>
 
-                            <label><span>Zip Code:</span><input number = "zip" type="" value="" placeholder="84041" required></label><br>
+                            <label><span>Zip Code:</span><input number = "zip" type="number" value="" placeholder="12345" pattern="[0-9]{10,20}" required></label><br>
 
-                            <label><span>Date:</span><input date = "date" type="date" value="" placeholder="xx/xx/xxxx" required></label><br>
-
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Storm Information</legend>
+                            <label><span>Date:</span><input date = "date" type="date" value="" placeholder="xx/xx/xxxx" required></label>
+                            
+                            
                             <label><span>Storm Severity (10 being worst)</span></label><span id="ratingvalue">1</span>
-                            <input type="range" id="rating" value="" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">10</span><br>
 
 
                             <label><span>Storm Region:</span> </label>
-                                <input list="browsers" name="browser">
-                                <datalist id="browsers">
+                            <input list="browsers" name="browser">
+                            <datalist id="browsers">
                                 <option selected="selected" disabled="disabled">Select a Region</option>
                                 <option value="Franklin">
                                 <option value="Greenville">
                                 <option value="Springfield">
                                  <br>  
                                     </option></datalist>
-                        </fieldset><br>
+                      
+                            <label><span>User Currently in Danger?</span></label><br>
 
-                              <fieldset>
-                        <label><span>User Currently in Danger?</span></label><br>
-                        
                             <input type="radio" name="yes" value="Yes"> Yes<br>
                             <input type="radio" name="maybe" value="Maybe" checked> Maybe <br>
                             <input type="radio" name="no" value="No"> No <br>
-                        
-                        <br>
 
-                       
-                            <div class=addComments><p>Add Comments and Additional Information</p><br>
+                            <br>
+
+
+                            <div class=addComments>
+                                <p>Add Comments and Additional Information</p><br>
 
                                 <textarea name="comments" id="comments"></textarea>
 
 
                             </div>
                             <input type="submit" value="Submit">
-                        
+
                         </fieldset>
 
                     </form>
                 </div>
-                
+
                 <aside class="right">
                     <div class="ad"><a href="#"><img src ="">
                       

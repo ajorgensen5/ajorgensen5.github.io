@@ -2,7 +2,7 @@
 
 
 
-function calcWc {
+function calcWc() {
 var h= document.getElementById("high").innerHTML;
 var l= document.getElementById("low").innerHTML;
 var w= document.getElementById("wind").innerHTML;
