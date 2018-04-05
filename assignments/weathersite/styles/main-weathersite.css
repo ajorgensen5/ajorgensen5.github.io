@@ -1,5 +1,7 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
+@media only screen and (max-width: 32em)
+
 * {
     box-sizing: border-box;
 }
@@ -99,7 +101,7 @@ nav {
     
 }
 
-nav ul {
+/*nav ul {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #0026BA;
     list-style-type: none;
@@ -138,14 +140,54 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: #33FD57;
 }
+*/
 
-.show-nav {
+nav ul li.active a {
+    background-color: greenyellow;
+    color: Blue;
+}
+
+.navigation {
+    list-style: block;
+    padding-left: 0;
+}
+.navigation li {
+    display: none;
+}
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+.navigation.responsive {
+    position: relative;
+}
+.navigation.responsive li {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #0026BA;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.navigation.responsive li a {
+    padding: .5rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.navigation.responsive li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #33FD57;
+}
+
+
+/*.show-nav {
     display: block;
 }
 
 .hide-nav {
     display: none;
 }
+*/
 
 main {
     padding: 2%;
@@ -573,11 +615,11 @@ footer p {
 }
 
 .gridcontainer {
+    margin:0 auto;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     background-color: #003FC6;
     padding: 2px;
-    max-width: 50%;
     border: none;
     color: white;
     

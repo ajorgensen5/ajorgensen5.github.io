@@ -26,6 +26,8 @@
     <link href="styles/large-weathersite.css" rel="stylesheet">
 
 
+
+
 </head>
 
 <body>
@@ -42,23 +44,21 @@
 
     <!-- site navigation use placeholder references -->
 
-    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    <!-- site navigation use placeholder references -->
 
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
 
     <nav>
-        <ul id="nav" class="hide-nav">
+        <ul id="mainmenu" class="navigation">
             <li><a href="index-weathersite.html">Home</a></li>
-                <li class="active">
-            <li><a href="gallery-weathersite.html">Franklin</a></li>
+            <li><a href="franklin-weathersite.html">Franklin</a></li>
             <li><a href="greenville-weathersite.html">Greenville</a></li>
             <li><a href="springfield-weathersite.html">Springfield</a></li>
             <li><a href="stormcenter-weathersite.html">Storm Center</a></li>
             <li><a href="gallery-weathersite.html">Gallery</a></li>
         </ul>
-    
-    </nav>
--->
 
+    </nav>
     <main>
 
         <figure class="myphoto">
@@ -199,6 +199,23 @@
         </script>
 
     </footer>
+    <script>
+        var urlString, urlArray, pageHREF, menu, i, currentURL;
+        urlString = document.location.href;
+        urlArray = urlString.split('/');
+        pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            menu = document.querySelectorAll('ul#mainmenu li a');
+            for (i = 0; i < menu.length; i++) {
+                currentURL = (menu[i].getAttribute('href'));
+                menu[i].parentNode.className = '';
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = 'active';
+                }
+            }
+        }
+    </script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>

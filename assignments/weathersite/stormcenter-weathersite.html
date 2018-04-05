@@ -7,18 +7,19 @@
     <title>CIT Assignment 10 - Weather Site Home Page - Aimee Jorgensen</title>
     <meta name="author" content="Aimee Jorgensen">
     <meta name="description" content="">
-    
-    
-    <!-- external style references in the proper cascading order -->
-    
-    <!-- default styles - small/phone views -->
-    <link href="/ajorgensen5.github.io/assignments/weathersite/styles/main.css" rel="stylesheet">
-    <!-- medium/tablet views -->
-    <link href="/ajorgensen5.github.io/assignments/weathersite/medium.css" rel="stylesheet">
-     <!-- large/wide/desktop views -->
-    <link href="/ajorgensen5.github.io/assignments/weathersite/large.css" rel="stylesheet">
 
-    <link href="/ajorgensen5.github.io/assignments/weathersite/phone-default.css" rel="stylesheet">
+
+    <!-- external style references in the proper cascading order -->
+
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/main-weathersite.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/medium-weathersite.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="styles/large-weathersite.css" rel="stylesheet">
+
 
 
 
@@ -37,7 +38,7 @@
     <link href="/ajorgensen5.github.io/assignments/weathersite/normalize.css">
 
 
-   
+
 </head>
 
 <body>
@@ -54,21 +55,18 @@
 
     <!-- site navigation use placeholder references -->
 
-    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
 
     <nav>
-
-        <ul id="nav" class="hide-nav">
-
-            <li><a href="home.html">Home</a></li>
-            <li class="active">
-                <a href="gallery.html">Franklin</a></li>
-            <li><a href="greenville.html">Greenville</a></li>
-            <li><a href="springville.html">Springfield</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+        <ul id="mainmenu" class="navigation">
+            <li><a href="index-weathersite.html">Home</a></li>
+            <li><a href="franklin-weathersite.html">Franklin</a></li>
+            <li><a href="greenville-weathersite.html">Greenville</a></li>
+            <li><a href="springfield-weathersite.html">Springfield</a></li>
+            <li><a href="stormcenter-weathersite.html">Storm Center</a></li>
+            <li><a href="gallery-weathersite.html">Gallery</a></li>
         </ul>
-    
+
     </nav>
 
     <main>
@@ -80,7 +78,7 @@
 
             <div class="row">
                 <div class="left">
-                    
+
 
                     <form action="/ajorgensen5.github.io/assignments/weathersite/thanks.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport">
 
@@ -105,8 +103,8 @@
 
 
                             <label><span>Storm Region:</span> </label>
-                                <input list="browsers" name="browser">
-                                <datalist id="browsers">
+                            <input list="browsers" name="browser">
+                            <datalist id="browsers">
                                 <option selected="selected" disabled="disabled">Select a Region</option>
                                 <option value="Franklin">
                                 <option value="Greenville">
@@ -115,29 +113,30 @@
                                     </option></datalist>
                         </fieldset><br>
 
-                              <fieldset>
-                        <label><span>User Currently in Danger?</span></label><br>
-                        
+                        <fieldset>
+                            <label><span>User Currently in Danger?</span></label><br>
+
                             <input type="radio" name="yes" value="Yes"> Yes<br>
                             <input type="radio" name="maybe" value="Maybe" checked> Maybe <br>
                             <input type="radio" name="no" value="No"> No <br>
-                        
-                        <br>
 
-                       
-                            <div class=addComments><p>Add Comments and Additional Information</p><br>
+                            <br>
+
+
+                            <div class=addComments>
+                                <p>Add Comments and Additional Information</p><br>
 
                                 <textarea name="comments" id="comments"></textarea>
 
 
                             </div>
                             <input type="submit" value="Submit">
-                        
+
                         </fieldset>
 
                     </form>
                 </div>
-                
+
                 <aside class="right">
                     <div class="ad"><a href="#"><img src ="">
                       
@@ -158,6 +157,24 @@
         <span id="currentdate"></span>
     </p>
 </footer>
+<script>
+    var urlString, urlArray, pageHREF, menu, i, currentURL;
+    urlString = document.location.href;
+    urlArray = urlString.split('/');
+    pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+        menu = document.querySelectorAll('ul#mainmenu li a');
+        for (i = 0; i < menu.length; i++) {
+            currentURL = (menu[i].getAttribute('href'));
+            menu[i].parentNode.className = '';
+            if (currentURL === pageHREF) {
+                menu[i].parentNode.className = 'active';
+            }
+        }
+    }
+</script>
+
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/windchill.js"></script>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain Spoke - Events</title>
+    <meta name="author" content="Aimee Jorgensen">
+    <meta name="description" content="Mountain Spoke - Events -Aimee Jorgensen-BYUI">
+
+    <!-- Google API font reference -->
+
+   <link href="https://fonts.googleapis.com/css?family=Exo+2:600|Martel:800" rel="stylesheet">
+    
+<!--
+    font-family: 'Exo 2', sans-serif;
+font-family: 'Martel', serif;
+-->
+
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+    <!-- external style references in the proper cascading order -->
+
+    <!-- normalize useragent/browser defaults -->
+    
+    <link href="styles/normalize.css" rel="stylesheet">
+    
+    <!-- default styles - small/phone views -->
+    
+    <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/main_ms.css" rel="stylesheet">
+    
+    <!-- medium/tablet views -->
+    
+    <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/medium_ms.css" rel="stylesheet">
+    
+    <!-- large/wide/desktop views -->
+    <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/large-weathersite.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <figure>
+            <img src="/ajorgensen5.github.io/assignments/mountain_spoke/Mountain-Spoke-Branding.gif" alt="The site logo">
+        </figure>
+        <h2>Events</h2>
+        <section>
+            <h3 class=weathersummary><strong>Weather Summary</strong></h3>
+            <div class="highlow">
+                <p>High: <span id="high">24</span> &#8457;</p>
+                <span id="currenthigh"></span>
+                <p>Low: <span id="low">15</span> &#8457;</p>
+                <p class="windchill">Windchill: <span id="outputWindchill"></span></p>
+                &#8457;
+            </div>
+            <picture>
+                <img src="images/sparkly-snowflake-clipart-1.jpg" alt="" width="" height="">
+            </picture>
+            <div class="current">
+                <strong>Snow</strong>
+
+            </div>
+            <div class="conditions">
+                <p>Precipitation: 20%</p>
+                <p>Wind Speed<span id="wind">5</span> mph SW</p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <table id="10day">
+                <caption><strong>10-Day Forecast</strong></caption>
+
+
+                <thead>
+                    <tr class="sunday">
+                        <th><strong>Sun</strong></th>
+                        <th><strong>Mon</strong></th>
+                        <th><strong>Tue</strong></th>
+                        <th><strong>Wed</strong></th>
+                        <th><strong>Thu</strong></th>
+                        <th><strong>Fri</strong></th>
+                        <th><strong>Sat</strong></th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>High</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Low</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Windchill</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>30</td>
+
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="7">SmartCast Weather 3.1.2018 by aJorgensen</th>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+
+        <article id=town-article>
+
+            <h3 class="prepare">Franklin Prepares for More Snow</h3>
+
+            <figure class="moresnow">
+                <img src="images/pine-tree-with-snow-original.jpg" alt="pine tree with snow" sizes="50vw" srcset="images/pine-tree-with-snow-200.jpg 200vw,
+                    images/pine-tree-with-snow-500.jpg 500vw,
+                    images/pine-tree-with-snow-800.jpg 800vw">
+
+                <p class="snow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu gravida quam. Fusce fermentum, urna non posuere tristique, mi nisl porttitor tellus, sed accumsan elit dolor vel ipsum. Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.
+                    <br><br> Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.
+                    <br><br> Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis. Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.</p>
+            </figure>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
+            <span id="currentdate"></span>
+        </p>
+        <script>
+            //remember to add an ID of ?mainmenu" to the nav ul"
+            var urlString = document.location.href;
+            varurlArray = urlString.split('/');
+            var pageHREF = urlArray[urlArray.length - 1];
+
+            if (pageHREF !== "") {
+                var menu = document.querySelectorAll('ul#mainmenu li a');
+                var i;
+                //loop through all the menu items in the navigation
+                for (i = 0; i < menu.length; i++) {
+                    var currentURL = (menu[i].getAttribute("href"));
+                    menu[i].parentNode.className = ""; //turn off highlighting by default
+                    if (currentURL === pageHREF) {
+                        menu[i] parentNode.className = "active";
+                    } //end if
+                } //end of the search for a match
+            } //end of if !==
+        </script>
+
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/wu_weather.js"></script>
+    <script src="scripts/franklin.js">
+    </script>
+</body>
+</html>
