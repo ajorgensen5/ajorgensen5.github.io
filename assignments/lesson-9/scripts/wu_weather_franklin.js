@@ -28,7 +28,7 @@ franklinObject.onload = function () {
         document.getElementById('dayone').innerHTML=weatherInfo.forecast.simpleforecast.forecastday[0].high.fahrenheit;
         console.log(weatherInfo.forecast.simpleforecast.forecastday[0].high.fahrenheit);
         
-//        franklinTemp.open('GET', 'http://api.wunderground.com/api/b427f9b05290ebaf/forecast/q/MN/Greenville.json', true);
+//        franklinTemp.open('GET', 'http://api.wunderground.com/api/b427f9b05290ebaf/forecast/q/MN/Franklin.json', true);
 //
 //        franklinTemp.send();
 //

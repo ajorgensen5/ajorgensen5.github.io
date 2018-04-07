@@ -10,7 +10,7 @@ franklinObject.onload = function () {
     
     var currentTemp=response.current_observation.temp_f;
     console.log(currentTemp);
-}
+
 
         var fweatherInfo = JSON.parse(franklinObject.responseText);
         console.log(fweatherInfo);
@@ -24,6 +24,7 @@ franklinObject.onload = function () {
         document.getElementById('w_url').src = fweatherInfo.current_observation.icon_url;
     
     var greenvilleObject = new XMLHttpRequest();
+}
 
 greenvilleObject.open('GET','http://api.wunderground.com/api/b427f9b05290ebaf/forecast/conditions/q/MN/Greenville.json', true);
 

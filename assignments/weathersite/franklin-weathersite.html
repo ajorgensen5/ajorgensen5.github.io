@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CIT Assignment 10 - Franklin Page - Aimee Jorgensen</title>
+    <title>SmartWeather -Franklin</title>
     <meta name="author" content="Aimee Jorgensen">
-    <meta name="description" content="Weathersite-Aimee Jorgensen-BYUI">
+    <meta name="description" content="Weathersite-Franklin - Aimee Jorgensen-BYUI">
 
     <!-- Google API font reference -->
 
@@ -70,8 +70,14 @@
 
         </figure>
         <h2>Franklin, IL</h2>
-        <section>
+        
+        <section id="weatherSummary">
             <h3 class=weathersummary><strong>Weather Summary</strong></h3>
+            <div class="franklinCurrent"><span id="nameCity"></span> Current Conditions
+                 <img id='w_icon' src="" alt="current weather icon">
+                <p id='weatherString'>weatherString</p>
+                
+            
             <div class="highlow">
                 <p>High: <span id="high">24</span> &#8457;</p>
                 <span id="currenthigh"></span>
@@ -79,16 +85,11 @@
                 <p class="windchill">Windchill: <span id="outputWindchill"></span></p>
                 &#8457;
             </div>
-            <picture>
-                <img src="images/sparkly-snowflake-clipart-1.jpg" alt="" width="" height="">
-            </picture>
-            <div class="current">
-                <strong>Snow</strong>
-
-            </div>
+            
             <div class="conditions">
                 <p>Precipitation: 20%</p>
                 <p>Wind Speed<span id="wind">5</span> mph SW</p>
+            </div>
             </div>
         </section>
 

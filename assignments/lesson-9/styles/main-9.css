@@ -52,6 +52,7 @@ header figure img {
     width: 100%;
 }
 
+
 header figure {
     width: 8%;
     margin: 2% 0 0 2%;
@@ -156,13 +157,16 @@ main {
 main h2 {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: yellow;
+    color: greenyellow;
     margin-left: 2%
 }
       
 #weatherSummary
 {
-    background-color: #00F4FF;
+     color: aqua;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-bottom: 0;
 }
 
 main figure {
@@ -191,7 +195,9 @@ main figure.myphoto img {
 }
 
 .franklinCurrent {
-    background: white;
+   background-color: orange;
+    color: black;
+    margin: 10%;
 }
 
 #nameCity{
@@ -199,15 +205,11 @@ main figure.myphoto img {
     
 }
 .windchill {
-    display: inline;
-
+    
 }
 
 .highLow {
-    margin-left: 0;
-    background-color: blue;
-    border: none;
-    color: greenyellow;
+
 }
 
 .forecast {
@@ -227,12 +229,7 @@ main figure.myphoto img {
 }
 
 .conditions {
-    color: greenyellow;
-    font-size: 1em;
-    margin-left: 2%;
-    margin-bottom: 0;
-    background-color: blue;
-    border: none;
+
 }
 
 .current {
@@ -629,6 +626,13 @@ footer p {
 .weatherCities {
     display: none;
     border: none;
+}
+
+#wUrl {
+    display: flex;
+    padding: 5px;
+    margin: 0;
+    max-width: 25%;
 }
 
 .footer-bar1 {

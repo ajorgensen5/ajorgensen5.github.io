@@ -2,12 +2,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 900px;
-
 }
 
-/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     margin: 0;
@@ -56,6 +52,7 @@ header figure img {
     width: 100%;
 }
 
+
 header figure {
     width: 8%;
     margin: 2% 0 0 2%;
@@ -100,17 +97,25 @@ nav button {
 
 
 nav {
-    font-family: Verdana, sans-serif;
+    
 }
 
 nav ul {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #0026BA;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    
 }
 
 nav ul li {
     width: 8rem;
+}
+
+a {
+    color: white;
+    font-size: 16px;
 }
 
 nav ul li a {
@@ -121,7 +126,7 @@ nav ul li a {
 }
 
 
-nav ul li .visited a {
+nav ul li a .visited {
     color: black;
 }
 
@@ -152,8 +157,16 @@ main {
 main h2 {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: yellow;
+    color: greenyellow;
     margin-left: 2%
+}
+      
+#weatherSummary
+{
+     color: aqua;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-bottom: 0;
 }
 
 main figure {
@@ -175,17 +188,28 @@ main figure.myphoto img {
     margin-bottom: 0;
 }
 
-.windchill {
-    display: inline;
-
-
+.weatherSum  {
+    padding-top: 4px;
+    color: black;
+    font-size: 1em;
 }
 
-.highlow {
-    margin-left: 0;
-    background-color: blue;
-    border: none;
-    color: greenyellow;
+.franklinCurrent {
+   background-color: orange;
+    color: black;
+    margin: 10%;
+}
+
+#nameCity{
+    color: black;
+    
+}
+.windchill {
+    
+}
+
+.highLow {
+
 }
 
 .forecast {
@@ -205,12 +229,7 @@ main figure.myphoto img {
 }
 
 .conditions {
-    color: greenyellow;
-    font-size: 1em;
-    margin-left: 2%;
-    margin-bottom: 0;
-    background-color: blue;
-    border: none;
+
 }
 
 .current {
@@ -607,6 +626,13 @@ footer p {
 .weatherCities {
     display: none;
     border: none;
+}
+
+#wUrl {
+    display: flex;
+    padding: 5px;
+    margin: 0;
+    max-width: 25%;
 }
 
 .footer-bar1 {

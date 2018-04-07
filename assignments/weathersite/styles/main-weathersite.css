@@ -196,10 +196,13 @@ main {
     margin: 0px;
 }
 
+h2{
+    color: greenyellow;
+}
 main h2 {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: yellow;
+    color: greenyellow;
     margin-left: 2%
 }
 
@@ -217,7 +220,7 @@ main figure.myphoto img {
 
 .weathersummary {
     color: aqua;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 2%;
     margin-bottom: 0;
 }
@@ -273,6 +276,9 @@ main figure.myphoto img {
     background-color: gray;
 }
 
+.franklinCurrent {
+    background-color: aqua;
+}
 .frankcontainer {
     margin: auto;
     background-color: lawngreen;
@@ -312,7 +318,7 @@ img#w_url {
 
 input {
     border-radius: 8px;
-    margin: 4% auto;
+    margin: 5px auto;
     background-color: azure;
     width: 100%;
 }
@@ -360,15 +366,6 @@ form#stormReport {
 }
 
 
-fieldset {
-    max-width: 90%;
-    background-color: #4881FC;
-    font-size: 1.2em; 
-    color: white;
-    border-radius: .8em;
-    margin: 1.5em 0;
-    border: lightgreen solid 2px;
-}
 
 legend {
 
@@ -409,26 +406,34 @@ footer {
     padding: 5%;
     margin: 0;
     border-radius: 8px;
-    font-size: 12px;
     border: 1px solid green;
 }
 
 textarea#comments {
     border-radius: 8px;
+    margin: 4% auto;
     background-color: azure;
-    font-size: 8px;
-    border: none;
-    width: 90%;
+    width: 100%;
 }
 
 
-fieldset.pi {
+
+
+
+fieldset {
     max-width: 100%;
-    font-size: 1.2em;
-    padding: 5%;
     background-color: #ff7600;
-
+    border-radius: .8em;
+    border: lightgreen solid 2px;
+    padding; 5px;
 }
+
+fieldset span {
+    
+    color: white;
+}
+
+
 
 section,
 div {
@@ -444,7 +449,7 @@ div {
 div {
     background-color: #eee;
     padding: 1rem;
-    border: 1px solid aqua;
+    
 }
 
 #aNum {
@@ -661,21 +666,24 @@ footer p {
 
 }
 
+
 .citiesDiv1 {
-    background-color: white;
+    background-color: greenyellow;
+    margin: 0 auto;
 }
 
 .citiesDiv2 {
-    background-color: white;
+    background-color: greenyellow;
+    margin: 0 auto;
 }
 
 .citiesDiv3 {
-    background-color: white;
+    background-color: greenyellow;
+    margin: 0 auto;
 }
 
 .weatherCities {
-    display: none;
-    border: none;
+  
 }
 
 .footer-bar1 {

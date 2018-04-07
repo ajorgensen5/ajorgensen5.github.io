@@ -80,12 +80,12 @@
                 <div class="left">
 
 
-                    <form id= "stormReport" action="/ajorgensen5.github.io/assignments/weathersite/thanks.html" method="post" enctype="multipart/form-data" name="stormreport">
+                    <form id="stormReport" action="/ajorgensen5.github.io/assignments/weathersite/thanks.html" method="post" enctype="multipart/form-data" name="stormreport">
 
 
 
                         <fieldset class="pi">
-                            <legend>Location of Storm</legend>
+                            <legend>Personal Information</legend>
 
                             <label><span>Your Full Name:</span><input name = "fullname" type="text" value="" placeholder="John Doe" pattern="(?=.*[a-z])(?=.*[A-Z]).{5-10,}" required></label><br>
 
@@ -117,29 +117,30 @@
                             <label><span>User Currently in Danger?</span></label><br>
 
                             <input type="radio" name="yes" value="Yes"> Yes<br>
-                            <input type="radio" name="maybe" value="Maybe" checked> Maybe <br>
+                            <input type="radio" name="maybe" value="Maybe" > Maybe <br>
                             <input type="radio" name="no" value="No"> No <br>
 
                             <br>
 
-
-                            <div class=addComments>
-                                <p>Add Comments and Additional Information</p><br>
-
-                                <textarea name="comments" id="comments"></textarea>
+                            <label><span>Add Comments and Additional Information</span></label>
 
 
-                            </div>
-                            <input type="submit" value="Submit">
+
+
+                            <textarea name="comments" id="comments"></textarea>
+
+
+
+                            <input type="button" onclick="submitForm()" value="Submit">
 
                         </fieldset>
 
                     </form>
                     <script>
-function myFunction() {
-    document.getElementById("stormReport").submit();
-}
-</script>
+                        function submitForm() {
+                            document.getElementById("stormReport").submit();
+                        }
+                    </script>
                 </div>
 
                 <aside class="right">
@@ -182,8 +183,6 @@ function myFunction() {
 
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/currentdate.js"></script>
-/ajorgensen5.github.io/assignments/weathersite/thanks.html
-<!--<script src="scripts/hideMenu.js"></script>-->
 <script src="scripts/jquery.min.js"></script>
 
 

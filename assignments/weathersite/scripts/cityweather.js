@@ -81,7 +81,7 @@ var section = document.querySelector('section');
                             myDiv2.appendChild(myPara4);
                             myDiv.appendChild(myDiv1);
                             myDiv.appendChild(myDiv2);
-                            section.appendChild(myDiv);
+                            section.appendChild(myDiv3);
                         }
                     }
                 }

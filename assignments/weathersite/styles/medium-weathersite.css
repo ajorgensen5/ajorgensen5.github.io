@@ -271,21 +271,20 @@ footer {
     justify-content: flex-start;
 }
 
-.addComments {
+/*
+ .addComments {
     max-width: 100%;
     padding: 2%;
     margin: 0;
     border-radius: 8px;
     display: flex;
     align-content: flex-start;
-    font-size: 12px;
     border: 1px solid green;
 }
 
 textarea#comments {
     border-radius: 8px;
     background-color: azure;
-    font-size: 12px;
     border: none;
 
 }
@@ -295,6 +294,7 @@ fieldset.pi {
     max-width: 100%;
     font-size: 16px;
     padding: 5%;
+*/
 
 
 
