@@ -154,6 +154,10 @@ main {
 
 }
 
+h2{
+    color: greenyellow;
+}
+
 main h2 {
     margin-top: 10px;
     margin-bottom: 10px;
