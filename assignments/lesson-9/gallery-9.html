@@ -15,15 +15,16 @@
 
     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 
-    <!-- Google API font reference -->
-    <link href="styles/normalize.css" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-9.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="styles/medium-9.css" rel="stylesheet">
+    <link href="styles/main-9.css" rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="styles/large-9.css" rel="stylesheet">
+    <link href="styles/medium-9.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
+    <link href="styles/large-9.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -40,23 +41,20 @@
 
     <!-- site navigation use placeholder references -->
 
-    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
 
     <nav>
-
-        <ul id="nav" class="hide-nav">
-
-            <li><a href="home.html">Home</a></li>
-            <li class="active">
-                <a href="gallery-9.html">Franklin</a></li>
-            <li><a href="greenville-9.html">Greenville</a></li>
-            <li><a href="springville-9.html">Springfield</a></li>
-            <li><a href="stormcenter-9.html">Storm Center</a></li>
-            <li><a href="gallery-9.html">Gallery</a></li>
+        <ul id="mainmenu" class="navigation">
+            <li><a href="index-weathersite.html">Home</a></li>
+            <li><a href="franklin-weathersite.html">Franklin</a></li>
+            <li><a href="greenville-weathersite.html">Greenville</a></li>
+            <li><a href="springfield-weathersite.html">Springfield</a></li>
+            <li><a href="stormcenter-weathersite.html">Storm Center</a></li>
+            <li><a href="gallery-weathersite.html">Gallery</a></li>
         </ul>
-    
+
     </nav>
-   
+
     <main>
         <h2>Weather Story</h2>
         <div class="gridcontainer">
@@ -125,6 +123,23 @@
         </script>
 
     </footer>
+    <script>
+        var urlString, urlArray, pageHREF, menu, i, currentURL;
+        urlString = document.location.href;
+        urlArray = urlString.split('/');
+        pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            menu = document.querySelectorAll('ul#mainmenu li a');
+            for (i = 0; i < menu.length; i++) {
+                currentURL = (menu[i].getAttribute('href'));
+                menu[i].parentNode.className = '';
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = 'active';
+                }
+            }
+        }
+    </script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
