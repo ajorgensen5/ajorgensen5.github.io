@@ -678,12 +678,13 @@ footer p {
 }
 
 .citiesDiv3 {
-    background-color: greenyellow;
+    background-color: white;
     margin: 0 auto;
 }
 
 .weatherCities {
-  
+  background-color: greenyellow;
+    margin-top: 0 auto;
 }
 
 .footer-bar1 {
