@@ -551,7 +551,6 @@ tr:nth-child(odd) td {
 article {}
 
 .moresnow img {
-    display: flex;
     max-width: 50%;
     height: auto;
     /* fill the page in the small/phone view */
@@ -561,6 +560,8 @@ article {}
 }
 
 .prepare {
+    display: flex;
+    
     text-align: left;
     margin: 0 0 5px 6px;
     color: aqua;
