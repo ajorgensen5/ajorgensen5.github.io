@@ -684,7 +684,7 @@ footer p {
 
 .weatherCities {
   background-color: greenyellow;
-    margin: 0;
+    margin-top: 0 auto;
 }
 
 .footer-bar1 {

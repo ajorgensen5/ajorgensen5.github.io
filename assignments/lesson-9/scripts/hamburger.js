@@ -1,4 +1,4 @@
-function toggleHam() {
+/*function toggleHam() {
     var x = document.getElementById("nav");
     if (x.classList == "show-nav") {
         x.classList.remove("show-nav");
@@ -11,9 +11,9 @@ function toggleHam() {
         x.classList.add("show-nav"); 
     }
 
+}*/
+function toggleNavMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
-
-
-
-
+ 
 
