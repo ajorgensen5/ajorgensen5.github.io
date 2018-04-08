@@ -168,6 +168,7 @@
         justify-content: center;
         justify-content: space-around;
         flex-direction: row;
+        margin-top: 0;
 
     }
 
@@ -230,7 +231,7 @@
 
     fieldset {
         max-width: 90%;
-        background-color: #4881FC;
+        background-color: #ff7600;
         color: white;
         border-radius: .8em;
         margin: 1.5em 0;

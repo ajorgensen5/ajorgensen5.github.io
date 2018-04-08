@@ -196,15 +196,17 @@ main {
     margin: 0px;
 }
 
-h2{
+h2 {
     color: greenyellow;
 }
+
 main h2 {
     margin-top: 10px;
     margin-bottom: 10px;
-    color: greenyellow;
-    margin-left: 2%
+    margin-left: 2%;
+    font-size: 2.3em;
 }
+
 
 main figure {
     margin: 0px;
@@ -279,6 +281,7 @@ main figure.myphoto img {
 .franklinCurrent {
     background-color: aqua;
 }
+
 .frankcontainer {
     margin: auto;
     background-color: lawngreen;
@@ -425,11 +428,12 @@ fieldset {
     background-color: #ff7600;
     border-radius: .8em;
     border: lightgreen solid 2px;
-    padding; 5px;
+    padding;
+    5px;
 }
 
 fieldset span {
-    
+
     color: white;
 }
 
@@ -449,7 +453,7 @@ div {
 div {
     background-color: #eee;
     padding: 1rem;
-    
+
 }
 
 #aNum {
@@ -656,35 +660,27 @@ footer p {
     box-shadow: 5px 5px 10px grey;
 }
 
-.weatherStory {
-    text-align: center;
-    padding: 10px;
-    margin: 3px;
-    background: none;
-    color: white;
-    border: none;
-
-}
-
-
-.citiesDiv1 {
-    background-color: greenyellow;
+.weatherCities div {
+    background-color: #013095;
+    margin: 0 0 0 10px;
+    font-size: .9em;
+    color: aqua;
     margin: 0 auto;
+    padding: 12px;
 }
 
-.citiesDiv2 {
-    background-color: greenyellow;
-    margin: 0 auto;
+.weatherCities div h2 {
+    padding: 0 0 12px 0;
+    font-family: 'Bad Script', cursive;
+    font-size: 1.3em;
 }
 
-.citiesDiv3 {
-    background-color: white;
-    margin: 0 auto;
+.citiesDiv div img{
+    width: 100%
 }
 
-.weatherCities {
-  background-color: greenyellow;
-    margin-top: 0 auto;
+.citiesDiv2 div img{
+    width: 100%
 }
 
 .footer-bar1 {
