@@ -667,6 +667,7 @@ footer p {
     color: aqua;
     margin: 0 auto;
     padding: 12px;
+    flex-direction: column-reverse;
 }
 
 .weatherCities div h2 {
