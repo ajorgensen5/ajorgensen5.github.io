@@ -91,11 +91,14 @@ nav button {
     border: none;
     font-size: 1.6rem;
     color: cornflowerblue;
+    
 }
 
 
 
-nav {}
+nav {
+    position: absolute;
+}
 
 /*nav ul {
     font-family: 'Roboto Condensed', sans-serif;

@@ -32,7 +32,6 @@ button {
 
 
 .header {
-    
     background: white;
     color: black;
     width: 100%;
@@ -45,18 +44,14 @@ button {
 .sticky {
     position: fixed;
     min-height: 70px;
-    top: 0;
+    margin-top: -2%;
     width: 100%;
-    background: white;
+    background-color: white;
 
 }
 
 .sticky + .content {
     padding-top: 102px;
-}
-
-
-
 }
 
 header div {
@@ -65,10 +60,17 @@ header div {
     flex-direction: column;
     background-color: white;
     color: white;
-    border: none;
+    border: solid 5px ;
 }
 
-
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin: auto;
+    
+}
 header img {
     position: fixed;
     top: 30%;
@@ -92,19 +94,6 @@ header {
     height: 30%;
 }
 
-header div h1 {
-    color: white;
-    font-size: 5vw;
-    margin: 0 0 2px 0;
-}
-
-header div h3 {
-    display: flex;
-    justify-content: flex-start;
-
-    font-size: 3vw;
-    margin: 2px 0 0 0;
-}
 
 
 nav button {
@@ -157,28 +146,28 @@ nav button {
 
 }
 
-.button {
-    background-color: black;
-    border-radius: 5px;
-    color: white;
-    padding: 2%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    cursor: pointer;
-    position: static;
+.exploreTours {
+    position: absolute;
     top: 20%;
     left: 50%;
-    font-family: 'Martel Sans', sans-serif;
-
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 nav {}
 
 nav ul {
     font-family: 'Eczar', serif;
-    background-color: #0026BA;
+    background-color: #401A1A;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -190,7 +179,7 @@ nav ul li {
 }
 
 a {
-    color: white;
+    color: #A68E7B;
     font-size: 16px;
 }
 
@@ -203,17 +192,17 @@ nav ul li a {
 
 
 nav ul li a .visited {
-    color: black;
+    color: #856376;
 }
 
 nav ul li.active a {
-    background-color: greenyellow;
-    color: Blue;
+    background-color: #1E1E1E;
+    color: white;
 }
 
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    color: #33FD57;
+    color: white;
 }
 
 .show-nav {
@@ -234,19 +223,18 @@ main h2 {
     margin-top: 10px;
     margin-bottom: 15px;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.6;
 
 }
 
 .welcomeStatement {
-    line-height: 1.8;
-    font-size: 1em;
+    line-height: 2.5;
+    font-size: .8em;
     background-color: white;
     font-family: 'Martel Sans', sans-serif;
-    margin: 0 auto;
+    max-width: 90%;
     padding: 0;
-
 }
 
 
@@ -284,10 +272,6 @@ footer p {
     margin: 0;
 }
 
-#Exotwo {
-    background-color: white;
-    font-family: 'Martel Sans', sans-serif;
-}
 
 footer {
     text-align: center;
