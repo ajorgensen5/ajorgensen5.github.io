@@ -1,75 +1,95 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-/* Declare the maximum width and other main element rules to limit the stretch on wide views */
-
-@media only screen and (max-width: 32em) 
-    
-* {
+@media only screen and (max-width: 32em) * {
     box-sizing: border-box;
 }
 
 
 body {
-    background-color: #1E1E1E;
+
     margin: 0;
     font-size: 16px;
-    font-family: 'Martel', sans-serif;
-    padding: 2%;
+    padding: 0;
     text-align: left;
     justify-content: center;
 }
 
 button {
     display: block;
-    position: absolute;
-    top: 2%;
+    position: fixed;
+    top: 1%;
     right: 2%;
     margin: 2%;
     background: none;
-    color: red;
+    color: black;
 }
 
-header,
-nav,
-main,
-footer {
+
 
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    font-family: 'Exo+2', serif;
-    background-color: darkgray;
 }
 
 
 
-header div {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: aqua;
-    width: 86%;
-    margin: 0;
-    padding: 16px 0 0 8px;
-    border: none;
-
-}
-
-header figure img {
+.header {
+    
+    background: white;
+    color: black;
     width: 100%;
 }
 
-header figure {
-    width: 30%;
-    margin: 2% 0 0 2%;
-    padding: 6px 0 0 0;
+.content {
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    min-height: 70px;
+    top: 0;
+    width: 100%;
+    background: white;
+
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+
+
+}
+
+header div {
+
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    color: white;
+    border: none;
+}
+
+
+header img {
+    position: fixed;
+    top: 30%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    font-size: 1.6em;
+    max-width: 15%;
+    padding: 10px;
 
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color:  white;
+    position: relative;
+    text-align: center;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 0;
+    height: 30%;
 }
 
 header div h1 {
@@ -81,37 +101,88 @@ header div h1 {
 header div h3 {
     display: flex;
     justify-content: flex-start;
-    font-family: 'Bad Script', cursive;
+
     font-size: 3vw;
     margin: 2px 0 0 0;
 }
 
-.griditem h3 {
-    color: aqua;
-    margin: 8px;
-}
 
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: cornflowerblue;
+    color: black;
 }
 
-
-
-nav {
+.container {
     
+    text-align: center;
+    color: white;
+    border: none;
+    margin: 0 auto;
+    padding: 0;
 }
+
+.centered {
+    display: none;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Eczar', serif;
+
+}
+
+.whoWeare {
+    display: none;
+    width: 150px;
+    position: absolute;
+    top: 38.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: .3rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: .5em;
+    color: white;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: 'Martel Sans', sans-serif;
+
+}
+
+.button {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    position: static;
+    top: 30%;
+    left: 50%;
+    font-family: 'Martel Sans', sans-serif;
+
+}
+
+nav {}
 
 nav ul {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Eczar', serif;
     background-color: #0026BA;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
+
 }
 
 nav ul li {
@@ -154,486 +225,81 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 2%;
+
     margin: 0px;
 }
 
 main h2 {
+    font-family: 'Eczar', serif;
     margin-top: 10px;
-    margin-bottom: 10px;
-    color: yellow;
-    margin-left: 2%
-}
-
-main figure {
-    margin: 0px;
-    width: 100%;
-    align-content: center;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 1.5em;
+    line-height: 1.6;
 
 }
 
-main figure.myphoto img {
+.welcomeStatement {
+    line-height: 1.8;
+    font-size: 1em;
+    background-color: white;
+    font-family: 'Martel Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+
+}
+
+#coverimage {
     width: 100%;
     margin: 0 auto;
-}
-
-.weathersummary {
-    color: aqua;
-    font-size: 1.2em;
-    margin-left: 2%;
-    margin-bottom: 0;
-}
-
-.windchill {
-    display: inline;
-
 
 }
 
-.highlow {
-    margin-left: 0;
-    background-color: blue;
-    border: none;
-    color: greenyellow;
-}
 
-.forecast {
-    display: none;
 
-}
-
-.highTemp {
-    display: flex;
-    list-style-type: none;
-    margin-left: 10px;
-}
-
-.lowTemp {
-    display: flex;
-    list-style-type: none;
-}
-
-.conditions {
-    color: greenyellow;
-    font-size: 1em;
-    margin-left: 2%;
-    margin-bottom: 0;
-    background-color: blue;
-    border: none;
-}
-
-.current {
-    color: greenyellow;
-    font-size: 1em;
-    margin-left: 2%;
-    margin-bottom: 0;
-    background-color: blue;
-    border: none;
-}
-
-.townweather {
-    background-color: gray;
-}
-
-.frankcontainer {
-    margin: auto;
-    background-color: lawngreen;
-    padding: 2%;
-    overflow: auto;
-    font-size: .8em;
-}
-
-img#w_url {
-    display: flex;
-    max-width: 10%;
+section,
+div {
     margin: 2%;
 }
 
-.greencontainer {
-    margin: auto;
-    background-color: lawngreen;
-    clear: both;
-    padding: 2%;
-    overflow: auto;
-    font-size: .8em;
-}
-
-.springcontainer {
-    margin: auto;
-    background-color: lawngreen;
-    clear: both;
-    padding: 2%;
-    overflow: auto;
-    font-size: .8em;
-}
-
-#content {
-    background-color: #4881FC;
-    
-}
-input {
-    border-radius: 8px;
-    margin: 8px;
-    padding-left: 10px;
-    background-color: azure;
-    width: 40%;
-}
-
-.left {
-
-    background-color: white;
-    margin: auto;
-}
-.row {
-    
-    background-color: greenyellow;
-    margin: auto;
-    max-width: 90%;
-}
-.report{
-    color: white;
-    background-color: #4881FC;
-    font-size: 16px;
-    color: white;
-    border: none;
-    margin: auto;
-    
-}
-progress {
-    width: 96%;
-    background-color: azure;
-    padding: 5%;
-    
-}
-
-#ratingvalue {
-    
-    
-}
 
 
-form#stormReport{
-    margin: 1em 3%;
-    
-}
-
-
-fieldset {
-    max-width: 90%;
-    background-color: #4881FC;
-    color: white;
-    border-radius: .8em;
-    margin: 1.5em 0;
-    border: lightgreen solid 2px;
-}
-
-legend {
-    
-    color: black;
-    padding: 8px;
-    font-style: oblique;
-    font-size: 12px;
-    background-color: greenyellow;
-    border-radius: .5em;
-    
-}
-
-label {
-    display: block;
-    margin: .3em;
-}
-}
-footer {
-background-color: black;
-}
-
-#myBar {
-    width: 1%;
-    height: 15px;
-    background-color: none;
-    
-}
-#output {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.addComments{
-    max-width: 100%;
-    padding: 5%;
-    margin: 0;
-    border-radius: 8px;
-    font-size: 12px;
-    border: 1px solid green;
-}
-textarea#comments{
-    border-radius: 8px;
-    background-color: azure;
-    font-size: 8px;
-    border: none;
-    width: 90%;
-}
-
-
-fieldset.pi{
-    max-width: 100%;
-    font-size: 8px;
-    padding: 5%;
-    background-color: #ff7600;
-   
-}
-section,
-div {
-    margin: 1rem;
-}
-
-.form {
-    background-color: #bbb;
-    padding: 1rem;
-    border: 1px solid #444;
-}
-
-div {
-    background-color: #eee;
-    padding: 1rem;
-    border: 1px solid aqua;
-}
-
-#aNum {
-    border: 1px solid #bbeedd;
-    background-color: #aaffcc;
-    text-align: center;
-}
-
-
-section img {
-    width: 30%;
-
-}
-
-section {
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
+.footer-bar1 {
+    font-size: .5em;
     margin: 0 auto;
-    max-width: 900px;
-
 
 }
 
-table fieldset {
-    border: 0;
-}
-
-table html {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    position: relative;
-    top: 150px;
-}
-
-table body {
-    max-width: 266px;
-    border-collapse: collapse;
-
-}
-
-table main {
-    border-collapse: collapse;
-}
-
-table {
-    border-collapse: collapse;
-
-
-}
-
-table caption {
-    background-color: greenyellow;
-    font-size: 1.6em;
-    max-height: 25%;
-    padding: 5px 5px 7px 7px;
-    border: 2px solid rgb(200, 200, 200);
-    border-bottom: none;
-
-
-}
-
-table thead {
-    text-align: center;
-    justify-content: center;
+footer p {
+    font-size: .5rem;
     background-color: white;
-
-}
-
-th,
-td {
-
-    margin: 0;
-    padding: 10px;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    text-align: center;
-    border: 2px solid rgb(200, 200, 200);
-    max-width: 120px;
-
-}
-
-table h2 {
-    text-align: center;
-    max-height: 5px;
-    align-content: center;
-
-}
-
-.period {
-    color: white;
-    background-color: #628ca6;
-
-
-}
-
-
-tr:nth-child(odd) td {
-    background-color: #e7f0ed;
-}
-
-tr:nth-child(even) td {
-    background-color: #E1FFE7;
-}
-
-
-. bf {
-    padding: 10px;
-}
-
-#ngoal {
-    background-color: #628ca6;
-    color: white;
-
-}
-
-
-tfoot {
-    background-color: white;
-}
-
-
-
-/*
-
-
-
-not sure how to use this?
-
-tr:nth-child(even) td {
-  background-color: rgb(250,250,250);
-    justify-content: center;
-}
-
-tr:nth-child(odd) td {
-  background-color: rgb(245,245,245);
-}
-*/
-
-article {}
-
-.moresnow img {
-    display: flex;
-    max-width: 50%;
-    height: auto;
-    /* fill the page in the small/phone view */
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.prepare {
-    text-align: left;
-    margin: 0 0 5px 6px;
-    color: aqua;
-    padding: 2%;
-}
-
-.snow {
-    display: flex;
-    font-size: .8rem;
-    color: white
-}
-
-footer {
-    font-size: .7rem;
-    background-color: black;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    margin: 0;
 }
 
-footer p {
-    color: white;
-
-}
-
-.gridcontainer {
-    display: grid;
-    grid-template-columns: auto;
-    background-color: #003FC6;
-    padding: 2px;
-    max-width: 50%;
-    border: none;
-    color: white;
-    
-}
-
-.griditem {
-    background-color: #003FC6;
-    text-align: center;
-    padding: 10px;
-    max-width: 90%;
-}
-
-.griditem img {
-    width: 90%;
-    border: 5px solid black;
-    margin: 10px;
-    box-shadow: 5px 5px 10px grey;
-}
-
-.weatherStory {
-    text-align: center;
-    padding: 10px;
-    margin: 3px;
-    background: none;
-    color: white;
-    border: none;
-
-}
-
-.citiesDiv1 {
+#Exotwo {
     background-color: white;
-}
-
-.citiesDiv2 {
-    background-color: white;
-}
-
-.citiesDiv3 {
-    background-color: white;
-}
-
-.weatherCities {
-    display: none;
-    border: none;
-}
-
-.footer-bar1 {
-    font-size: 1.2em;
+    font-family: 'Martel Sans', sans-serif;
 }
 
 footer {
     text-align: center;
+    font-size: 2em;
+}
+
+footer p {
+    text-align: center;
+    font-size: .5em;
+}
+
+.footer-bar2 {
+
+    margin: 0 auto;
 }

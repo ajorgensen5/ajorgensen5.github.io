@@ -169,6 +169,7 @@
         justify-content: space-around;
         flex-direction: row;
         margin-top: 0;
+        flex-direction: column-reverse;
 
     }
 
@@ -176,9 +177,22 @@
         display: flex;
         justify-content: center;
         justify-content: space-around;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
     }
+    
+    .weatherCities div {
+    background-color: #013095;
+    font-size: 1em;
+    color: #4991FC;
+    margin: 0 auto;
+    padding: 12px;
+}
 
+.weatherCities div h2 {
+    padding: 0 0 12px 0;
+    font-family: 'Bad Script', cursive;
+    font-size: 1.3em;
+}
     .weatherCities img {
         width: 100%;
     }

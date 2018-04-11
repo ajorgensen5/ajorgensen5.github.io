@@ -10,29 +10,25 @@
 
     <!-- Google API font reference -->
 
-   <link href="https://fonts.googleapis.com/css?family=Exo+2:600|Martel:800" rel="stylesheet">
-    
-<!--
-    font-family: 'Exo 2', sans-serif;
-font-family: 'Martel', serif;
--->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Martel+Sans|Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Eczar|Martel+Sans|Scheherazade" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <!--
 
     <!-- external style references in the proper cascading order -->
 
     <!-- normalize useragent/browser defaults -->
-    
+
     <link href="styles/normalize.css" rel="stylesheet">
-    
+
     <!-- default styles - small/phone views -->
-    
+
     <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/main_ms.css" rel="stylesheet">
-    
+
     <!-- medium/tablet views -->
-    
+
     <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/medium_ms.css" rel="stylesheet">
-    
+
     <!-- large/wide/desktop views -->
     <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/large-weathersite.css" rel="stylesheet">
 
@@ -41,15 +37,13 @@ font-family: 'Martel', serif;
 
 <body>
 
-    <header>
-        <figure>
-            <img src="/ajorgensen5.github.io/assignments/mountain_spoke/Mountain-Spoke-Branding.gif" alt="The site logo">
-        </figure>
-        <div>
-            <h1>Mountain Spoke</h1>
-            <h3>Making More Adventures </h3>
+    <div class='header' id="myHeader">
+        <div id="logoms">
+            <img src="images/msLogo.png" alt="mountain spokes logo">
         </div>
-    </header>
+        </div>
+        <div class="content">
+    
 
     <!-- site navigation use placeholder references -->
 
@@ -65,26 +59,44 @@ font-family: 'Martel', serif;
             <li><a href="tours.html">Tours</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-    
+
     </nav>
 
     <main>
-        <h2>Welcome</h2>
-        <div class="weatherStory">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
-            <img src="images/pine-tree-with-snow-200.jpg" alt="snow on pine tree">
-        </div>
+
+
+        <div class="container"> <img src="/ajorgensen5.github.io/assignments/mountain_spoke/images/coverimage.jpg" id="coverimage" alt="mountian biking near bowman" style="width:100%;">
+            </div>
+            <div class="centered">Make More Adventures</div>
+        
+        <div class="whoWeare">Your one stop shop for mountain bike tours service and shopping.</div>
+
+        <button class="button" type="button" onclick="alert('Bike Shop Page')">Explore Tours</button>
+
+
+
+        <section class="welcome">
+            <h2>Welcome to Mountain Spoke</h2>
+            <div class="welcomeStatement">Mountain Spoke bike tours service and sales was establised in 1975. We cater soley to those that are looking for a spectacular time enjoying biking in the wild outdoors. We provide service to people of all ages that value the beauty of the mountains around us and want to enjoy the ride.
+            
+            
+            <p> We offer our adventurer's many trails and tours in the surrounding Bowman mountain terrain as well as local events that we sponsor and ideas to make your next outing spectacular.
+            
+            <p> Our experts provide you with the latest models of BMX, Razor and Helo bikes to chose from as well as provide excellent service for repairs, upgrades and other bike accessories and sales.
+            
+            <p> Come see why all the locals love Mountain Spoke.<br>
+            </div>
+            
+            
+
+        </section>
+       
     </main>
-    <section class="weatherCities"></section>
-<!--                 JSON -->
+    <!--                 JSON -->
 
-    <script src="scripts/currentdate.js"></script>
 
-    <script src="scripts/franklin.js"></script>
 
-    <script src="scripts/hamburger.js"></script>
-
-    <script src="scripts/hideMenu.js"></script>
+    <script src=""></script>
 
 
     <footer>
@@ -92,13 +104,28 @@ font-family: 'Martel', serif;
             <p class="footer-bar1"><b>Mountain Spoke</b></p>
             <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
         </aside>
-        <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>Mountain Spoke </strong></em> &nbsp;| &nbsp;
+        <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp; 
             <span id="currentdate"></span>
         </p>
-
+        
 
     </footer>
+        
+        <script>
+window.onscroll = function() {myFunction()};
 
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+    
 </body>
 
 </html>
