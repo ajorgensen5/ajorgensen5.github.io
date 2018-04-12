@@ -1,8 +1,9 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
- /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+/* Declare the maximum width and other main element rules to limit the stretch on wide views */
 
-@media only screen and (max-width: 32em) * {
+@media only screen and (max-width: 37.5em)  * {
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -24,6 +25,7 @@ body {
     height: 20%;
 }
 
+
 button {
     display: block;
     position: fixed;
@@ -34,12 +36,12 @@ button {
     color: black;
 }
 
-img{
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    margin: auto; 
+    margin: auto;
 }
 
 .content {
@@ -61,23 +63,45 @@ img{
 }
 
 
+
+
+.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+
+.navigation { list-style: none; padding-left: 0; }
+.navigation li { display: none; }
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive { position: relative;
+    display: block;}
+    
+    .navigation.responsive li { background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
+    
+    .navigation.responsive li a {   padding: 1rem; text-align: center;  display: block; text-decoration:none; }
+    .navigation.responsive li a:hover { background-color: #ddd; }
+}
+
+
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: #1E1E1E;
+    color: red;
 }
 
-nav {
-    
-}
+
+nav { 
+background-color: white;}
+
 
 nav ul li.active a {
     background-color: white;
     color: #1E1E1E;
 }
 
+/*
 .navigation {
     list-style: block;
     padding-left: 0;
@@ -87,9 +111,11 @@ nav ul li.active a {
     display: none;
 }
 
-/* When the responsive class is added to the unordered list on hamburger button click 
-placed in a media query in order to accomodate the toggle when in wider view*/
+ When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view
+*/
 
+/*
 .navigation.responsive {
     position: relative;
 }
@@ -110,11 +136,14 @@ placed in a media query in order to accomodate the toggle when in wider view*/
     text-decoration: none;
     color: #A68E7B;
 }
+*/
+/*
 
 .navigation.responsive li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
 }
+*/
 
 
 
@@ -130,10 +159,8 @@ placed in a media query in order to accomodate the toggle when in wider view*/
 }
 */
 
-
-
 .container {
-    
+
     text-align: center;
     color: white;
     border: none;
@@ -193,8 +220,7 @@ placed in a media query in order to accomodate the toggle when in wider view*/
 }
 */
 
-main {
-}
+main {}
 
 main h2 {
     font-family: 'Eczar', serif;

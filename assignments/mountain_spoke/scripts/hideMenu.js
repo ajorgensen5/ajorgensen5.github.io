@@ -11,3 +11,9 @@ $(function(){
   }); //end of myNav
 }); //end showPhoneNav
 }); //end of ready
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});

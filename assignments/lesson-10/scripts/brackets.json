@@ -1,0 +1,278 @@
+br{
+    "fonts.fontSize": "14px",
+    "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
+    "livedev.multibrowser": true,
+    "styleActiveLine": true,
+    "debug.showErrorsInStatusBar": true,
+    "brackets.linkfile.droparea": true,
+    "wadedwalker.brackets.extension.htmlFormat.preferences.boldTag": [
+        "Cmd",
+        null,
+        null,
+        null,
+        "B"
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.boldStyle": [
+        "Cmd",
+        "Shift",
+        null,
+        null,
+        "B"
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.italicTag": [
+        "Cmd",
+        null,
+        null,
+        null,
+        "I"
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.italicStyle": [
+        "Cmd",
+        "Shift",
+        null,
+        null,
+        "I"
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.underlineTag": [
+        "Cmd",
+        null,
+        null,
+        null,
+        "U"
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.underlineStyle": [
+        "Cmd",
+        "Shift",
+        null,
+        null,
+        "U"
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.emptyTag": [
+        "Cmd",
+        null,
+        null,
+        null,
+        "T"
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.preferences": [
+        "Cmd",
+        "Shift",
+        null,
+        null,
+        ","
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.firstUseMessageShown": true,
+    "wadedwalker.brackets.extension.htmlFormat.preferences.extensions": "htm, html, php, asp",
+    "wadedwalker.brackets.extension.htmlFormat.preferences.boldUsesStrong": false,
+    "wadedwalker.brackets.extension.htmlFormat.preferences.italicUsesEm": false,
+    "wadedwalker.brackets.extension.htmlFormat.preferences.rightClick": false,
+    "wadedwalker.brackets.extension.htmlFormat.preferences.breakType": false,
+    "wadedwalker.brackets.extension.htmlFormat.preferences.breakTypeNextLine": false,
+    "wadedwalker.brackets.extension.htmlFormat.preferences.anchorTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.paragraphTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.h1Tag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.h2Tag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.h3Tag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.h4Tag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.h5Tag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.h6Tag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.spanTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.divTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.headerTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.navTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.mainTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.sectionTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.articleTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.asideTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.footerTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.strikeTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.strikeStyle": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.teletypeTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.teletypeStyle": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.codeTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.variableTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.sampleTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.keyboardTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.citationTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.deletedTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.definitionTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "wadedwalker.brackets.extension.htmlFormat.preferences.insertedTag": [
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "brackets-eslint.gutterMarks": true,
+    "brackets-eslint.useLocalESLint": false,
+    "wadedwalker.brackets.extension.htmlFormat.preferences.updateMessage2Shown": true,
+    "linting.collapsed": true
+}

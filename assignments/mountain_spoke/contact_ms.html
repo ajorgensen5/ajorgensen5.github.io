@@ -61,8 +61,8 @@
             </ul>
 
         </nav>
-
-
+        <main>
+    
         <h2>Contact Us</h2>
         <section>
             <h3 class=weathersummary><strong>Weather Summary</strong></h3>
@@ -162,42 +162,61 @@
             </figure>
 
         </article>
-
+   
     </main>
 
-    <footer>
-        <aside>
-            <p>25 Main St. Franklin, IL &nbsp; 83454 &nbsp; 809.876.7676</p>
-        </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved &nbsp;| &nbsp; <em><strong>SmartCast Weather </strong></em> &nbsp;| &nbsp;
-            <span id="currentdate"></span>
-        </p>
-        <script>
-            //remember to add an ID of ?mainmenu" to the nav ul"
-            var urlString = document.location.href;
-            varurlArray = urlString.split('/');
-            var pageHREF = urlArray[urlArray.length - 1];
+    <script src="scripts/hamburger.js"></script>
 
-            if (pageHREF !== "") {
-                var menu = document.querySelectorAll('ul#mainmenu li a');
-                var i;
-                //loop through all the menu items in the navigation
-                for (i = 0; i < menu.length; i++) {
-                    var currentURL = (menu[i].getAttribute("href"));
-                    menu[i].parentNode.className = ""; //turn off highlighting by default
-                    if (currentURL === pageHREF) {
-                        menu[i] parentNode.className = "active";
-                    } //end if
-                } //end of the search for a match
-            } //end of if !==
+        <script src="scripts/hideMenu.js"></script>
+
+
+        <footer>
+            <aside>
+                <p class="footer-bar1"><b>Mountain Spoke</b></p>
+                <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
+            </aside>
+            <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp;
+                <span id="currentdate"></span>
+            </p>
+
+
+        </footer>
+
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
         </script>
 
-    </footer>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/wu_weather.js"></script>
-    <script src="scripts/franklin.js">
-    </script>
+        <script>
+            var urlString, urlArray, pageHREF, menu, i, currentURL;
+            urlString = document.location.href;
+            urlArray = urlString.split('/');
+            pageHREF = urlArray[urlArray.length - 1];
+
+            if (pageHREF !== "") {
+                menu = document.querySelectorAll('ul#mainmenu li a');
+                for (i = 0; i < menu.length; i++) {
+                    currentURL = (menu[i].getAttribute('href'));
+                    menu[i].parentNode.className = '';
+                    if (currentURL === pageHREF) {
+                        menu[i].parentNode.className = 'active';
+                    }
+                }
+            }
+        </script>
+    </div>
 </body>
+
 </html>

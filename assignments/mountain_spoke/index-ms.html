@@ -36,122 +36,121 @@
 </head>
 
 <body>
-
+<div class="content">
     <div class='header' id="myHeader">
         <div id="logoms">
             <img src="images/msLogo.png" alt="mountain spokes logo">
         </div>
-    </div>
-    <div class="content">
-
-
-        <!-- site navigation use placeholder references -->
-
         <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    
+    
+    
+    <!-- site navigation use placeholder references -->
+    
+    <nav>
+        <ul  class="navigation">
+            <li><a href="index-ms.html">Home</a></li>
+            <li><a href="service_ms.html">Service</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="tours_ms.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+</div>
+    </div>
+
+    <main>
 
 
-        <nav>
-            <ul id="mainmenu" class="navigation">
-                <li><a href="index-ms.html">Home</a></li>
-                <li><a href="service_ms.html">Service</a></li>
-                <li><a href="sales.html">Sales</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="tours_ms.html">Tours</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="container"> <img src="/ajorgensen5.github.io/assignments/mountain_spoke/images/coverimage.jpg" id="coverimage" alt="mountian biking near bowman" style="width:100%;">
+            <form id="exploreTours" action="https://ajorgensen5.github.io/assignments/lesson-8/stormcenter-8.html">
+                <input type="submit" value="Explore Tours" />
+            </form>
+        </div>
+        <div class="centered">Make More Adventures</div>
 
-        </nav>
+        <div class="whoWeare">Your one stop shop for mountain bike tours service and shopping.</div>
 
 
 
-        <main>
+        <section class="welcome">
+            <h2>WELCOME TO
+                <p>
+                    MOUNTAIN SPOKE</h2>
+            <div class="welcomeStatement">Mountain Spoke bike tours service and sales was establised in 1975. We cater soley to those that are looking for a spectacular time enjoying biking in the wild outdoors. We provide service to people of all ages that value the beauty of the mountains around us and want to enjoy the ride.
 
 
-            <div class="container"> <img src="/ajorgensen5.github.io/assignments/mountain_spoke/images/coverimage.jpg" id="coverimage" alt="mountian biking near bowman" style="width:100%;">
-                <form id="exploreTours" action="https://ajorgensen5.github.io/assignments/lesson-8/stormcenter-8.html">
-                    <input type="submit" value="Explore Tours" />
-                </form>
+                <p> We offer our adventurer's many trails and tours in the surrounding Bowman mountain terrain as well as local events that we sponsor and ideas to make your next outing spectacular.
+
+                    <p> Our experts provide you with the latest models of BMX, Razor and Helo bikes to chose from as well as provide excellent service for repairs, upgrades and other bike accessories and sales.
+
+                        <p> Come see why all the locals love Mountain Spoke.<br>
             </div>
-            <div class="centered">Make More Adventures</div>
-
-            <div class="whoWeare">Your one stop shop for mountain bike tours service and shopping.</div>
 
 
 
-            <section class="welcome">
-                <h2>WELCOME TO
-                    <p>
-                        MOUNTAIN SPOKE</h2>
-                <div class="welcomeStatement">Mountain Spoke bike tours service and sales was establised in 1975. We cater soley to those that are looking for a spectacular time enjoying biking in the wild outdoors. We provide service to people of all ages that value the beauty of the mountains around us and want to enjoy the ride.
+        </section>
 
-
-                    <p> We offer our adventurer's many trails and tours in the surrounding Bowman mountain terrain as well as local events that we sponsor and ideas to make your next outing spectacular.
-
-                        <p> Our experts provide you with the latest models of BMX, Razor and Helo bikes to chose from as well as provide excellent service for repairs, upgrades and other bike accessories and sales.
-
-                            <p> Come see why all the locals love Mountain Spoke.<br>
-                </div>
+    </main>
+    <!--                 JSON -->
 
 
 
-            </section>
+    <script src="scripts/hamburger.js"></script>
 
-        </main>
-        <!--                 JSON -->
-
+    <script src="scripts/hideMenu.js"></script>
 
 
-        <script src="scripts/hamburger.js"></script>
-
-        <script src="scripts/hideMenu.js"></script>
-
-
-        <footer>
-            <aside>
-                <p class="footer-bar1"><b>Mountain Spoke</b></p>
-                <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
-            </aside>
-            <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp;
-                <span id="currentdate"></span>
-            </p>
+    <footer>
+        <aside>
+            <p class="footer-bar1"><b>Mountain Spoke</b></p>
+            <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
+        </aside>
+        <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp;
+            <span id="currentdate"></span>
+        </p>
 
 
-        </footer>
+    </footer>
 
-        <script>
-            window.onscroll = function() {
-                myFunction()
-            };
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
 
-            var header = document.getElementById("myHeader");
-            var sticky = header.offsetTop;
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
 
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    header.classList.add("sticky");
-                } else {
-                    header.classList.remove("sticky");
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+    <script>
+        var urlString, urlArray, pageHREF, menu, i, currentURL;
+        urlString = document.location.href;
+        urlArray = urlString.split('/');
+        pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            menu = document.querySelectorAll('ul#mainmenu li a');
+            for (i = 0; i < menu.length; i++) {
+                currentURL = (menu[i].getAttribute('href'));
+                menu[i].parentNode.className = '';
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = 'active';
                 }
             }
-        </script>
+        }
 
-        <script>
-            var urlString, urlArray, pageHREF, menu, i, currentURL;
-            urlString = document.location.href;
-            urlArray = urlString.split('/');
-            pageHREF = urlArray[urlArray.length - 1];
-
-            if (pageHREF !== "") {
-                menu = document.querySelectorAll('ul#mainmenu li a');
-                for (i = 0; i < menu.length; i++) {
-                    currentURL = (menu[i].getAttribute('href'));
-                    menu[i].parentNode.className = '';
-                    if (currentURL === pageHREF) {
-                        menu[i].parentNode.className = 'active';
-                    }
-                }
-            }
-        </script>
+    </script>
     </div>
 </body>
 
