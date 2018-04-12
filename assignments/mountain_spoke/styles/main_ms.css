@@ -1,5 +1,7 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
+ /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+
 @media only screen and (max-width: 32em) * {
     box-sizing: border-box;
 }
@@ -14,6 +16,14 @@ body {
     justify-content: center;
 }
 
+.header {
+    margin: 0 auto;
+    background: white;
+    color: black;
+    width: 100%;
+    height: 20%;
+}
+
 button {
     display: block;
     position: fixed;
@@ -24,21 +34,17 @@ button {
     color: black;
 }
 
-
-
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-}
-
-
-
-.header {
-    background: white;
-    color: black;
-    width: 100%;
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin: auto; 
 }
 
 .content {
     width: 100%;
+    margin: 0 auto;
 }
 
 .sticky {
@@ -54,55 +60,70 @@ button {
     padding-top: 102px;
 }
 
-header div {
-
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: white;
-    border: solid 5px ;
-}
-
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    margin: auto;
-    
-}
-header img {
-    position: fixed;
-    top: 30%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    border: none;
-    font-size: 1.6em;
-    max-width: 15%;
-    padding: 10px;
-
-}
-
-header {
-    position: relative;
-    text-align: center;
-    color: white;
-    border: none;
-    margin: 15px;
-    padding: 0;
-    height: 30%;
-}
-
-
 
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: black;
+    color: cornflowerblue;
 }
+
+nav {}
+
+nav ul li.active a {
+    background-color: greenyellow;
+    color: Blue;
+}
+
+.navigation {
+    list-style: block;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+
+.navigation.responsive {
+    position: relative;
+}
+
+.navigation.responsive li {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #0026BA;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navigation.responsive li a {
+    padding: .5rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation.responsive li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #33FD57;
+}
+
+
+.show-nav {
+    display: block;
+}
+
+.hide-nav {
+    display: none;
+}
+
+
 
 .container {
     
@@ -116,14 +137,15 @@ nav button {
 .centered {
     display: none;
     position: absolute;
-    top: 58%;
-    left: 50%;
+    top: 30%;
+    left: 55%;
     transform: translate(-50%, -50%);
     margin: .2rem 2%;
-    background-color: transparent;
+    background-color: #e1e1e;;
     border: none;
     font-size: 1.5em;
     font-family: 'Eczar', serif;
+    color: white;
 
 }
 
@@ -146,9 +168,10 @@ nav button {
 
 }
 
+/*
 .exploreTours {
-    position: fixed;
-    top: 100%;
+    position: relative;
+    top: 20%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     background-color: #555;
@@ -161,66 +184,16 @@ nav button {
     border-radius: 5px;
     text-align: center;
 }
-
-nav {}
-
-nav ul {
-    font-family: 'Eczar', serif;
-    background-color: #401A1A;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-}
-
-nav ul li {
-    width: 8rem;
-}
-
-a {
-    color: #A68E7B;
-    font-size: 16px;
-}
-
-nav ul li a {
-    display: block;
-    padding: .8rem;
-    text-decoration: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-
-nav ul li a .visited {
-    color: #856376;
-}
-
-nav ul li.active a {
-    background-color: #1E1E1E;
-    color: white;
-}
-
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-}
-
-.show-nav {
-    display: block;
-}
-
-.hide-nav {
-    display: none;
-}
+*/
 
 main {
-
-    margin: 0px;
 }
 
 main h2 {
     font-family: 'Eczar', serif;
     margin-top: 10px;
     margin-bottom: 15px;
+    margin-left: 10px;
     color: black;
     font-size: 1.2em;
     line-height: 1.6;

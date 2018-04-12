@@ -5,23 +5,27 @@
         width: 29.333%;
     }
 
+/*
     header figure img {
         width: 80%;
         margin: 0 10%;
     }
+*/
 
-    header div h1 {
+/*    header div h1 {*/
         color: white;
         font-size: 200%;
         margin: 16px 0 2px 0;
     }
 
+/*
     header div h3 {
         display: flex;
         justify-content: flex-start;
         font-size: 140%;
         margin: 2px 0 0 0;
     }
+*/
 
     /* navigation bar*/
     nav {
@@ -33,18 +37,13 @@
         list-style-type: none;
         flex-direction: row;
         align-items: center;
-
-
     }
 
     .hide-nav {
         display: flex;
     }
 
-    .myphoto {
-        max-width: 900px;
-        margin: 0;
-    }
+ 
 
 
     nav ul li a {

@@ -97,47 +97,6 @@ nav button {
 
 nav {}
 
-/*nav ul {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #0026BA;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    
-}
-
-nav ul li {
-    width: 8rem;
-}
-
-a {
-    color: white;
-    font-size: 16px;
-}
-
-nav ul li a {
-    display: block;
-    padding: .8rem;
-    text-decoration: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-
-nav ul li a .visited {
-    color: black;
-}
-
-nav ul li.active a {
-    background-color: greenyellow;
-    color: Blue;
-}
-
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #33FD57;
-}
-*/
-
 nav ul li.active a {
     background-color: greenyellow;
     color: Blue;
