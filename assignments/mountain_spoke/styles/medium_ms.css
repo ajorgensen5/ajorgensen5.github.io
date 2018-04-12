@@ -21,37 +21,34 @@
 
   
 
-    nav {
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+
+.navigation {
         display: flex;
-        justify-content: center;
-        width: 100%;
-        font-size: .7em;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+        background-color: #0026BA;
+        overflow: hidden;
+        text-align: center;
     }
-
-    nav ul {
-        width: 100%;
-
+    .navigation li {
+        display: block;
+        margin-left: .25rem;
     }
-    nav ul li a {
-       
-    }
-  
-
-    nav ul li {
-    width: 16.67%;
-        text-align:center;
-    }
-
-    .hide-nav {
-        display: flex;
-    }
-
-    ul li ul .active {
+    .navigation a {
+        color: #eee;
+        padding: 1rem;
+        text-align: center;
         text-decoration: none;
-        color: white;
     }
-
- 
+    .navigation a:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #33FD57;
+    }
 
 
     /* responsive images */

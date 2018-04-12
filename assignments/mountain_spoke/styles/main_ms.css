@@ -9,7 +9,7 @@
 
 body {
 
-    margin: 0;
+    margin: 0 auto;
     font-size: 16px;
     padding: 0;
     text-align: left;
@@ -66,14 +66,16 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: cornflowerblue;
+    color: #1E1E1E;
 }
 
-nav {}
+nav {
+    
+}
 
 nav ul li.active a {
-    background-color: greenyellow;
-    color: Blue;
+    background-color: white;
+    color: #1E1E1E;
 }
 
 .navigation {
@@ -106,22 +108,27 @@ placed in a media query in order to accomodate the toggle when in wider view*/
     text-align: center;
     display: block;
     text-decoration: none;
-    color: white;
+    color: #A68E7B;
 }
 
 .navigation.responsive li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    color: #33FD57;
+    color: white;
 }
 
 
+
+/*
 .show-nav {
     display: block;
 }
+*/
 
+/*
 .hide-nav {
     display: none;
 }
+*/
 
 
 
@@ -141,7 +148,7 @@ placed in a media query in order to accomodate the toggle when in wider view*/
     left: 55%;
     transform: translate(-50%, -50%);
     margin: .2rem 2%;
-    background-color: #e1e1e;;
+    background-color: #e1e1e1;
     border: none;
     font-size: 1.5em;
     font-family: 'Eczar', serif;

@@ -93,8 +93,6 @@ nav button {
     color: cornflowerblue;
 }
 
-
-
 nav {}
 
 nav ul li.active a {
@@ -141,14 +139,14 @@ placed in a media query in order to accomodate the toggle when in wider view*/
 }
 
 
-/*.show-nav {
+.show-nav {
     display: block;
 }
 
 .hide-nav {
     display: none;
 }
-*/
+
 
 main {
     padding: 2%;
