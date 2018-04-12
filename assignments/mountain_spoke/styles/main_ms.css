@@ -2,7 +2,7 @@
 
 /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 
-@media only screen and (max-width: 37.5em)  * {
+@media only screen and (max-width: 37.5em) * {
     margin: 0;
     box-sizing: border-box;
 }
@@ -65,22 +65,59 @@ img {
 
 
 
-.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
+}
 
-.navigation { list-style: none; padding-left: 0; }
-.navigation li { display: none; }
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
 
 /* When the responsive class is added to the unordered list on hamburger button click 
 placed in a media query in order to accomodate the toggle when in wider view*/
+
 @media only screen and (max-width: 37.5em) {
-    .navigation.responsive { position: relative;
-    display: block;}
+    .navigation.responsive {
+        position: relative;
+        display: block;
+    }
+
+    .navigation.responsive li {
+        color: #A68E7B;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #ddd;
+    }
+
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: #A68E7B;
+    }
+    .navigation.responsive li a:hover {
+        background-color: #ddd;
+    }
+
+    .navigation.responsive li a:active{
+        background-color: #ddd;
+        color: black;
+    }
     
-    .navigation.responsive li { background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
-    
-    .navigation.responsive li a {   padding: 1rem; text-align: center;  display: block; text-decoration:none; }
-    .navigation.responsive li a:hover { background-color: #ddd; }
-}
+    .navigation.responsive li a:visited {
+        background-color: #1E1E1E;
+        color: #856376;
+    }
 
 
 nav button {
@@ -88,12 +125,14 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: red;
+    
 }
 
 
-nav { 
-background-color: white;}
+nav {
+    background-color: #1E1E1E;
+   
+}
 
 
 nav ul li.active a {
@@ -137,15 +176,12 @@ placed in a media query in order to accomodate the toggle when in wider view
     color: #A68E7B;
 }
 */
-/*
+
 
 .navigation.responsive li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
 }
-*/
-
-
 
 /*
 .show-nav {
