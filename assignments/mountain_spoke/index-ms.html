@@ -32,124 +32,168 @@
     <!-- large/wide/desktop views -->
     <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/large-ms.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-<div class="content">
-    <div class='header' id="myHeader">
-        <div id="logoms">
-            <img src="images/msLogo.png" alt="mountain spokes logo">
-        </div>
-        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-    
-    
-    
-    <!-- site navigation use placeholder references -->
-    
-    <nav>
-        <ul  class="navigation">
-            <li><a href="index-ms.html">Home</a></li>
-            <li><a href="service_ms.html">Service</a></li>
-            <li><a href="sales_ms.html">Sales</a></li>
-            <li><a href="events_ms.html">Events</a></li>
-            <li><a href="tours_ms.html">Tours</a></li>
-            <li><a href="contact_ms.html">Contact</a></li>
-        </ul>
-
-    </nav>
-    </div>
-
-    <main>
-
-
-        <div class="container"> <img src="/ajorgensen5.github.io/assignments/mountain_spoke/images/coverimage.jpg" id="coverimage" alt="mountian biking near bowman" style="width:100%;">
-            <form id="exploreTours" action="https://ajorgensen5.github.io/assignments/lesson-8/stormcenter-8.html">
-                <input type="submit" value="Explore Tours" />
-            </form>
-        </div>
-        <div class="centered">Make More Adventures</div>
-
-        <div class="whoWeare">Your one stop shop for mountain bike tours service and shopping.</div>
-
-
-
-        <section class="welcome">
-            <h2>WELCOME TO
-                <p>
-                    MOUNTAIN SPOKE</h2>
-            <div class="welcomeStatement">Mountain Spoke bike tours service and sales was establised in 1975. We cater soley to those that are looking for a spectacular time enjoying biking in the wild outdoors. We provide service to people of all ages that value the beauty of the mountains around us and want to enjoy the ride.
-
-
-                <p> We offer our adventurer's many trails and tours in the surrounding Bowman mountain terrain as well as local events that we sponsor and ideas to make your next outing spectacular.
-
-                    <p> Our experts provide you with the latest models of BMX, Razor and Helo bikes to chose from as well as provide excellent service for repairs, upgrades and other bike accessories and sales.
-
-                        <p> Come see why all the locals love Mountain Spoke.<br>
+    <div class="content">
+        <div class='header' id="myHeader">
+            <div id="logoms">
+                <img src="images/msLogo.png" alt="mountain spokes logo">
             </div>
-
-        </section>
-
-    </main>
-    <!--                 JSON -->
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
 
 
 
-    <script src="scripts/hamburger.js"></script>
+            <!-- site navigation use placeholder references -->
 
-    <script src="scripts/hideMenu.js"></script>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index-ms.html" >Home</a></li>
+                    <li><a href="service_ms.html">Service</a></li>
+                    <li><a href="sales_ms.html">Sales</a></li>
+                    <li><a href="events_ms.html">Events</a></li>
+                    <li><a href="tours_ms.html">Tours</a></li>
+                    <li><a href="contact_ms.html">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <main>
 
 
-    <footer>
-        <aside>
-            <p class="footer-bar1"><b>Mountain Spoke</b></p>
-            <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
-        </aside>
-        <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp;
-            <span id="currentdate"></span>
-        </p>
+            <div class="container">
+                <source srcset= "images/index_images/indexcover-1050.jpg,images/indexcover-800.jpg, images/indexcover_500.jpg, images/indexcover-200.jpg">
+                <source media="(min-width: 641px)" srcset="images/indexcover_500.jpg">
+   
+                
+                
+<!--
+                <div>
+    <source srcset="http://placehold.it/640x256/444444/ffffff, http://placehold.it/1000x400/444444/ffffff">
+    <source media="(min-width: 641px)" srcset="http://placehold.it/1000x400/444444/ffffff">
+    <img src="http://placehold.it/999x399/444444/ffffff" alt="">
+    </div>
+-->
+<!--
+                <img src="images/space-needle.jpg"
+srcset="images/space-needle.jpg 1x, images/space-needle-2x.jpg 2x,
+images/space-needle-hd.jpg 3x">
+-->
+
+            </div>
+            <div class="centered">MAKE MORE ADVENTURES</div>
+
+            <div class="whoWeare">Your one stop shop for mountain bike tours service and shopping.</div>
 
 
-    </footer>
 
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
+            <section class="welcome">
+                <h2>WELCOME TO
+                    <p>
+                        MOUNTAIN SPOKE</h2>
+                <div class="welcomeStatement">Mountain Spoke bike tours service and sales was establised in 1975. We cater soley to those that are looking for a spectacular time enjoying biking in the wild outdoors. We provide service to people of all ages that value the beauty of the mountains around us and want to enjoy the ride.
 
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
+                    <p> We offer our adventurer's many trails and tours in the surrounding Bowman mountain terrain as well as local events that we sponsor and ideas to make your next outing spectacular.
 
-    </script>
+                        <p> Our experts provide you with the latest models of BMX, Razor and Helo bikes to chose from as well as provide excellent service for repairs, upgrades and other bike accessories and sales.
 
-    <script>
-        var urlString, urlArray, pageHREF, menu, i, currentURL;
-        urlString = document.location.href;
-        urlArray = urlString.split('/');
-        pageHREF = urlArray[urlArray.length - 1];
+                            <p> Come see why all the locals love Mountain Spoke.<br>
 
-        if (pageHREF !== "") {
-            menu = document.querySelectorAll('ul#mainmenu li a');
-            for (i = 0; i < menu.length; i++) {
-                currentURL = (menu[i].getAttribute('href'));
-                menu[i].parentNode.className = '';
-                if (currentURL === pageHREF) {
-                    menu[i].parentNode.className = 'active';
+                                <form id="exploreTours" action="https://ajorgensen5.github.io/assignments/lesson-8/stormcenter-8.html">
+                                    <input type="submit" value="Explore Tours" />
+                                </form>
+
+
+                </div>
+                <article class="leftColumn">
+                    <h2>AS GOOD AS IT GETS</h2>
+                    <img src="images/index_images/index2_500.jpg" id="enjoyView" alt="enjoying the view" style="width:100%; ">
+                    <p class="testimonial">It was a beautiful evening up Stone Creek—the kind of night that practically demands an after-work ride. The switchbacks were a sweaty grind, as always, but the wildflowers were in bloom, swaying in the evening breeze, and the air tasted sweet and cool...</p>
+
+                </article>
+
+
+                <article class="middleColumn">
+                    <h2>CONDITIONS WARNING</h2>
+                    <img src="images/index_images/conditions.jpg" alt="conditon warning" style="width:80%;">
+                </article>
+
+                <article class="rightColumn">
+                    <h2>A PEACEFUL CHALLENGE</h2>
+                    <img src="/ajorgensen5.github.io/assignments/mountain_spoke/images/coverimage.jpg" id="coverimage" alt="mountian biking near bowman" style="width:100%;">
+                    <p>For those who require a little sweat to find peaceful solice, this ride will be sure to bring many peaceful and satifying rides. Snake-Butte Peak offers many trails that challenge even the most experienced rider.</p>
+                    
+                </article>
+            </section>
+
+        </main>
+        <!--                 JSON -->
+
+
+
+        <script src="scripts/hamburger.js"></script>
+
+        <script src="scripts/hideMenu.js"></script>
+
+
+
+
+        <footer>
+
+            <aside>
+
+                <p class="footer-bar1"><b>Mountain Spoke</b></p>
+                <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
+            </aside>
+            <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp;
+                <span id="currentdate"></span>
+            </p>
+
+
+        </footer>
+
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
                 }
             }
-        }
 
-    </script>
+        </script>
+
+        <script>
+            var urlString, urlArray, pageHREF, menu, i, currentURL;
+            urlString = document.location.href;
+            urlArray = urlString.split('/');
+            pageHREF = urlArray[urlArray.length - 1];
+
+            if (pageHREF !== "") {
+                menu = document.querySelectorAll('ul#mainmenu li a');
+                for (i = 0; i < menu.length; i++) {
+                    currentURL = (menu[i].getAttribute('href'));
+                    menu[i].parentNode.className = '';
+                    if (currentURL === pageHREF) {
+                        menu[i].parentNode.className = 'active';
+                    }
+                }
+            }
+
+        </script>
     </div>
-   
+
 </body>
 
 </html>

@@ -20,6 +20,8 @@
     <!-- normalize useragent/browser defaults -->
 
     <link href="styles/normalize.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- default styles - small/phone views -->
 
@@ -36,188 +38,186 @@
 </head>
 
 <body>
-<div class="content">
-    <div class='header' id="myHeader">
-        <div id="logoms">
-            <img src="images/msLogo.png" alt="mountain spokes logo">
+    <div class="content">
+        <div class='header' id="myHeader">
+            <div id="logoms">
+                <img src="images/msLogo.png" alt="mountain spokes logo">
+            </div>
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+
+
+            <!-- site navigation use placeholder references -->
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index-ms.html">Home</a></li>
+                    <li><a href="service_ms.html">Service</a></li>
+                    <li><a href="sales_ms.html">Sales</a></li>
+                    <li><a href="events_ms.html">Events</a></li>
+                    <li><a href="tours_ms.html">Tours</a></li>
+                    <li><a href="contact_ms.html">Contact</a></li>
+                </ul>
+
+            </nav>
         </div>
-        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-    
-    
-    
-    <!-- site navigation use placeholder references -->
-    
-    <nav>
-        <ul  class="navigation">
-            <li><a href="index-ms.html">Home</a></li>
-            <li><a href="service_ms.html">Service</a></li>
-            <li><a href="sales_ms.html">Sales</a></li>
-            <li><a href="events_ms.html">Events</a></li>
-            <li><a href="tours_ms.html">Tours</a></li>
-            <li><a href="contact_ms.html">Contact</a></li>
-        </ul>
-
-    </nav>
-    </div>
         <main>
-    
-        <h2>Contact Us</h2>
-        <section>
-            <h3 class=weathersummary><strong>Weather Summary</strong></h3>
-            <div class="highlow">
-                <p>High: <span id="high">24</span> &#8457;</p>
-                <span id="currenthigh"></span>
-                <p>Low: <span id="low">15</span> &#8457;</p>
-                <p class="windchill">Windchill: <span id="outputWindchill"></span></p>
-                &#8457;
-            </div>
-            <picture>
-                <img src="images/sparkly-snowflake-clipart-1.jpg" alt="" width="" height="">
-            </picture>
-            <div class="current">
-                <strong>Snow</strong>
 
-            </div>
-            <div class="conditions">
-                <p>Precipitation: 20%</p>
-                <p>Wind Speed<span id="wind">5</span> mph SW</p>
-            </div>
-        </section>
+            <h2>Contact Us</h2>
+            <section>
+                <h3 class=weathersummary><strong>Weather Summary</strong></h3>
+                <div class="highlow">
+                    <p>High: <span id="high">24</span> &#8457;</p>
+                    <span id="currenthigh"></span>
+                    <p>Low: <span id="low">15</span> &#8457;</p>
+                    <p class="windchill">Windchill: <span id="outputWindchill"></span></p>
+                    &#8457;
+                </div>
+                <picture>
+                    <img src="images/sparkly-snowflake-clipart-1.jpg" alt="" width="" height="">
+                </picture>
+                <div class="current">
+                    <strong>Snow</strong>
 
-        <section class="forecast">
-            <table id="10day">
-                <caption><strong>10-Day Forecast</strong></caption>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: 20%</p>
+                    <p>Wind Speed<span id="wind">5</span> mph SW</p>
+                </div>
+            </section>
 
-
-                <thead>
-                    <tr class="sunday">
-                        <th><strong>Sun</strong></th>
-                        <th><strong>Mon</strong></th>
-                        <th><strong>Tue</strong></th>
-                        <th><strong>Wed</strong></th>
-                        <th><strong>Thu</strong></th>
-                        <th><strong>Fri</strong></th>
-                        <th><strong>Sat</strong></th>
-
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>High</td>
-                        <td>20</td>
-                        <td>30</td>
-                        <td>40</td>
-                        <td>30</td>
-                        <td>40</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>Low</td>
-                        <td>20</td>
-                        <td>30</td>
-                        <td>40</td>
-                        <td>30</td>
-                        <td>40</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>Windchill</td>
-                        <td>20</td>
-                        <td>30</td>
-                        <td>40</td>
-                        <td>30</td>
-                        <td>40</td>
-                        <td>30</td>
+            <section class="forecast">
+                <table id="10day">
+                    <caption><strong>10-Day Forecast</strong></caption>
 
 
-                </tbody>
+                    <thead>
+                        <tr class="sunday">
+                            <th><strong>Sun</strong></th>
+                            <th><strong>Mon</strong></th>
+                            <th><strong>Tue</strong></th>
+                            <th><strong>Wed</strong></th>
+                            <th><strong>Thu</strong></th>
+                            <th><strong>Fri</strong></th>
+                            <th><strong>Sat</strong></th>
 
-                <tfoot>
-                    <tr>
-                        <th colspan="7">SmartCast Weather 3.1.2018 by aJorgensen</th>
-                    </tr>
-                </tfoot>
+                        </tr>
+                    </thead>
 
-            </table>
+                    <tbody>
+                        <tr>
+                            <td>High</td>
+                            <td>20</td>
+                            <td>30</td>
+                            <td>40</td>
+                            <td>30</td>
+                            <td>40</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Low</td>
+                            <td>20</td>
+                            <td>30</td>
+                            <td>40</td>
+                            <td>30</td>
+                            <td>40</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Windchill</td>
+                            <td>20</td>
+                            <td>30</td>
+                            <td>40</td>
+                            <td>30</td>
+                            <td>40</td>
+                            <td>30</td>
 
-        </section>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th colspan="7">SmartCast Weather 3.1.2018 by aJorgensen</th>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </section>
 
 
 
-        <article id=town-article>
+            <article id=town-article>
 
-            <h3 class="prepare">Franklin Prepares for More Snow</h3>
+                <h3 class="prepare">Franklin Prepares for More Snow</h3>
 
-            <figure class="moresnow">
-                <img src="images/pine-tree-with-snow-original.jpg" alt="pine tree with snow" sizes="50vw" srcset="images/pine-tree-with-snow-200.jpg 200vw,
+                <figure class="moresnow">
+                    <img src="images/pine-tree-with-snow-original.jpg" alt="pine tree with snow" sizes="50vw" srcset="images/pine-tree-with-snow-200.jpg 200vw,
                     images/pine-tree-with-snow-500.jpg 500vw,
                     images/pine-tree-with-snow-800.jpg 800vw">
 
-                <p class="snow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu gravida quam. Fusce fermentum, urna non posuere tristique, mi nisl porttitor tellus, sed accumsan elit dolor vel ipsum. Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.
-                    <br><br> Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.
-                    <br><br> Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis. Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.</p>
-            </figure>
+                    <p class="snow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu gravida quam. Fusce fermentum, urna non posuere tristique, mi nisl porttitor tellus, sed accumsan elit dolor vel ipsum. Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.
+                        <br><br> Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.
+                        <br><br> Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis. Nulla vehicula lorem sit amet mi sagittis accumsan. Donec et auctor metus. In felis ante, dignissim sit amet facilisis in, ornare a nibh. Praesent a metus quis ex tempor suscipit nec et odio. Vestibulum auctor facilisis erat. Duis non tortor vulputate, euismod quam sit amet, convallis eros. Phasellus nec dignissim sapien. Vestibulum vitae augue a risus accumsan lobortis.</p>
+                </figure>
 
-        </article>
-   
-    </main>
+            </article>
 
-    <script src="scripts/hamburger.js"></script>
+        </main>
+
+        <script src="scripts/hamburger.js"></script>
 
         <script src="scripts/hideMenu.js"></script>
 
 
         <footer>
-        <aside>
-            <p class="footer-bar1"><b>Mountain Spoke</b></p>
-            <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
-        </aside>
-        <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp;
-            <span id="currentdate"></span>
-        </p>
+            <aside>
+                <p class="footer-bar1"><b>Mountain Spoke</b></p>
+                <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
+            </aside>
+            <p class="footer-bar2">&copy;2018 All Rights Reserved &nbsp;| &nbsp;
+                <span id="currentdate"></span>
+            </p>
 
 
-    </footer>
+        </footer>
 
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
 
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-
-    </script>
-
-    <script>
-        var urlString, urlArray, pageHREF, menu, i, currentURL;
-        urlString = document.location.href;
-        urlArray = urlString.split('/');
-        pageHREF = urlArray[urlArray.length - 1];
-
-        if (pageHREF !== "") {
-            menu = document.querySelectorAll('ul#mainmenu li a');
-            for (i = 0; i < menu.length; i++) {
-                currentURL = (menu[i].getAttribute('href'));
-                menu[i].parentNode.className = '';
-                if (currentURL === pageHREF) {
-                    menu[i].parentNode.className = 'active';
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
                 }
             }
-        }
+        </script>
 
-    </script>
+        <script>
+            var urlString, urlArray, pageHREF, menu, i, currentURL;
+            urlString = document.location.href;
+            urlArray = urlString.split('/');
+            pageHREF = urlArray[urlArray.length - 1];
+
+            if (pageHREF !== "") {
+                menu = document.querySelectorAll('ul#mainmenu li a');
+                for (i = 0; i < menu.length; i++) {
+                    currentURL = (menu[i].getAttribute('href'));
+                    menu[i].parentNode.className = '';
+                    if (currentURL === pageHREF) {
+                        menu[i].parentNode.className = 'active';
+                    }
+                }
+            }
+        </script>
     </div>
-   
+
 </body>
 
 </html>

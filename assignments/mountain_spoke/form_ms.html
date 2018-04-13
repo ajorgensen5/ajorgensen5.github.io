@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain Spoke - Home </title>
+    <meta name="author" content="Aimee Jorgensen">
+    <meta name="description" content="Mountain Spoke - Home Page - Aimee Jorgensen-BYUI">
+
+    <!-- Google API font reference -->
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Martel+Sans|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar|Martel+Sans|Scheherazade" rel="stylesheet">
+
+    <!--
+
+    <!-- external style references in the proper cascading order -->
+
+    <!-- normalize useragent/browser defaults -->
+
+    <link href="styles/normalize.css" rel="stylesheet">
+
+    <!-- default styles - small/phone views -->
+
+    <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/main_ms.css" rel="stylesheet">
+
+    <!-- medium/tablet views -->
+
+    <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/medium_ms.css" rel="stylesheet">
+
+    <!-- large/wide/desktop views -->
+    <link href="/ajorgensen5.github.io/assignments/mountain_spoke/styles/large-ms.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class='header' id="myHeader">
+            <div id="logoms">
+                <img src="images/msLogo.png" alt="mountain spokes logo">
+            </div>
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+
+
+            <!-- site navigation use placeholder references -->
+        
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index-ms.html">Home</a></li>
+                    <li><a href="service_ms.html">Service</a></li>
+                    <li><a href="sales_ms.html">Sales</a></li>
+                    <li><a href="events_ms.html">Events</a></li>
+                    <li><a href="tours_ms.html">Tours</a></li>
+                    <li><a href="contact_ms.html">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        
+        <main>
+
+        <div id="content">
+
+            <h2>Mountain Spoke Newsletter</h2>
+            <div class="report"> </div>
+
+            <div class="row">
+                <div class="left">
+
+
+                    <form action="https://ajorgensen5.github.io/assignments/lesson-8/thanks-8.html" method="post" enctype="multipart/form-data" name="stormreport" id="stormReport" target="_blank">
+
+
+
+                        <fieldset class="pi">
+                            <legend>Personal Information</legend>
+
+                            <label><span>Your Full Name:</span><input name = "fullname" type="text" value="" placeholder="Full Name" pattern="([a-zA-Z -.]).{5,30,}" required></label>
+
+                            <label><span>Your Phone Number (optional):</span><input name = "phone" type="tel" value="" placeholder="1233215322" pattern="[0-9]{10,20}" required></label><br>
+
+                            <label><span>Email:</span><input name = "email" type="email" value="" placeholder="biker@gmail.com" required></label><br>
+
+                            <label><span>Zip Code:</span><input number = "zip" type="number" value="" placeholder="12345" pattern="[0-9]{10,20}" required></label><br>
+
+                        </fieldset>
+                        
+<!--
+                        <fieldset>
+                            <legend>Storm Information</legend>
+                            <label><span>Date:</span><input date = "date" type="date" value="" placeholder="xx/xx/xxxx" required></label>
+                            
+                            
+                            <label><span>Storm Severity (10 being worst)</span></label><span id="ratingvalue">1</span>
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">10</span><br>
+
+
+                            <label><span>Storm Region:</span> </label>
+                            <input list="browsers" name="browser">
+                            <datalist id="browsers">
+                                <option selected="selected" disabled="disabled">Select a Region</option>
+                                <option value="Franklin">
+                                <option value="Greenville">
+                                <option value="Springfield">
+                                 <br>  
+                                    </option></datalist>
+                      
+                            <label><span>User Currently in Danger?</span></label><br>
+
+                            <input type="radio" name="yes" value="Yes"> Yes<br>
+                            <input type="radio" name="maybe" value="Maybe"> Maybe <br>
+                            <input type="radio" name="no" value="No"> No <br>
+
+                            <br>
+
+-->
+
+                            <div class=addComments>
+                                <p>Add Comments and Additional Information</p><br>
+
+                                <textarea name="comments" id="comments"></textarea>
+
+
+                            </div>
+                            <input type="submit" value="Submit">
+
+                        </fieldset>
+
+                    </form>
+                </div>
+
+                <aside class="right">
+                    <div class="ad"><a href="#"><img src ="">
+                      
+                    </a>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+<!--                 JSON -->
+
+
+
+        <script src="scripts/hamburger.js"></script>
+
+        <script src="scripts/hideMenu.js"></script>
+        
+       
+
+
+        <footer>
+           
+            <aside>
+           
+                <p class="footer-bar1"  ><b>Mountain Spoke</b></p>
+                <p>Bozeman, MN &nbsp; 83454 &nbsp; 809.876.7676</p>
+            </aside>
+            <p class="footer-bar2" >&copy;2018 All Rights Reserved &nbsp;| &nbsp;
+                <span id="currentdate"></span>
+            </p>
+
+
+        </footer>
+
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+
+        </script>
+
+        <script>
+            var urlString, urlArray, pageHREF, menu, i, currentURL;
+            urlString = document.location.href;
+            urlArray = urlString.split('/');
+            pageHREF = urlArray[urlArray.length - 1];
+
+            if (pageHREF !== "") {
+                menu = document.querySelectorAll('ul#mainmenu li a');
+                for (i = 0; i < menu.length; i++) {
+                    currentURL = (menu[i].getAttribute('href'));
+                    menu[i].parentNode.className = '';
+                    if (currentURL === pageHREF) {
+                        menu[i].parentNode.className = 'active';
+                    }
+                }
+            }
+
+        </script>
+    </div>
+
+</body>
+
+</html>
