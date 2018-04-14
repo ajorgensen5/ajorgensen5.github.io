@@ -38,17 +38,18 @@
 
 <body>
     <!--    <div class="content">-->
-    <div class='header' id="myHeader">
+    <header>
 
         <img src="images/msLogo.png" id="mslogo" alt="mountain spokes logo">
 
 
-        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
-
-
-
+        
+    </header>
+   
         <!-- site navigation use placeholder references -->
 
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    
         <nav>
             <ul id="mainmenu" class="navigation">
                 <li><a href="index-ms.html">Home</a></li>
@@ -60,20 +61,20 @@
             </ul>
 
         </nav>
-    </div>
+  
 
     <main>
+        <div class="container">
         <img src="images/index_images/biker_legs.jpg" id="seriousBiker" alt="index serious biker image">
 
         <div class="centered">MAKE MORE ADVENTURES</div>
 
         <div class="whoWeare">Your one stop shop for mountain bike tours service and shopping.
-            <button id="exploreTours" action="https://ajorgensen5.github.io/assignments/lesson-8/stormcenter-8.html">Explore Tours
-                            </button>
+            
+            <button id="exploreTours" action="https://ajorgensen5.github.io/assignments/mountain_spoke/tours_ms.html">Explore Tours</button>
         </div>
-
+        </div>
         <h2 id="title">WELCOME TO
-            <p>
                 MOUNTAIN SPOKE</h2>
 
         <div class="welcomeStatement">Mountain Spoke bike tours service and sales was establised in 1975. We cater soley to those that are looking for a spectacular time enjoying biking in the wild outdoors. We provide service to people of all ages that value the beauty of the mountains around us and want to enjoy the ride.
@@ -85,7 +86,7 @@
 
             <p> Come see why all the locals love Mountain Spoke.<br></p>
 
-            <button id="bikeTours" action="https://ajorgensen5.github.io/assignments/lesson-8/stormcenter-8.html">Bike Tours</button>
+          
             
         </div>
 
@@ -141,30 +142,15 @@
             
         </aside>
         <p class="footer-bar2">&copy;2018 All Rights Reserved 
-            <span id="currentdate"></span>
+            <span id="currentdate"></span> 
+           <a href="video.html">Aimee Jorgensen Mountain Spokes Website Video</a>
+           
         </p>
 
 
     </footer>
 
-    <!--
-    <script>
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-
-    </script>
+  
 
     <script>
         var urlString, urlArray, pageHREF, menu, i, currentURL;
@@ -184,7 +170,7 @@
         }
 
     </script>
-<!--    </div>-->
+
 
 </body>
 
