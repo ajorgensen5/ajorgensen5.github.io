@@ -2,166 +2,162 @@
 
 /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 
-@media only screen and (max-width: 37.5em) * {
-    margin: 0;
+@media only screen and (max-width: 32em) * {
     box-sizing: border-box;
+
 }
 
-
-body {
-
-    margin: 0 auto;
-    font-size: 16px;
-    padding: 0;
-    text-align: left;
-    justify-content: center;
+body,
+html {
+    line-height: 30px;
+    height: 100%;
 }
 
-.header {
+/* The hero image */
+
+.hero-image {
+    /* The image used */
+    background-image: url("/ajorgensen5.github.io/assignments/mountain_spoke/images/index_images/indexcover-1050.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Place text in the middle of the image */
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    line-height: 30px;
+    color: white;
+    letter-spacing: 4px;
+    font-size: .6em;
+    width: 300px;
+}
+
+.hero-text p{
+    
+}
+
+header {
     margin: 0 auto;
+    max-width: 100%;
+
+}
+
+picture {
+    width: 600px;
+    height: 100px;
+}
+
+nav,
+main,
+footer {
+  
     background: white;
-    color: black;
-    width: 100%;
-    height: 20%;
-}
-
-
-button {
-    display: block;
-    position: fixed;
-    top: 1%;
-    right: 2%;
-    margin: 2%;
-    background: none;
-    color: black;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    margin: auto;
-}
-
-.content {
-    width: 100%;
     margin: 0 auto;
+    font-family: 'Eczar', serif;
 }
 
+#mslogo {
+    display: flex;
+    margin: 0 auto;
+    width: 35%;
+    padding-top: 20px;
+
+
+}
+
+
+
+/*
 .sticky {
     position: fixed;
     min-height: 70px;
     margin-top: -2%;
     width: 100%;
     background-color: white;
-
 }
+*/
 
-.sticky + .content {
+/*
+.sticky + .container + .centered {
     padding-top: 102px;
+    background-color: white;
 }
-
-
-
+*/
 
 .hamburger {
     display: block;
     position: absolute;
-    top: 2.0rem;
-    right: 1.25rem;
+    top: 4%;
+    margin: 5%;
 }
-
-.navigation {
-    list-style: none;
-    padding-left: 0;
-}
-
-.navigation li {
-    display: none;
-}
-
-/* When the responsive class is added to the unordered list on hamburger button click 
-placed in a media query in order to accomodate the toggle when in wider view*/
-
-@media only screen and (max-width: 37.5em) {
-    .navigation.responsive {
-        position: relative;
-        display: block;
-    }
-
-    .navigation.responsive li {
-        color: #A68E7B;
-        display: block;
-        width: 100%;
-        margin: 2px 0;
-        border: 1px solid #ddd;
-    }
-
-    .navigation.responsive li a {
-        padding: 1rem;
-        text-align: center;
-        display: block;
-        text-decoration: none;
-        color: #A68E7B;
-    }
-    .navigation.responsive li a:hover {
-        background-color: #ddd;
-    }
-
-    .navigation.responsive li a:active{
-        background-color: #ddd;
-        color: black;
-    }
-    
-    .navigation.responsive li a:visited {
-        background-color: #1E1E1E;
-        color: #856376;
-    }
-
-
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.6rem;
-    
-}
-
 
 nav {
-    background-color: #1E1E1E;
-   
+overflow: hidden;
+    
 }
-
 
 nav ul li.active a {
     background-color: white;
     color: #1E1E1E;
 }
 
-/*
+nav ul li.visited a {
+    background-color: black;
+    color: #856376;
+}
+
 .navigation {
     list-style: block;
     padding-left: 0;
+     
 }
 
 .navigation li {
     display: none;
+    
 }
 
- When the responsive class is added to the unordered list on hamburger button click 
-placed in a media query in order to accomodate the toggle when in wider view
-*/
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
 
-/*
 .navigation.responsive {
     position: relative;
+     
 }
 
 .navigation.responsive li {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #0026BA;
+   
+    background-color: #1E1E1E;
     display: block;
     width: 100%;
     margin: 2px 0;
@@ -175,62 +171,254 @@ placed in a media query in order to accomodate the toggle when in wider view
     text-decoration: none;
     color: #A68E7B;
 }
-*/
-
 
 .navigation.responsive li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
+    background-color: #856376;
+    color: #1e1e1e;
 }
 
-/*
+.navigation.responsive li a:visited {
+    background-color: #1e1e1e;
+    color: #856376;
+
+
+}
+
+a:hover {
+    background-color: green;
+}
+
+
 .show-nav {
     display: block;
 }
-*/
 
-/*
 .hide-nav {
     display: none;
 }
-*/
 
+/*
 .container {
-
+    display: none;
     text-align: center;
-    color: white;
     border: none;
     margin: 0 auto;
     padding: 0;
 }
 
-.centered {
-    display: none;
-    position: absolute;
-    top: 30%;
-    left: 55%;
+
+
+.whoWeare {
+    display: flex;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 1px;
+    min-width: 250px;
+    top: 38%;
+    left: 47%;
     transform: translate(-50%, -50%);
-    margin: .2rem 2%;
-    background-color: #e1e1e1;
+    background-color: transparent;
     border: none;
-    font-size: 1.5em;
-    font-family: 'Eczar', serif;
+    font-size: 1em;
+    color: darkgray;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: 'Martel Sans', sans-serif;
+    padding-bottom: 5px;
+}
+
+#exploreTours {
+    top: 100%;
+    left: 28%;
+    background-color: #;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
     color: white;
+    min-width: 100px;
+    min-height: 20px;
+    background-color: #746242;
+    padding: 9px;
+    margin: 2%;
+}
+*/
+
+#title {
+    line-height: 1;
+    font-family: 'Eczar', serif;
+    margin: 10% 2%;
 
 }
 
-.whoWeare {
-    display: none;
-    width: 150px;
-    position: absolute;
-    top: 38.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: .3rem 2%;
-    background-color: transparent;
-    border: none;
-    font-size: .5em;
+main h2 {
+    font-family: 'Eczar', serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 2%;
+    color: black;
+    line-height: 1.6;
+
+}
+
+.welcomeStatement {
+    margin-left: 2%;
+    padding: 0;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: .8em;
+}
+
+#bikeTours {
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
     color: white;
+    min-width: 100px;
+    min-height: 20px;
+    background-color: #746242;
+    padding: 9px;
+
+}
+
+}
+
+#coverimage {
+    max-width: 410px;
+    margin: 0 auto;
+
+}
+
+h3 {
+    font-family: 'Eczar', serif;
+    margin: 2%;
+}
+
+.leftColumn {
+    border-top: solid 2px black;
+    max-width: 100%;
+    margin: 2%;
+    line-height: 2.5;
+    font-size: em;
+    background-color: white;
+    font-family: 'Martel Sans', sans-serif;
+    max-width: 95%;
+    padding: 0;
+    color: black;
+}
+
+#enjoyView {
+    max-width: 100% display: block;
+
+}
+ img #shopBiker {
+    width 100%;
+}
+
+.testimonial {
+    margin: 2%;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: .8em;
+}
+
+#readMore {
+    position: relative;
+    top: 90%;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    color: #745252;
+    min-width: 100px;
+    min-height: 20px;
+    background-color: white;
+    padding: 9px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+
+}
+
+.middleColumn {
+    border-top: solid 2px black;
+    margin: 2%;
+    ;
+    line-height: 2.5;
+    font-size: 1em;
+    background-color: black;
+    font-family: 'Martel Sans', sans-serif;
+    max-width: 95%;
+    padding-bottom: 100px;
+    0;
+}
+
+
+
+
+
+    {
+    background-color: white;
+    color: black;
+}
+
+#conditions {
+    display: block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.conditionsHazard {
+    color: white;
+    margin-left: 2%;
+}
+
+.rightColumn {
+    border-top: solid 2px black;
+    margin: 10% auto;
+    line-height: 2.5;
+    font-size: 1em;
+    background-color: white;
+    font-family: 'Martel Sans', sans-serif;
+    max-width: 95%;
+    padding: 0;
+}
+
+.challenge {
+    margin: 2%;
+    font-size: .8em;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.adventureBackground {
+    background-color: #1e1e1e;
+}
+
+.containerTours {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 47%;
+    letter-spacing: 3px;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+    font-family: 'Eczar', serif;
+    color: white;
+    width: 78%;
+}
+
+.halfday {
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+    min-width: 250px;
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    border: none;
+    font-size: 20px;
+    color: orange;
     text-align: center;
     -moz-text-align-last: center;
     text-align-last: center;
@@ -238,56 +426,160 @@ placed in a media query in order to accomodate the toggle when in wider view
 
 }
 
-/*
-.exploreTours {
-    position: relative;
-    top: 20%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 5px;
-    border: 2px solid #ccc;
-    cursor: pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+.shortTours {
+    line-height: 32px;
     text-align: center;
-}
-*/
-
-main {}
-
-main h2 {
-    font-family: 'Eczar', serif;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    color: black;
-    font-size: 1.2em;
-    line-height: 1.6;
-
-}
-
-.welcomeStatement {
-    line-height: 2.5;
-    font-size: .8em;
-    background-color: white;
+    letter-spacing: 1px;
+    min-width: 300px;
+    position: absolute;
+    top: 54%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
     font-family: 'Martel Sans', sans-serif;
-    max-width: 90%;
-    padding: 0;
+    padding-bottom: 5px;
 }
 
 
+.fullday {
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+    min-width: 250px;
+    position: absolute;
+    top: -20%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    border: none;
+    font-size: 20px;
+    color: orange;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: 'Martel Sans', sans-serif;
+
 }
 
-#coverimage {
+
+.longTours {
+
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+    min-width: 300px;
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: 'Martel Sans', sans-serif;
+    padding-bottom: 5px;
+}
+
+.eventsP {
+    margin-left: 2%;
+}
+
+#content {
+    background-color: #4881FC;
+
+}
+
+#eventSection {
+    margin: 2%;
+}
+
+input {
+    border-radius: 8px;
+    margin: 5px auto;
+    background-color: azure;
     width: 100%;
-    margin: 0 auto;
+}
+
+.left {
+
+    background-color: white;
+    margin: auto;
+}
+
+.row {
+
+    background-color: greenyellow;
+    margin: auto;
+    max-width: 90%;
+}
+
+.report {
+    color: white;
+    background-color: #4881FC;
+    font-size: 16px;
+    color: white;
+    border: none;
+    margin: auto;
+
+}
+
+progress {
+    width: 96%;
+    background-color: azure;
+    padding: 5%;
+
+}
+
+#rating {
+    max-width: 50%;
+    margin-bottom: 10%;
 
 }
 
 
+form#stormReport {
+    margin: 1em 3%;
+
+}
+
+.shopPing {
+    font-size: 16px;
+}
+
+legend {
+
+    color: tan;
+    padding: 12px;
+    font-style: oblique;
+    font-size: 16px;
+    background-color: #4D4252;
+    border-radius: .5em;
+
+}
+
+label {
+    display: block;
+    margin: .3em;
+}
+
+#shopBiker {
+    min-width: 100%
+}
+
+.middlebikeColumn {
+
+    margin: 2%;
+
+}
 
 section,
 div {
